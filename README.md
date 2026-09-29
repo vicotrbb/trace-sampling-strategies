@@ -4,13 +4,13 @@
 
 A measurement study and reproducibility artifact by **Victor Bona**.
 
-[Read the paper](output/pdf/trace-sampling-collector-boundary.pdf) | [Download the complete evidence](https://github.com/vicotrbb/trace-sampling-strategies/releases/tag/v1.8.0) | [Citation](CITATION.cff) | [Release instructions](release/README.md)
+[Zenodo preprint](https://zenodo.org/records/23032245) | [Read the paper](output/pdf/trace-sampling-collector-boundary.pdf) | [Download the complete evidence](https://github.com/vicotrbb/trace-sampling-strategies/releases/tag/v1.8.0) | [Citation](CITATION.cff) | [Release instructions](release/README.md)
 
 Sampling reduces stored telemetry, but it does not necessarily reduce Collector CPU. This study measures how sampler placement, export path, and batching change the work saved, and how delivery mechanisms and sampling affect available diagnostic evidence.
 
 At 40,000 offered spans/s, native uniform sampling at nominal 10% retention increased Collector CPU by 3.2% with JSON-only export and reduced it by 24.2% with JSON plus Jaeger. A low-load CPU reduction from retain-all tail processing disappeared in the higher-load batching experiment. The paper reports both outcomes and their measurement boundaries. Its localization example uses measured HTTP timings with ideal offline sampling, and is conditional on its task and fixed corpus.
 
-This is a public research manuscript and artifact, not a claim of peer-reviewed acceptance. No DOI is assigned in this release. The 22-page paper includes the mathematical supplement as Appendix A. Its audited PDF is preserved without editorial changes. The availability statement records the manuscript's preparation checkpoint, before this GitHub publication; this repository and release provide its subsequent public distribution.
+The article is published as an open-access [Zenodo preprint](https://zenodo.org/records/23032245), version 1.8.0, with assigned DOI `10.5281/zenodo.23032245`. It has not been peer reviewed. Zenodo hosts the unchanged 22-page PDF, including the mathematical supplement as Appendix A; the complete evidence archive is hosted in the linked GitHub release. The manuscript and immutable release retain their preparation-time availability statements. See the [publication record](docs/ZENODO_PUBLICATION.md) for verification details and the DOI resolver status at publication.
 
 ## Read and inspect
 
@@ -72,6 +72,8 @@ Workload orchestration is explicitly separate from offline verification. Only ru
 
 ## Citation and licensing
 
-Use [CITATION.cff](CITATION.cff) to cite version 1.8.0 and link the [versioned release](https://github.com/vicotrbb/trace-sampling-strategies/releases/tag/v1.8.0).
+For the article: Bona, V. (2026). *Trace Sampling at the Collector Boundary: Costs and Diagnostic Evidence* (Version 1.8.0) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.23032245
+
+The direct [Zenodo record](https://zenodo.org/records/23032245) is publicly accessible. Use [CITATION.cff](CITATION.cff) and the [versioned release](https://github.com/vicotrbb/trace-sampling-strategies/releases/tag/v1.8.0) to identify the complete research artifact separately.
 
 Original manuscript, data, figures, and narrative documentation are CC-BY-4.0. Original software and configuration are MIT. Third-party components retain their own terms. See [LICENSE.md](LICENSE.md) for the component-specific scope.

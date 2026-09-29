@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this versioned research manuscript and artifact. No peer-review acceptance or DOI is claimed."
+message: "For the article, cite the Zenodo preprint, version 1.8.0, assigned DOI 10.5281/zenodo.23032245. This citation file identifies the linked research artifact. See docs/ZENODO_PUBLICATION.md for the article citation and publication verification. No peer-reviewed acceptance is claimed."
 type: dataset
 title: "Trace Sampling at the Collector Boundary: Costs and Diagnostic Evidence"
 authors:

@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-09-29T06:58:23.246347+00:00",
+  "verification_method": "Firefox native computer use; published record and PDF also checked in a private browsing window without signing in.",
+  "record_url": "https://zenodo.org/records/23032245",
+  "record_id": "23032245",
+  "doi": "10.5281/zenodo.23032245",
+  "concept_doi": "10.5281/zenodo.23032244",
+  "publication_date": "2026-09-29",
+  "version": "1.8.0",
+  "title": "Trace Sampling at the Collector Boundary: Costs and Diagnostic Evidence",
+  "author": {
+    "family_name": "Bona",
+    "given_name": "Victor",
+    "affiliation": "Independent Researcher, Blumenau, Brazil"
+  },
+  "resource_type": "Preprint",
+  "record_published": true,
+  "access": "open",
+  "anonymous_record_access_verified": true,
+  "language": "English",
+  "license": "CC-BY-4.0",
+  "deposited_files": [
+    {
+      "name": "trace-sampling-strategies-v1.8.0.pdf",
+      "bytes": 515824,
+      "preview_pages": 22,
+      "server_reported_md5": "991e0176f96924f6bc0801077a0ff5b0",
+      "local_sha256": "390ed5be9b794c28a76f223dc9af1071e82e5f7821b77b162b532478290d72bc",
+      "server_md5_matches_local_pdf": true
+    }
+  ],
+  "related_artifact": {
+    "identifier": "https://github.com/vicotrbb/trace-sampling-strategies/releases/tag/v1.8.0",
+    "relation": "isSupplementedBy",
+    "resource_type": "Other"
+  },
+  "archive_hosted_on_zenodo": false,
+  "archive_host": "GitHub immutable v1.8.0 release",
+  "archive_bytes": 2475034112,
+  "archive_sha256": "38a209f77e5befee6c84e2094f489a112ba992b82a8db50a275840b679392dd0",
+  "raw_evidence_files": 9242,
+  "doi_resolution": {
+    "status": "not_confirmed",
+    "observed_page_title": "Error: DOI Not Found",
+    "record_is_public": true
+  },
+  "manuscript_and_scientific_evidence_changed": false,
+  "peer_reviewed": false,
+  "description": "Trace retention is an incomplete predictor of observability cost: a sampler changes where work is avoided, how spans are grouped for export, and which evidence remains available. We study these effects in OpenTelemetry Collector Contrib v0.136.0 on one shared node with loopback transport. Five randomized blocks cross sampler placement with export path at 40,000 offered spans/s. Native uniform sampling at nominal 10% retention increases Collector CPU by 3.2% with JSON-only export and reduces it by 24.2% with JSON plus Jaeger. A pre-ingress gate retains identical trace IDs but avoids ingestion and excludes selection work from the Collector endpoint. Retain-all controls show that stateful release changes batching and CPU without discarding traces. A short-timeout CPU reduction at 250 spans/s disappears at 5,000 spans/s, where tail increases CPU at both tested timeouts. A separate SDK comparison, load sweep, and delivery probes distinguish application work, Collector resources, and complete evidence delivery. An illustrative localization task uses measured HTTP timings and ideal offline sampling without an SDK or Collector. Its results show how window size and selection-dependent reference evidence affect a fixed median-change scorer, conditional on the observed corpus. The study supports evaluating sampling at explicit component boundaries, measuring batching and serialization alongside trace counts, and defining the diagnostic evidence objective before selecting a rate. The research archive preserves frozen protocols, raw observations, failed attempts, and executable checks.\n\nResearch artifact. Version 1.8.0 contains the complete 22-page article, including the mathematical supplement as Appendix A. The complete research artifact is available from the immutable GitHub v1.8.0 release linked below. It includes all 9,242 raw evidence files, including experiment logs, test-environment metadata, pilots, failed attempts, frozen execution sources, derived results, analysis, limited Lean proofs, licenses, and validation records. The 2.48 GB archive is distributed there in three numbered parts with RELEASE.json, VERIFICATION.log, and SHA256SUMS. This Zenodo record deposits the complete article PDF; the research archive is hosted in the linked GitHub release. Historical availability statements in the unchanged paper and sealed archive describe their preparation checkpoint before public deposition. This is a preprint and has not been peer reviewed.\n\nAI-assisted research workflow. OpenAI Codex assisted protocol design, literature discovery, workload and orchestration programs, analysis and validation code, mathematical derivations and proof code, figure-generation code, manuscript drafting, and revision. Automated workloads collected the measurements in the Kubernetes testbed; timings and resource counters are archived program observations. The validation implementations are part of the same AI-assisted workflow, not external replication. The author retains responsibility for the methods, claims, source attribution, and final text.\n\nLicense scopes. The deposited manuscript is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Original research data, figures, derived results, and narrative documentation in the linked artifact use CC BY 4.0; original software, formalization, build, and deployment code use MIT. These licenses apply to their respective components. Third-party material retains its applicable terms; LICENSE.md in the archive details the scope.\n\nResearch archive: https://github.com/vicotrbb/trace-sampling-strategies/releases/tag/v1.8.0"
+}
