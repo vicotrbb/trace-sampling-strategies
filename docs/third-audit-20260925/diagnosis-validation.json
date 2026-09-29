@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "episodes": 600,
+  "requests": 240000,
+  "spans": 960000,
+  "comparison_rows": 240000,
+  "family_size": 48,
+  "bounds_independently_inverted": true
+}

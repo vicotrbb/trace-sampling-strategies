@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "scope": "Deterministic arithmetic checks, no new randomized or application experiment",
+  "loss_interval_boundaries": [
+    {
+      "losses": 0,
+      "upper": 0.0011529989844525964,
+      "binomial_inverse": 0.0011529989844526276,
+      "meets_five_points": true
+    },
+    {
+      "losses": 1,
+      "upper": 0.00159113772567898,
+      "binomial_inverse": 0.0015911377256790681,
+      "meets_five_points": true
+    },
+    {
+      "losses": 50,
+      "upper": 0.014504331644426773,
+      "binomial_inverse": 0.014504331644426782,
+      "meets_five_points": true
+    },
+    {
+      "losses": 100,
+      "upper": 0.026047758511040815,
+      "binomial_inverse": 0.02604775851105169,
+      "meets_five_points": true
+    },
+    {
+      "losses": 150,
+      "upper": 0.0372141571979389,
+      "binomial_inverse": 0.03721415719793886,
+      "meets_five_points": true
+    },
+    {
+      "losses": 200,
+      "upper": 0.04818100454731472,
+      "binomial_inverse": 0.048181004547314735,
+      "meets_five_points": true
+    },
+    {
+      "losses": 208,
+      "upper": 0.04992245582931903,
+      "binomial_inverse": 0.049922455829338526,
+      "meets_five_points": true
+    },
+    {
+      "losses": 209,
+      "upper": 0.050139916700860224,
+      "binomial_inverse": 0.05013991670086022,
+      "meets_five_points": false
+    },
+    {
+      "losses": 4999,
+      "upper": 0.9999993740215941,
+      "binomial_inverse": 0.9999993740215941,
+      "meets_five_points": false
+    },
+    {
+      "losses": 5000,
+      "upper": 1.0,
+      "binomial_inverse": 1.0,
+      "meets_five_points": false
+    }
+  ],
+  "witness_recovery_at_head_10_percent": {
+    "1": 0.09999999999999998,
+    "5": 0.40950999999999993,
+    "20": 0.8784233454094307
+  },
+  "witness_retention_for_95_percent": {
+    "1": 0.95,
+    "5": 0.4507197283469412,
+    "20": 0.13910834066826516
+  },
+  "twenty_witnesses_at_least_three": 0.32307319481053404,
+  "tail_background_at_ten_percent": 0.0816326530612245,
+  "old_hoeffding_radius": 0.8983822175882501,
+  "old_minimum_zero_loss_blocks": 1615
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "cells": 1,
+  "exported_spans_including_warmup": 1500000,
+  "max_lag_s": 0.0035263346135616658,
+  "throttled_usec": 0
+}

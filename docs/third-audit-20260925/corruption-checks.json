@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "rejected_corruptions": [
+    "observed-duration mismatch",
+    "injected-truth ledger mismatch",
+    "wrong full-data answer",
+    "threshold not calibration quantile",
+    "missing incident file",
+    "wrong CPU endpoint",
+    "wrong native hash seed",
+    "wrong exported digest",
+    "invalid native sampling metadata"
+  ],
+  "cp_endpoint_and_decision_boundary_checks": 6
+}

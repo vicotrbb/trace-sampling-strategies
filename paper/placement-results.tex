@@ -1,0 +1,23 @@
+\subsection{RQ1: placement and export path at matched retention}\label{sec:placement-results}
+Table~\ref{tab:boundary} crosses placement with export path at 40,000 offered spans/s. Native uniform sampling increases Collector CPU by \PlacementFileUniformIncrease{}\% with JSON-only export, but reduces it by \PlacementDualUniformSaving{}\% with JSON plus Jaeger. Each direction occurs in every paired block. The export-path interaction, defined as the dual-export minus JSON-only difference in native-minus-full CPU, is $-2.162$ CPU-seconds, with pointwise 95\% interval $[-2.390,-1.934]$.
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrlrrr}
+\toprule
+Policy & Collector & CPU saving versus full & Jaeger & JSON & RSS \\
+& CPU (s) & \% [95\% interval] & CPU (s) & \% & MiB \\
+\midrule
+\tableinput{fifth-placement-rows.tex}
+\bottomrule
+\end{tabular}
+\caption{Placement crossed with export path, five randomized blocks. CPU spans thirty seconds of offered load plus five seconds of drain and final counter scrapes. Savings average paired block percentages; JSON is relative to the matching full-retention mean. RSS is the mean per-cell sampled Collector peak. The pre-ingress gate admits only selected spans; all other paths receive the full input. Uniform selections match exactly. Negative savings mean increased CPU. Intervals are pointwise.}
+\label{tab:boundary}
+\end{table}
+
+In the reference model of Equation~\eqref{eq:savings}, the JSON result corresponds to sampler work exceeding avoided downstream work; adding OTLP export reverses that balance for native uniform sampling. The same intervention reduces the tail penalty from 53.9\% to 13.9\%, but tail still increases Collector CPU. The boundary matters even within one configuration: with dual export, Collector-plus-Jaeger process CPU falls from 51.72\,s under full retention to 10.09\,s under native uniform and 13.10\,s under tail.
+
+The pre-ingress gate saves \PlacementFileGateSaving{}\% and \PlacementDualGateSaving{}\% of Collector CPU in the respective export paths. It is the favorable Collector-only reference in which discarded input never reaches that process and selection work is excluded. Native uniform receives the complete input, selects the same IDs, and adds 44 serialized bytes of tracestate per retained span. Its JSON output is 11.4\% of full, compared with 10.1\% for the gate. Equal selections therefore do not make either the work or serialized representation equal.
+
+All forty cells meet the delivery and pacing criteria. Maximum scheduling lag is 309.7\,ms, with no throttling, refusal, failed export, or early tail eviction.

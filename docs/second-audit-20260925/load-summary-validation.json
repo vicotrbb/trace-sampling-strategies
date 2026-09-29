@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "groups": 16,
+  "paired_contrasts": 12,
+  "summary_intervals_recomputed": 136,
+  "coverage_scope": "Pointwise t model, df=4; does not verify distributional assumptions"
+}

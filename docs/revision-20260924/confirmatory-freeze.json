@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-24T21:16:57Z",
+  "sha256": {
+    "experiments/revision/application.py": "10e2969ae8d0f9c228e49695315f441c37bd011b0611ea2940ef7e03f96ec182",
+    "experiments/revision/calibration.py": "2d7cd6111297ac7f3bde9ce2ece5cc2be651aaf691103c523aff49d4fdf015db",
+    "experiments/revision/counterfactual.py": "d4e0ea691431b5e6a634fd6f96b4b8fe66d714ae058e5cc5cd7db1e71e1d340e",
+    "experiments/revision/diagnose.py": "8595178a2a690bc4fc5510d2557a9df0a2bffdce028f4b7ffdb1e9c64933e5cc",
+    "experiments/revision/live_study.py": "d234ff8c68d31f05925c34d369b0ee2874fbe98a3f89575e1afbede8da55456f",
+    "experiments/revision/matched_probes.py": "6396125ab0a5eb6c1a38adf8f9e77298a4188f5e82176da253c8cfbfed9650e3",
+    "experiments/revision/pg-metrics.sh": "3aabe0b51ed573e51088648df09b1b6489c9547d52081a25c230e94621e8a55b",
+    "experiments/revision/pod.yaml": "c43f472f00689acb901d198eb455d19c8e303a4f986928b329f052443ada07ec",
+    "requirements-live.lock": "6a08fe706d3d28963c5226c60c8ed07dc3ad175182e4607bd4e57f133c77a6f0",
+    "experiments/runner.py": "3d97385826d910440b29831b4dfe585be384a8c6b894a2a8e310bf05fd27b9ff",
+    "docs/revision-20260924/protocol.md": "9d817ccdae72feed81b450fe7913da921bfa82182e342dc0a02268940d7233fa",
+    "docs/revision-20260924/amendments.md": "1170ab5480b239bfeb4e73628791edec082be153bba204e7440fca2bd1360d01"
+  },
+  "pilots_passed": 16
+}

@@ -1,0 +1,1675 @@
+{
+  "load_cells": 80,
+  "baseline": {
+    "episodes": 600,
+    "full_correct": 568,
+    "strata": {
+      "service-a-5-0.5": {
+        "n": 50,
+        "correct": 42
+      },
+      "service-a-5-1": {
+        "n": 50,
+        "correct": 50
+      },
+      "service-a-15-0.5": {
+        "n": 50,
+        "correct": 46
+      },
+      "service-a-15-1": {
+        "n": 50,
+        "correct": 50
+      },
+      "service-b-5-0.5": {
+        "n": 50,
+        "correct": 40
+      },
+      "service-b-5-1": {
+        "n": 50,
+        "correct": 49
+      },
+      "service-b-15-0.5": {
+        "n": 50,
+        "correct": 48
+      },
+      "service-b-15-1": {
+        "n": 50,
+        "correct": 50
+      },
+      "service-c-5-0.5": {
+        "n": 50,
+        "correct": 46
+      },
+      "service-c-5-1": {
+        "n": 50,
+        "correct": 49
+      },
+      "service-c-15-0.5": {
+        "n": 50,
+        "correct": 48
+      },
+      "service-c-15-1": {
+        "n": 50,
+        "correct": 50
+      }
+    }
+  },
+  "diagnosis_results": [
+    {
+      "policy": "head",
+      "budget": 0.05,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 1344,
+      "abstentions": 2971,
+      "losses": 3424,
+      "gains": 42,
+      "net_loss": 0.6764,
+      "upper_loss_bound": 0.702660726740992,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.049555,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 63,
+          "losses": 281,
+          "gains": 17
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 168,
+          "losses": 255,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 162,
+          "losses": 228,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 103,
+          "losses": 328,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 108,
+          "losses": 260,
+          "gains": 3
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 85,
+          "losses": 297,
+          "gains": 11
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 110,
+          "losses": 304,
+          "gains": 4
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 133,
+          "losses": 268,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 80,
+          "losses": 317,
+          "gains": 5
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 116,
+          "losses": 298,
+          "gains": 1
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 105,
+          "losses": 287,
+          "gains": 1
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 111,
+          "losses": 301,
+          "gains": 0
+        }
+      }
+    },
+    {
+      "policy": "head",
+      "budget": 0.1,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 2697,
+      "abstentions": 1158,
+      "losses": 2110,
+      "gains": 81,
+      "net_loss": 0.4058,
+      "upper_loss_bound": 0.44127361608926885,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.10016,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 157,
+          "losses": 197,
+          "gains": 27
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 324,
+          "losses": 99,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 298,
+          "losses": 92,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 225,
+          "losses": 206,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 206,
+          "losses": 168,
+          "gains": 9
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 177,
+          "losses": 217,
+          "gains": 23
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 223,
+          "losses": 194,
+          "gains": 7
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 296,
+          "losses": 105,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 164,
+          "losses": 233,
+          "gains": 5
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 203,
+          "losses": 213,
+          "gains": 3
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 203,
+          "losses": 190,
+          "gains": 2
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 221,
+          "losses": 196,
+          "gains": 5
+        }
+      }
+    },
+    {
+      "policy": "head",
+      "budget": 0.2,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 3750,
+      "abstentions": 112,
+      "losses": 1069,
+      "gains": 93,
+      "net_loss": 0.1952,
+      "upper_loss_bound": 0.23005584626373646,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.200775,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 224,
+          "losses": 133,
+          "gains": 30
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 413,
+          "losses": 10,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 382,
+          "losses": 8,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 325,
+          "losses": 106,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 288,
+          "losses": 88,
+          "gains": 11
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 251,
+          "losses": 142,
+          "gains": 22
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 325,
+          "losses": 94,
+          "gains": 9
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 391,
+          "losses": 10,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 226,
+          "losses": 172,
+          "gains": 6
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 324,
+          "losses": 96,
+          "gains": 7
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 304,
+          "losses": 91,
+          "gains": 4
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 297,
+          "losses": 119,
+          "gains": 4
+        }
+      }
+    },
+    {
+      "policy": "head",
+      "budget": 0.35,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4117,
+      "abstentions": 2,
+      "losses": 703,
+      "gains": 94,
+      "net_loss": 0.1218,
+      "upper_loss_bound": 0.15452517746429678,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.350445,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 246,
+          "losses": 111,
+          "gains": 30
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 421,
+          "losses": 2,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 362,
+          "losses": 69,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 324,
+          "losses": 52,
+          "gains": 11
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 284,
+          "losses": 108,
+          "gains": 21
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 359,
+          "losses": 59,
+          "gains": 8
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 274,
+          "losses": 125,
+          "gains": 7
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 358,
+          "losses": 62,
+          "gains": 7
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 343,
+          "losses": 54,
+          "gains": 6
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 355,
+          "losses": 61,
+          "gains": 4
+        }
+      }
+    },
+    {
+      "policy": "head",
+      "budget": 0.5,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4352,
+      "abstentions": 0,
+      "losses": 469,
+      "gains": 95,
+      "net_loss": 0.0748,
+      "upper_loss_bound": 0.10561102008030035,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.500345,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 273,
+          "losses": 85,
+          "gains": 31
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 398,
+          "losses": 33,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 342,
+          "losses": 34,
+          "gains": 11
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 315,
+          "losses": 72,
+          "gains": 16
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 372,
+          "losses": 45,
+          "gains": 7
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 318,
+          "losses": 85,
+          "gains": 11
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 384,
+          "losses": 35,
+          "gains": 6
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 363,
+          "losses": 38,
+          "gains": 10
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 373,
+          "losses": 42,
+          "gains": 3
+        }
+      }
+    },
+    {
+      "policy": "head",
+      "budget": 0.65,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4491,
+      "abstentions": 0,
+      "losses": 323,
+      "gains": 88,
+      "net_loss": 0.047,
+      "upper_loss_bound": 0.07467745969242658,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.650365,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 292,
+          "losses": 66,
+          "gains": 31
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 412,
+          "losses": 19,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 344,
+          "losses": 27,
+          "gains": 6
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 347,
+          "losses": 39,
+          "gains": 15
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 379,
+          "losses": 37,
+          "gains": 6
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 339,
+          "losses": 66,
+          "gains": 13
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 402,
+          "losses": 18,
+          "gains": 7
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 373,
+          "losses": 28,
+          "gains": 10
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 389,
+          "losses": 23,
+          "gains": 0
+        }
+      }
+    },
+    {
+      "policy": "head",
+      "budget": 0.8,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4605,
+      "abstentions": 0,
+      "losses": 187,
+      "gains": 66,
+      "net_loss": 0.0242,
+      "upper_loss_bound": 0.045344095368850756,
+      "meets_five_point_margin": true,
+      "retained_fraction": 0.800485,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 310,
+          "losses": 43,
+          "gains": 26
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 422,
+          "losses": 9,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 360,
+          "losses": 11,
+          "gains": 6
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 358,
+          "losses": 26,
+          "gains": 13
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 386,
+          "losses": 27,
+          "gains": 3
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 362,
+          "losses": 35,
+          "gains": 5
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 413,
+          "losses": 6,
+          "gains": 6
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 377,
+          "losses": 21,
+          "gains": 7
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 403,
+          "losses": 9,
+          "gains": 0
+        }
+      }
+    },
+    {
+      "policy": "head",
+      "budget": 0.95,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4687,
+      "abstentions": 0,
+      "losses": 74,
+      "gains": 35,
+      "net_loss": 0.0078,
+      "upper_loss_bound": 0.0201138246881277,
+      "meets_five_point_margin": true,
+      "retained_fraction": 0.950085,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 321,
+          "losses": 18,
+          "gains": 12
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 427,
+          "losses": 4,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 363,
+          "losses": 4,
+          "gains": 2
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 365,
+          "losses": 10,
+          "gains": 4
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 397,
+          "losses": 18,
+          "gains": 5
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 385,
+          "losses": 10,
+          "gains": 3
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 414,
+          "losses": 0,
+          "gains": 1
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 390,
+          "losses": 9,
+          "gains": 8
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 411,
+          "losses": 1,
+          "gains": 0
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.05,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 1302,
+      "abstentions": 2985,
+      "losses": 3469,
+      "gains": 45,
+      "net_loss": 0.6848,
+      "upper_loss_bound": 0.7115088291700684,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.049405,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 68,
+          "losses": 276,
+          "gains": 17
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 161,
+          "losses": 262,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 160,
+          "losses": 230,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 96,
+          "losses": 335,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 104,
+          "losses": 264,
+          "gains": 3
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 87,
+          "losses": 294,
+          "gains": 10
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 103,
+          "losses": 311,
+          "gains": 4
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 116,
+          "losses": 285,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 86,
+          "losses": 311,
+          "gains": 5
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 106,
+          "losses": 308,
+          "gains": 1
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 102,
+          "losses": 292,
+          "gains": 3
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 113,
+          "losses": 301,
+          "gains": 2
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.1,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 2677,
+      "abstentions": 1153,
+      "losses": 2135,
+      "gains": 86,
+      "net_loss": 0.4098,
+      "upper_loss_bound": 0.44629777084375705,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.09995,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 164,
+          "losses": 193,
+          "gains": 30
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 324,
+          "losses": 99,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 302,
+          "losses": 88,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 223,
+          "losses": 208,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 191,
+          "losses": 183,
+          "gains": 9
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 184,
+          "losses": 211,
+          "gains": 24
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 220,
+          "losses": 197,
+          "gains": 7
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 283,
+          "losses": 118,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 168,
+          "losses": 229,
+          "gains": 5
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 200,
+          "losses": 216,
+          "gains": 3
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 206,
+          "losses": 188,
+          "gains": 3
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 212,
+          "losses": 205,
+          "gains": 5
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.2,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 3735,
+      "abstentions": 110,
+      "losses": 1087,
+      "gains": 96,
+      "net_loss": 0.1982,
+      "upper_loss_bound": 0.2337481548695499,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.20067,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 227,
+          "losses": 131,
+          "gains": 31
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 411,
+          "losses": 12,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 380,
+          "losses": 10,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 324,
+          "losses": 107,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 287,
+          "losses": 89,
+          "gains": 11
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 249,
+          "losses": 145,
+          "gains": 23
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 323,
+          "losses": 96,
+          "gains": 9
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 388,
+          "losses": 13,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 222,
+          "losses": 177,
+          "gains": 7
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 318,
+          "losses": 102,
+          "gains": 7
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 308,
+          "losses": 88,
+          "gains": 5
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 298,
+          "losses": 117,
+          "gains": 3
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.35,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4121,
+      "abstentions": 2,
+      "losses": 697,
+      "gains": 92,
+      "net_loss": 0.121,
+      "upper_loss_bound": 0.1532783876134059,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.350365,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 253,
+          "losses": 105,
+          "gains": 31
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 421,
+          "losses": 2,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 360,
+          "losses": 71,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 324,
+          "losses": 52,
+          "gains": 11
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 283,
+          "losses": 108,
+          "gains": 20
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 358,
+          "losses": 60,
+          "gains": 8
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 277,
+          "losses": 122,
+          "gains": 7
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 361,
+          "losses": 59,
+          "gains": 7
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 342,
+          "losses": 55,
+          "gains": 6
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 351,
+          "losses": 63,
+          "gains": 2
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.5,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4351,
+      "abstentions": 0,
+      "losses": 466,
+      "gains": 91,
+      "net_loss": 0.075,
+      "upper_loss_bound": 0.10497932507573252,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.500285,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 277,
+          "losses": 81,
+          "gains": 31
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 395,
+          "losses": 36,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 343,
+          "losses": 33,
+          "gains": 11
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 317,
+          "losses": 70,
+          "gains": 16
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 372,
+          "losses": 45,
+          "gains": 7
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 317,
+          "losses": 86,
+          "gains": 11
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 383,
+          "losses": 36,
+          "gains": 6
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 360,
+          "losses": 38,
+          "gains": 7
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 373,
+          "losses": 41,
+          "gains": 2
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.65,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4490,
+      "abstentions": 0,
+      "losses": 322,
+      "gains": 86,
+      "net_loss": 0.0472,
+      "upper_loss_bound": 0.07446399386138522,
+      "meets_five_point_margin": false,
+      "retained_fraction": 0.65027,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 291,
+          "losses": 66,
+          "gains": 30
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 412,
+          "losses": 19,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 343,
+          "losses": 28,
+          "gains": 6
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 349,
+          "losses": 37,
+          "gains": 15
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 378,
+          "losses": 38,
+          "gains": 6
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 341,
+          "losses": 64,
+          "gains": 13
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 402,
+          "losses": 18,
+          "gains": 7
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 371,
+          "losses": 28,
+          "gains": 8
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 389,
+          "losses": 24,
+          "gains": 1
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.8,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4601,
+      "abstentions": 0,
+      "losses": 190,
+      "gains": 65,
+      "net_loss": 0.025,
+      "upper_loss_bound": 0.04599957598063344,
+      "meets_five_point_margin": true,
+      "retained_fraction": 0.800365,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 310,
+          "losses": 43,
+          "gains": 26
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 422,
+          "losses": 9,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 360,
+          "losses": 11,
+          "gains": 6
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 358,
+          "losses": 26,
+          "gains": 13
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 384,
+          "losses": 29,
+          "gains": 3
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 361,
+          "losses": 36,
+          "gains": 5
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 412,
+          "losses": 6,
+          "gains": 5
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 377,
+          "losses": 21,
+          "gains": 7
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 403,
+          "losses": 9,
+          "gains": 0
+        }
+      }
+    },
+    {
+      "policy": "tail",
+      "budget": 0.95,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4726,
+      "correct": 4687,
+      "abstentions": 0,
+      "losses": 74,
+      "gains": 35,
+      "net_loss": 0.0078,
+      "upper_loss_bound": 0.0201138246881277,
+      "meets_five_point_margin": true,
+      "retained_fraction": 0.95008,
+      "descriptive_strata": {
+        "service-b-5-0.5": {
+          "n": 404,
+          "full_correct": 327,
+          "correct": 321,
+          "losses": 18,
+          "gains": 12
+        },
+        "service-c-15-1": {
+          "n": 423,
+          "full_correct": 423,
+          "correct": 423,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-b-15-1": {
+          "n": 390,
+          "full_correct": 390,
+          "correct": 390,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-a-5-1": {
+          "n": 431,
+          "full_correct": 431,
+          "correct": 427,
+          "losses": 4,
+          "gains": 0
+        },
+        "service-a-15-0.5": {
+          "n": 394,
+          "full_correct": 365,
+          "correct": 363,
+          "losses": 4,
+          "gains": 2
+        },
+        "service-a-5-0.5": {
+          "n": 449,
+          "full_correct": 371,
+          "correct": 365,
+          "losses": 10,
+          "gains": 4
+        },
+        "service-b-15-0.5": {
+          "n": 424,
+          "full_correct": 410,
+          "correct": 397,
+          "losses": 18,
+          "gains": 5
+        },
+        "service-a-15-1": {
+          "n": 401,
+          "full_correct": 401,
+          "correct": 401,
+          "losses": 0,
+          "gains": 0
+        },
+        "service-c-5-0.5": {
+          "n": 428,
+          "full_correct": 392,
+          "correct": 385,
+          "losses": 10,
+          "gains": 3
+        },
+        "service-b-5-1": {
+          "n": 422,
+          "full_correct": 413,
+          "correct": 414,
+          "losses": 0,
+          "gains": 1
+        },
+        "service-c-15-0.5": {
+          "n": 409,
+          "full_correct": 391,
+          "correct": 390,
+          "losses": 9,
+          "gains": 8
+        },
+        "service-c-5-1": {
+          "n": 425,
+          "full_correct": 412,
+          "correct": 411,
+          "losses": 1,
+          "gains": 0
+        }
+      }
+    }
+  ]
+}

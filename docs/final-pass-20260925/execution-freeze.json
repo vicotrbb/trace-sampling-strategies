@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-25T05:07:23.017869+00:00",
+  "stage": "before any measured cell",
+  "pilot_cells": 12,
+  "measured_cells": 96,
+  "runtime_blocks": 8,
+  "sha256": {
+    "docs/final-pass-20260925/protocol.md": "d322471ac36886164f6e87da145f51cfe3a67fa856cd68634a6cab6fdf34c875",
+    "docs/final-pass-20260925/amendments.md": "df3d3e82b39900d11609b53ef8182ebd06f4c12b7c5ffcf531cf842df3b6253e",
+    "experiments/final_cost/pod.yaml": "939132d811f91a4dbed3f796777d69ee9c322b3fcc7d837c91330d9de49a860c",
+    "experiments/final_cost/cost_study.py": "21c7c34a59d4e56cad9cf4009324d2b4cc7b939a6397012561acbbe80f8fd6bc",
+    "scripts/analyze_cost_study.py": "b4d698851ddeab5de60994c430694b7e704e06d90d2c059105e0b628be22650e",
+    "scripts/verify_cost_study.py": "077a7e8ed96e51762641739c8fa10ef86dfc58ad48a137d9c0f1443965e988f5",
+    "data/raw/final-cost-20260925/pilot-v1/corpus/manifest.json": "e7f0769663a29ea456be889b7fd5e0ada6045a67c53a59d716e503c88abfd1f9"
+  }
+}

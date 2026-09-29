@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "uncorrupted_pilots_passed": true,
+  "rejected_cases": [
+    "cpu_summary",
+    "accepted_counter",
+    "json_bytes",
+    "missing_cell",
+    "timing_record",
+    "parent_link",
+    "baseline_prediction",
+    "replay_label",
+    "replay_coverage",
+    "interval_summary"
+  ]
+}

@@ -1,0 +1,36 @@
+\section{Model and diagnostic criterion}\label{sec:model}
+Fix a population of $N\ge1$ traces. Ideal uniform sampling retains each complete trace independently with probability $p\in[0,1]$. An ideal protected-tail policy retains every trace satisfying a fixed predicate and independently retains other traces with probability $r\in[0,1]$. Let $\alpha$ be the protected fraction and $b$ the expected retained trace fraction. These models describe selection; native hash decisions and stateful delivery are measured separately.
+
+Diagnostic value requires an endpoint. A stipulated witness set $W_j$ contains $m_j\ge1$ traces, each sufficient for a defined evidence predicate. Its one-witness endpoint is $D_j(S)=\mathbf1\{S\cap W_j\ne\varnothing\}$ for retained set $S$. In the localization example, a fixed scorer instead compares reference and incident windows. Let $B_i\in\{0,1\}$ be full-data correctness for incident $i$, and $A_{i,a}\in\{0,1\}$ correctness under sampling configuration $a$, counting abstention as incorrect. For a uniform draw $I$ from the fixed corpus and fresh sampling randomness, the expected accuracy loss is
+\begin{equation}\label{eq:loss-target}
+ \Delta_a=\mathbb E[B_I]-\mathbb E[A_{I,a}].
+\end{equation}
+This example evaluates retention of evidence for a known task. Its corpus, incident windows, candidate services, and scorer are fixed.
+
+\section{Formal results}\label{sec:theory}
+Under independent complete-trace selection, at least one of $m\ge1$ interchangeable witnesses survives with probability $1-(1-p)^m$, whereas retaining all $d\ge1$ required traces has probability $p^d$. For any fixed $p<1$, the latter approaches zero as the number of required traces grows. Thus a retention rate alone cannot guarantee a task-independent minimum success probability. A window of $w$ requests supplies $wp$ retained requests in expectation, so window size also determines the amount of available evidence. Neither identity determines a scorer's accuracy.
+
+For the protected-tail policy, linearity of expectation gives, for $0\le\alpha<1$ and $b\in[\alpha,1]$,
+\begin{equation}\label{eq:tailbudget}
+ b=\alpha+(1-\alpha)r,\qquad r=\frac{b-\alpha}{1-\alpha}.
+\end{equation}
+When $\alpha>0$ and $b<1$, $r<b$: protection reduces unprotected inclusion at equal expected trace budget. Budgets below $\alpha$ are infeasible if every protected trace must survive. Equal trace budgets need not imply equal byte budgets. Appendix~\ref{app:mathematical-supplement} provides proofs, witness thresholds, and the full window-count identities.
+
+\section{Resource accounting and estimation}\label{sec:cost}
+For additive trace sizes $v_i$ and inclusion probabilities $\pi_i$, linearity gives $\mathbb E[V_{\rm out}]=\sum_i\pi_i v_i$. Export envelopes, compression, and sampler-added metadata require additional accounting. We measure Collector CPU, sampled peak resident set size (RSS), accepted spans, and serialized output separately.
+
+A linear reference model separates fixed work $F$, work before selection $U$, downstream work $D$, and additional sampling work $A_H,A_T$, all nonnegative:
+\begin{align}
+ C_1&=F+U+D,& C_H&=F+A_H+p(U+D),\nonumber\\
+ C_T&=F+U+A_T+b_VD,&&\label{eq:cost-model}
+\end{align}
+where $b_V$ is the retained downstream byte fraction. Sampling overhead includes only work inside the chosen measurement boundary; the pre-ingress gate's own CPU is outside our Collector endpoint. Here the head gate precedes $U$, whereas the tail processor follows it. Consequently,
+\begin{equation}\label{eq:savings}
+ C_1-C_H=(1-p)(U+D)-A_H,\qquad
+ C_1-C_T=(1-b_V)D-A_T.
+\end{equation}
+An in-Collector uniform sampler has the same placement-dependent form as $C_T$, with its own sampling overhead and retained byte fraction. Sampling after ingress can save CPU when avoided downstream work exceeds added work; the sign requires measurement.
+
+These equations assume a fixed downstream cost per retained byte and unchanged grouping. Stateful release can violate that approximation: batch count, resource/scope grouping, encoding, and export fanout can change even with full span retention. The retain-all tail intervention tests this distinction directly. The model explains possible signs but its coefficients are not identified from total CPU.
+
+Tail state also creates a capacity requirement. Under finite-mean stationary conditions and the arrival regularity required by Little's theorem, mean buffered occupancy is $\lambda W$ for admitted arrival rate $\lambda$ and mean residence time $W$~\cite{Little1961}. Mean occupancy is not a bound on bursts. Our finite measurements characterize the configured Collector boundary, including export work, rather than long-run saturation or monetary savings.

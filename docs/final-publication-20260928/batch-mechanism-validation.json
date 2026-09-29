@@ -1,0 +1,311 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-28T18:51:53.214400+00:00",
+  "cells": 20,
+  "measured_spans_reconstructed": 6000000,
+  "raw_observations_modified": false,
+  "batch_source_sha256": "138859d104c61c9d5b7503e6ae870a41838d694adfb49d5211a42dc2892c28a5",
+  "observed_short_timeout_is_not_1140_size_plus_60_timeout": true,
+  "rows": [
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83001/batching-dual-100-full",
+      "timeout_ms": 100,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "8644ce99f69176f85e17599c44a0630ec347b2b3709f6306e15d5c9bbc53b2e1"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83001/batching-dual-100-tail100",
+      "timeout_ms": 100,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "60": 59,
+        "70": 1,
+        "250": 1,
+        "260": 1139
+      },
+      "size_triggers": 1139,
+      "timeout_triggers": 61,
+      "first_partial": 70,
+      "last_partial": 250,
+      "json_sha256": "c1bc8d9afcd9e8e34c3f3438dd8e151113e6fc58fa8edcd33dfbf612c0e53dcf"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83001/batching-dual-1000-full",
+      "timeout_ms": 1000,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "8644ce99f69176f85e17599c44a0630ec347b2b3709f6306e15d5c9bbc53b2e1"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83001/batching-dual-1000-tail100",
+      "timeout_ms": 1000,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "220": 1,
+        "260": 1153
+      },
+      "size_triggers": 1153,
+      "timeout_triggers": 1,
+      "first_partial": 220,
+      "last_partial": 220,
+      "json_sha256": "c2c0043fce31d5be15dd1b83be1d83e9984d8e1a58605a6aee382605f2a3d32f"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83002/batching-dual-100-full",
+      "timeout_ms": 100,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "ecde324a36efb33807555a89e9077136f2f9ab2cda24f7fc1302fa2fbb71fc67"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83002/batching-dual-100-tail100",
+      "timeout_ms": 100,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "60": 59,
+        "120": 1,
+        "200": 1,
+        "260": 1139
+      },
+      "size_triggers": 1139,
+      "timeout_triggers": 61,
+      "first_partial": 120,
+      "last_partial": 200,
+      "json_sha256": "d9c724113cd49e9da45a3632eaa9a33dc89ac998f386b909af74a6019cf419e7"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83002/batching-dual-1000-full",
+      "timeout_ms": 1000,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "ecde324a36efb33807555a89e9077136f2f9ab2cda24f7fc1302fa2fbb71fc67"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83002/batching-dual-1000-tail100",
+      "timeout_ms": 1000,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "220": 1,
+        "260": 1153
+      },
+      "size_triggers": 1153,
+      "timeout_triggers": 1,
+      "first_partial": 220,
+      "last_partial": 220,
+      "json_sha256": "a1caf2198e9700a51d9ced7ceb2f74349ee78925230e8ef045b8073b51c966f6"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83003/batching-dual-100-full",
+      "timeout_ms": 100,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "324b151d2f500f36d66b211367b0c3cc2bd36525d553f78585ea6edc39c9a769"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83003/batching-dual-100-tail100",
+      "timeout_ms": 100,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "60": 59,
+        "100": 1,
+        "220": 1,
+        "260": 1139
+      },
+      "size_triggers": 1139,
+      "timeout_triggers": 61,
+      "first_partial": 220,
+      "last_partial": 100,
+      "json_sha256": "174402bd3d24f499a1fbf3d5b30b78f093d48ab4636078675f3e47729aa946ad"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83003/batching-dual-1000-full",
+      "timeout_ms": 1000,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "324b151d2f500f36d66b211367b0c3cc2bd36525d553f78585ea6edc39c9a769"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83003/batching-dual-1000-tail100",
+      "timeout_ms": 1000,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "220": 1,
+        "260": 1153
+      },
+      "size_triggers": 1153,
+      "timeout_triggers": 1,
+      "first_partial": 220,
+      "last_partial": 220,
+      "json_sha256": "733260cde91c1c55eb3bf9b0aa8d19071b91d2175ff0a2471c976a8de3cec010"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83004/batching-dual-100-full",
+      "timeout_ms": 100,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "834a5f9a1c857dd78c2c55efc5342f2594f8ee71ceb9951a7e56ec8eb1ee2f5f"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83004/batching-dual-100-tail100",
+      "timeout_ms": 100,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "60": 59,
+        "70": 1,
+        "250": 1,
+        "260": 1139
+      },
+      "size_triggers": 1139,
+      "timeout_triggers": 61,
+      "first_partial": 70,
+      "last_partial": 250,
+      "json_sha256": "fa63a6dfe69aefa25c04448a284d2f74dc5aa2c5e225e1b330aabe3154856434"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83004/batching-dual-1000-full",
+      "timeout_ms": 1000,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "834a5f9a1c857dd78c2c55efc5342f2594f8ee71ceb9951a7e56ec8eb1ee2f5f"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83004/batching-dual-1000-tail100",
+      "timeout_ms": 1000,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "220": 1,
+        "260": 1153
+      },
+      "size_triggers": 1153,
+      "timeout_triggers": 1,
+      "first_partial": 220,
+      "last_partial": 220,
+      "json_sha256": "9991c549a43d7dfe58b23b26da35c05d5f37c85cdb1b4d594b40afc468fbbd19"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83005/batching-dual-100-full",
+      "timeout_ms": 100,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "b374d7135358eb0999ee33b5f3846a3bf40a23e6732dceb05205cfaa86db5e6b"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83005/batching-dual-100-tail100",
+      "timeout_ms": 100,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "60": 59,
+        "70": 1,
+        "250": 1,
+        "260": 1139
+      },
+      "size_triggers": 1139,
+      "timeout_triggers": 61,
+      "first_partial": 70,
+      "last_partial": 250,
+      "json_sha256": "51778dfe572246b8b18b11b6fec42c589b44c0eb1ed783225a18e498d2dde75c"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83005/batching-dual-1000-full",
+      "timeout_ms": 1000,
+      "tail": false,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "300": 1000
+      },
+      "size_triggers": 1000,
+      "timeout_triggers": 0,
+      "first_partial": null,
+      "last_partial": null,
+      "json_sha256": "b374d7135358eb0999ee33b5f3846a3bf40a23e6732dceb05205cfaa86db5e6b"
+    },
+    {
+      "cell": "data/raw/fifth-audit-20260928/batching-confirm-v2/block-83005/batching-dual-1000-tail100",
+      "timeout_ms": 1000,
+      "tail": true,
+      "measured_spans": 300000,
+      "batch_size_histogram": {
+        "220": 1,
+        "260": 1153
+      },
+      "size_triggers": 1153,
+      "timeout_triggers": 1,
+      "first_partial": 220,
+      "last_partial": 220,
+      "json_sha256": "2388eff43be056745970f9a3a428a2faa2a3662cab46275d73d6404757adab62"
+    }
+  ]
+}

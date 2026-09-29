@@ -1,0 +1,722 @@
+[
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "checkout-worker",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 14550,
+    "policy": "full",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "checkout",
+    "n": 141,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 9,
+    "policy": "head",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 133,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 17,
+    "policy": "head",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "checkout-worker",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 13064,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 1486,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 136,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "checkout",
+    "n": 14,
+    "policy": "head",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 140,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 10,
+    "policy": "tail",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "checkout-worker",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 13400,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 1150,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "checkout-worker",
+    "regime": "steady",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 14550,
+    "policy": "full",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "checkout",
+    "n": 135,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 15,
+    "policy": "head",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 131,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 19,
+    "policy": "head",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "checkout-worker",
+    "regime": "steady",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 13039,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 1511,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 136,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "checkout",
+    "n": 14,
+    "policy": "head",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "checkout",
+    "n": 138,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 12,
+    "policy": "tail",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "checkout-worker",
+    "regime": "steady",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "checkout",
+    "n": 13343,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 1207,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "checkout",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "documents-worker",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 14550,
+    "policy": "full",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 133,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 17,
+    "policy": "head",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 133,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 17,
+    "policy": "head",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "documents-worker",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 13130,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 1420,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 133,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 17,
+    "policy": "head",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 141,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 9,
+    "policy": "tail",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "documents-worker",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 13374,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 1176,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "bursty",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "documents-worker",
+    "regime": "steady",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 14550,
+    "policy": "full",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "full",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 138,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 12,
+    "policy": "head",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 140,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 10,
+    "policy": "head",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "documents-worker",
+    "regime": "steady",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 13052,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 1498,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 130,
+    "policy": "head",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 20,
+    "policy": "head",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "sql_schema"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "database_latency",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "database_latency"
+  },
+  {
+    "app": "documents",
+    "n": 131,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 19,
+    "policy": "tail",
+    "predicted_cause": "domain_invariant",
+    "predicted_service": "documents-worker",
+    "regime": "steady",
+    "retained": true,
+    "truth": "domain_invariant"
+  },
+  {
+    "app": "documents",
+    "n": 13385,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": false,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 1165,
+    "policy": "tail",
+    "predicted_cause": "abstain",
+    "predicted_service": "unknown",
+    "regime": "steady",
+    "retained": true,
+    "truth": "normal"
+  },
+  {
+    "app": "documents",
+    "n": 150,
+    "policy": "tail",
+    "predicted_cause": "sql_schema",
+    "predicted_service": "postgresql",
+    "regime": "steady",
+    "retained": true,
+    "truth": "sql_schema"
+  }
+]

@@ -1,0 +1,4 @@
+{"stage": 0, "command": ["diagnosis_study.py", "calibrate", "--output", "/work/outputs/calibration-v1"]}
+{"stage": 1, "command": ["diagnosis_study.py", "collect", "--pilot", "--output", "/work/outputs/diagnosis-pilot-v1"]}
+{"stage": 2, "command": ["load_study.py", "--pilot", "--policies", "full,gate10,collector10,tail10", "--rates", "2000", "--output", "/work/outputs/load-pilot-v1"]}
+{"complete": true, "utc": "2026-09-25T17:09:21Z"}

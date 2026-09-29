@@ -1,0 +1,49 @@
+verified placement-file-1000-gate10 block 82001
+verified placement-dual-1000-tail10 block 82001
+verified placement-file-1000-collector10 block 82001
+verified placement-file-1000-full block 82001
+verified placement-dual-1000-gate10 block 82001
+verified placement-file-1000-tail10 block 82001
+verified placement-dual-1000-collector10 block 82001
+verified placement-dual-1000-full block 82001
+verified placement-dual-1000-tail10 block 82002
+verified placement-file-1000-full block 82002
+verified placement-dual-1000-gate10 block 82002
+verified placement-dual-1000-collector10 block 82002
+verified placement-file-1000-collector10 block 82002
+verified placement-dual-1000-full block 82002
+verified placement-file-1000-gate10 block 82002
+verified placement-file-1000-tail10 block 82002
+verified placement-file-1000-tail10 block 82003
+verified placement-dual-1000-full block 82003
+verified placement-dual-1000-collector10 block 82003
+verified placement-file-1000-full block 82003
+verified placement-dual-1000-gate10 block 82003
+verified placement-file-1000-collector10 block 82003
+verified placement-dual-1000-tail10 block 82003
+verified placement-file-1000-gate10 block 82003
+verified placement-dual-1000-tail10 block 82004
+verified placement-dual-1000-full block 82004
+verified placement-file-1000-collector10 block 82004
+verified placement-file-1000-gate10 block 82004
+verified placement-file-1000-tail10 block 82004
+verified placement-dual-1000-collector10 block 82004
+verified placement-file-1000-full block 82004
+verified placement-dual-1000-gate10 block 82004
+verified placement-file-1000-tail10 block 82005
+verified placement-file-1000-full block 82005
+verified placement-dual-1000-collector10 block 82005
+verified placement-file-1000-gate10 block 82005
+verified placement-dual-1000-tail10 block 82005
+verified placement-file-1000-collector10 block 82005
+verified placement-dual-1000-gate10 block 82005
+verified placement-dual-1000-full block 82005
+{
+  "status": "PASS",
+  "cells": 40,
+  "exported_spans_including_warmup": 18200450,
+  "backend_sample_traces": 640,
+  "max_schedule_lag_s": 0.3096889346837983,
+  "throttled_usec": 0,
+  "matched_input_payload_groups": 20
+}

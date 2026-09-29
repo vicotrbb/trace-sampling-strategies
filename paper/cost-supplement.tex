@@ -1,0 +1,46 @@
+\subsection{Complete controlled cost summaries}\label{app:cost}
+Table~\ref{tab:cost-contrasts} gives every primary paired CPU contrast. Table~\ref{tab:cost-batches} reports all twelve factor combinations, including Jaeger CPU in file-only cells where the process runs without receiving study traces. Table~\ref{tab:cost-interactions} reports every planned interaction. Batch counts and sizes are measured counter differences, not values inferred from the timeout setting. CPU ticks resolve 0.01\,s; additional decimal places in means and intervals reflect arithmetic across eight blocks. The accompanying \artifact{cost-summary.json} and \artifact{cost-cells.csv} retain every block value.
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Export path & Timeout & Bypass CPU & Retain-all tail $\Delta$ & 10\% tail $\Delta$ \\
+& ms & seconds & seconds [95\% CI] & seconds [95\% CI] \\
+\midrule
+\tableinput{cost-contrast-rows.tex}
+\bottomrule
+\end{tabular}
+\caption{Controlled Collector CPU contrasts, tail minus paired bypass. Negative values mean less observed CPU. Baselines are means; contrasts and pointwise Student-$t$ intervals use eight runtime-block differences with seven degrees of freedom.}
+\label{tab:cost-contrasts}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllr r r r}
+\toprule
+Export path & Timeout & Sampler & Collector & Jaeger & Batch & Spans \\
+& ms & & CPU s & CPU s & sends & per send \\
+\midrule
+\tableinput{cost-batch-rows.tex}
+\bottomrule
+\end{tabular}
+\caption{Means across eight fixed-input cost blocks. Sampler labels \texttt{tail100} and \texttt{tail10} denote retain-all and nominal 10\% tail; \texttt{bypass} omits the tail processor. Batch quantities and CPU cover the measured schedule and common drain.}
+\label{tab:cost-batches}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllr}
+\toprule
+Interaction & Condition & Sampler & CPU difference [95\% CI] \\
+\midrule
+\tableinput{cost-interaction-rows.tex}
+\bottomrule
+\end{tabular}
+\caption{All ten planned Collector CPU interactions, in seconds. Each starts from the within-block tail-minus-bypass contrast. ``Added Jaeger'' subtracts that contrast under JSON-only export from its dual-export value at fixed timeout. ``Longer timeout'' subtracts its 100\,ms value from its 1,000\,ms value at fixed export path. ``Three-factor'' subtracts the 100\,ms added-Jaeger interaction from its 1,000\,ms value. Intervals use the eight resulting block values and are pointwise model-based summaries.}
+\label{tab:cost-interactions}
+\end{table}

@@ -1,0 +1,17 @@
+verified placement-file-1000-collector10 block 81000
+verified placement-dual-1000-tail10 block 81000
+verified placement-dual-1000-full block 81000
+verified placement-dual-1000-collector10 block 81000
+verified placement-file-1000-tail10 block 81000
+verified placement-file-1000-full block 81000
+verified placement-file-1000-gate10 block 81000
+verified placement-dual-1000-gate10 block 81000
+{
+  "status": "PASS",
+  "cells": 8,
+  "exported_spans_including_warmup": 1041230,
+  "backend_sample_traces": 128,
+  "max_schedule_lag_s": 0.0014979355037212372,
+  "throttled_usec": 0,
+  "matched_input_payload_groups": 4
+}

@@ -1,0 +1,14 @@
+{
+  "cells": 80,
+  "measured_offered_traces": 18030000,
+  "measured_offered_spans": 90150000,
+  "measured_exported_spans": 49590690.0,
+  "max_lag_s": 0.10854497015476383,
+  "wall_s_range": [
+    35.00052075460553,
+    35.031164579093456
+  ],
+  "last_send_end_max_s": 30.030604496598244,
+  "throttled_usec": 0,
+  "max_endpoint_snapshot_span_s": 0.00044650956988334656
+}

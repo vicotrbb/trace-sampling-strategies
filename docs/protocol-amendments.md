@@ -1,0 +1,11 @@
+# Protocol amendments and pilot log
+
+1. Before pilot or main runs: use Collector Contrib **0.123.1**, because the official `v0.123.0` release exposes core/OTLP/K8s assets but no Contrib asset; `v0.123.1` provides the published Contrib binary and checksums. Source/docs are pinned to the actual version in the paper. No measurements existed at this amendment.
+2. Collector binary runs as a subprocess within the pinned Python container. This permits exact per-process Linux CPU accounting and frequent RSS sampling, while keeping experiment load bounded in one pod. It replaces the planned separate collector image without changing the evaluated collector code. Record Python image digest and collector archive and binary SHA256 independently.
+
+3. Bootstrap validation found that the v0.123.1 published Contrib checksum file lists only Windows artifacts, and the GitHub Linux asset digest is null. Before any workload pilot or main measurements, switch to **v0.136.0**, whose Linux tar has matching published SHA256 and GitHub asset digest `e642146998b9559929c34f5b85525e27ca6430585e2951fa88a403ff5ebf9f47`. This is the evaluated version; earlier versions above document provenance investigation only.
+
+4. A bootstrap attempt failed on transient cluster DNS; a prematurely started pilot found no binary and emitted no workload. Its directory is retained as `pilot-bootstrap-failure`. The release was downloaded locally, its published SHA256 verified, and transferred into homelab; all workload execution remained in homelab.
+5. Pilot seed 999 completed three treatments (full, head 10%, tail 10%), with complete trace reconstruction and no duplicates. The main script adds explicit receiver/exporter counter reconciliation using names discovered in the pilot. No seed-999 observation enters confirmatory summaries.
+
+6. Before sensitivity measurements, source/method review identified that merely disabling a decision cache does not evict the existing in-buffer decision when 200 trace IDs fit in a 50,000-entry buffer. Add paired late-span probes with 256-entry capacity and 300 intervening healthy traces, once with and once without the separate decision cache. These intentionally force in-buffer decision eviction; they are mechanism demonstrations, excluded from main resource/visibility estimates. The original no-churn late probes are retained.

@@ -1,0 +1,7 @@
+# Pilot amendment 1: reconcile backend completion
+
+Recorded before any measured execution. The first eight-cell placement pilot at 100,000 offered spans/s passed Collector delivery and schedule checks, but the full dual-export cell's Jaeger successful-save counter was 988,000 rather than 1,000,000 at the ending scrape. Its warmup counter was exactly 500,000. The original pilot archive is retained under `data/raw/fifth-audit-20260928/pilots/`; its original selection receipt is not used to freeze measured rates.
+
+Inspection of pinned Jaeger v1.76.0 `span_processor.go` confirms that OTLP `ConsumeTraces` enqueues work and `pushTraces` counts successful saves only after `WriteTraces` returns. The legacy queue/received counters do not establish the state of that exporterhelper queue. Archived primary source files support this interpretation. A successful Collector OTLP send therefore cannot alone establish complete backend work by a process-CPU endpoint.
+
+Strengthen pilot and measured acceptance: at both warmup and final metric scrapes, require the successful Jaeger save counter to equal all selected spans supplied to date, with zero save-error count. JSON-only controls must have zero saved spans. Keep the declared fixed five-second drains and candidate order. Rerun the excluded pilots in `/work/pilots-v2`; do not reuse the previous pilot rate selection. Every failed attempt remains. This correction is based on endpoint validity, not a favorable CPU direction. The five-block measured design is unchanged.

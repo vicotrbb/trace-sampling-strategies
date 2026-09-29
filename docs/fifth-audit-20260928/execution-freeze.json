@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-28T15:05:00.698847+00:00",
+  "stage": "before measured execution",
+  "selected_rates_traces_s": {
+    "placement": 8000,
+    "batching": 4000
+  },
+  "files": {
+    "docs/fifth-audit-20260928/batching-pilot-validation.json": "7e431e9c2a8dbe0380348821bf9a384643360d4d2b7bda950a44fa09056143e2",
+    "docs/fifth-audit-20260928/endpoint-instrumentation.md": "b86d690d4cf640071c5cd28f11699497c8f4d7556d0295bf269dcf190240cdca",
+    "docs/fifth-audit-20260928/pilot-amendment-1.md": "d453e3ce5e36e6ccf49aba6054a3ea8ea8e015834522146d9b48eff7cf607d09",
+    "docs/fifth-audit-20260928/placement-pilot-validation.json": "57510389800112cd309d7519cd390f7702f5279d4b6866fd4c844107501994f5",
+    "docs/fifth-audit-20260928/protocol.md": "77e247e80c7198c82ce8124d466c12532cb59bb65823acd628bc5b05b73b3552",
+    "docs/fifth-audit-20260928/validator-negative-controls.json": "1baea44fac296f3b8728fd71a675804d11fbaba1a2d14e0dd06507e882e6fd37",
+    "experiments/fifth_audit/analyze_fifth_audit.py": "bb24c2326d95a07a6f24d9f18f42f4ba27365a603bd8a932647feac853b2962b",
+    "experiments/fifth_audit/endpoint-instrumentation.md": "b86d690d4cf640071c5cd28f11699497c8f4d7556d0295bf269dcf190240cdca",
+    "experiments/fifth_audit/pilot-amendment-1.md": "d453e3ce5e36e6ccf49aba6054a3ea8ea8e015834522146d9b48eff7cf607d09",
+    "experiments/fifth_audit/pilot-source-freeze.json": "1a7f4b203d8723223b1d02f45f63a755412f20c72f575809bb3ee2b6e001f0ed",
+    "experiments/fifth_audit/pod.yaml": "dda7e60659d8390f70a27b595c1bf30d186b8b1808cf6b755121fe3fda7a663c",
+    "experiments/fifth_audit/protocol.md": "77e247e80c7198c82ce8124d466c12532cb59bb65823acd628bc5b05b73b3552",
+    "experiments/fifth_audit/run_measured.py": "b9858ee71a4567197aa90c8f72c7dcd129117bcc5e94ae32d827f1ce631d1071",
+    "experiments/fifth_audit/run_pilots.py": "044718b6fdbe6e65b38aaa0208a363a3114ebeebc7ae968196fd29a4090e270e",
+    "experiments/fifth_audit/runtime.py": "21c7c34a59d4e56cad9cf4009324d2b4cc7b939a6397012561acbbe80f8fd6bc",
+    "experiments/fifth_audit/study.py": "c6ede0123400542c3fca13aa1bbe21a73df5a8b85a2021cd554adf1efec61dee",
+    "experiments/fifth_audit/test_fifth_validator.py": "8a1e3e67a92e4b25eff6bb9234fcf1faee0fee0fbaddfc604126afefe877989c",
+    "experiments/fifth_audit/verify_fifth_audit.py": "3fcb9d9b672be87102061ba275a5189be21bae371570e921c86ca0a147e2926c",
+    "scripts/analyze_fifth_audit.py": "bb24c2326d95a07a6f24d9f18f42f4ba27365a603bd8a932647feac853b2962b",
+    "scripts/test_fifth_validator.py": "8a1e3e67a92e4b25eff6bb9234fcf1faee0fee0fbaddfc604126afefe877989c",
+    "scripts/verify_fifth_audit.py": "3fcb9d9b672be87102061ba275a5189be21bae371570e921c86ca0a147e2926c"
+  },
+  "binary_sha256": {
+    "otelcol-contrib": "8133aa166e5a0cc706c7168b16828737baeb9d78b7a630b3cc0c2dac225e57ea",
+    "jaeger-all-in-one": "b465fd8aeca0148c04a6317e58d86ce7a840d7ceea5f13a48e4ad40ba6f29e13"
+  },
+  "input_sha256": {
+    "timestamp-origin.json": "e4b483bf15459c32a55ed74b4b08a3448b0356af409eb1a53168f042e88017eb",
+    "traces.jsonl.gz": "2c265147d96a783a080b04919a29deffc26ae437d526c7713fd26042af2919be",
+    "truth.json": "8794430df728fecd698b43fbb6bfffcec8c02c7beb158af61d317896211a05eb",
+    "warmup.json": "0aa71475f2003afd2bcc9e7abb74480e161d393a1761aac6d217e97a3362924e"
+  },
+  "pilot_selection_sha256": "7d6f863d1f4f3a0584e477826a8f58381cba8daa56215a12ad53fe7e4efe0a45"
+}

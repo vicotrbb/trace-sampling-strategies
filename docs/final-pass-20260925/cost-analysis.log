@@ -1,0 +1,8 @@
+.venv/bin/python scripts/analyze_cost_study.py data/raw/final-cost-20260925/confirm-v1
+{
+  "cells": 96,
+  "groups": 12,
+  "contrasts": 18,
+  "summary": "/Users/victorbona/Code/Research/trace-sampling-strategies/data/derived/final-cost-20260925/cost-summary.json"
+}
+XDG_CACHE_HOME=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/cache MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib .venv/bin/python scripts/plot_cost_study.py

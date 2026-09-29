@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-25T18:07:24.733968+00:00",
+  "pdf_sha256": "c4378423b3d1814ae84fb96137f893363559682d0cc32ada28ebb516445057da",
+  "pdf_pages": 22,
+  "cited_references": 30,
+  "figures": 2,
+  "tables": 7,
+  "all_citations_and_references_resolve": true,
+  "template_settings_author_and_main_section_order_preserved": true,
+  "permitted_title_and_keyword_changes": true,
+  "active_tex_files": 21,
+  "source_emdash_count": 0,
+  "pdf_emdash_count": 0,
+  "tex_warnings_or_bad_boxes": 0,
+  "bibtex_warnings": 0,
+  "original_raw_files_unchanged": 722,
+  "previous_delivery_raw_files_unchanged": 4514,
+  "frozen_file_counts": [
+    12,
+    7,
+    10
+  ],
+  "load_cells_validated": 80,
+  "diagnosis_incidents_validated": 600,
+  "diagnosis_replay_rows_validated": 80000,
+  "last_delivery_raw_files_unchanged": 6257,
+  "new_load_cells_validated": 20,
+  "new_diagnosis_incidents": 600,
+  "new_replay_rows_validated": 240000,
+  "new_frozen_files_unchanged": 9,
+  "all_final_pages_visually_inspected": true,
+  "namespace_removed": true,
+  "nodes_ready": [
+    "homelab-01",
+    "homelab-02"
+  ]
+}

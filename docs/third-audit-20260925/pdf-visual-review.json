@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-25T18:07:22.141049+00:00",
+  "pdf_sha256": "c4378423b3d1814ae84fb96137f893363559682d0cc32ada28ebb516445057da",
+  "pages_inspected": 22,
+  "method": "All 22 rendered pages reviewed in six contact sheets. Pages 4, 11, 13, 14, 21 and 22 additionally reviewed at full rendered size for formulas, both figures, the new result tables and proofs. No clipping, overlap, missing text, illegible labels, or broken equations observed.",
+  "render_dpi": 115,
+  "page_images_sha256": {
+    "page-01.png": "90978924eb396b938f6cf20b8d21d139df599669116bbdff0a952d6cf4de46f0",
+    "page-02.png": "9cfa14abfdd4c79f492bbbf7f9cb562d4fa74101f4b7f855856d4c31f01772cb",
+    "page-03.png": "32d0cc9a91968a18ae785a9dfdffdb465ae5880b5235021d1ed3b4012ff0cb74",
+    "page-04.png": "844f0b0d6a1f12e8463c74c449708ac0c105208e059658dc94c43f8adb58cc66",
+    "page-05.png": "ab6acd2bd4857d5b68df8c598f2f32b1c202826d731a232c4a102d3685b80244",
+    "page-06.png": "e0f8963db2bfed1cd6ee891281090b88550b5716a8b4366ce2f9e1b54f710142",
+    "page-07.png": "a0bb3535eaed1242eae264cf06e69b2a1e673d8eebc89c1ae92a8a651630aa30",
+    "page-08.png": "1766723457acd6eee6e96b85ee46e206f43673b334ef201fe112134e92f61790",
+    "page-09.png": "12c2f3cc65091369f548a62cdee3b6428018d260017837d6338c6f5a35e16659",
+    "page-10.png": "7e1c6a42c92849d4643ebbfc489565f611c9082e0b022cd2b5b9a9e77aab0fba",
+    "page-11.png": "09fabbaced2b7cc28340136ad8c9153e436b9063fe45631f305206143ff7f75d",
+    "page-12.png": "4b59714a0dcddf9e9db23ef0b101efc06d35b65243017ff4cb05a979a0849331",
+    "page-13.png": "461a96075d382fbbdd0823fe3c4c13c80c00a426e73c549680b6cfebe2b18b50",
+    "page-14.png": "d2fdd7a416501a88563552fd09fb9723e421321917173570c360ce47e3dbe49d",
+    "page-15.png": "5bb8b4f0b252de72c73d86e594cb5cdc22b84351ec4c7b8def71b42601f2a9b1",
+    "page-16.png": "37ac2cca11e4df39584dce01214fbba7832901316bbedde9664646c3462448db",
+    "page-17.png": "f37f89cbd978b747fc2e502d8339d9d97cc030bc80a879b754bced3076c56136",
+    "page-18.png": "2e15f78505f8d1905017bf9cff10fff51f7095710410506523b241c5b9e7a92d",
+    "page-19.png": "4a5525cae3680e886457076f4dd71bca45b6731b2aa82517a78ccf0a1b0450bd",
+    "page-20.png": "f18f1e6e084846737d9a483a2e9b367efa566e70ab78da870f3608b27e9ef85f",
+    "page-21.png": "9f26c6fdc651b43adbfb69150c0335f336360107dfea408c2deabbb61ab95478",
+    "page-22.png": "0ba568b0a769ec924d7ccb707d6ad7b9a8a9067cdc42acb8a0e9e9874d3dcc3a"
+  }
+}

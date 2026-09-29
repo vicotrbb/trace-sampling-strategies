@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-25T15:23:57.836364+00:00",
+  "pdf_sha256": "4641b2673ccc6e03b7f5fffc5546c48ec144e59fe52b6e122b375e5bf65912be",
+  "pages_inspected": 21,
+  "rendering": "Poppler pdftoppm 26.07, PNG, maximum dimension 1200 pixels",
+  "page_images_sha256": {
+    "page-01.png": "c9ec61cc9981aff0706f2cd2ae558a2c008ea74888a565cc27dd25475aa934fd",
+    "page-02.png": "5dd5c2816131c6c379914183ed751df091ccf423d02a3e8e3b48ddba9b2d3ee0",
+    "page-03.png": "382d8448f9c8307e08aef3333f8f642ce02fdd02f311c26ce26daea894e585cc",
+    "page-04.png": "3e830d158bcfb72456adccb1bde78594f77ce76dda62cf596925e289759a58cd",
+    "page-05.png": "cec0ae939ca43dbbff8ae1bd8b15887d08c55e482df79b3201391617794563ea",
+    "page-06.png": "04fb3f9d580e6a9d7159558395122ac9f904e87e3bf6834255ae307ea0806399",
+    "page-07.png": "ae0620682e4892710364b4337637e8e3fa46f0ad15104b2d4ea2d4b735ad3a09",
+    "page-08.png": "8b9d0e8feff7ed7102f4b3482669da6b273c9cef4abd10ebbe4b520cbda86421",
+    "page-09.png": "d86597d33ba426ee849dce6a02a6fcf104ee7f3d0a1484123aa42c40576d699f",
+    "page-10.png": "5b24272226407ab0754f3e5d599565a0471578cf1b41efed768024cc27afba73",
+    "page-11.png": "eaa512023d18f893a280cef7ba193d6ac73a056e15890340e0debd8e635b3d9c",
+    "page-12.png": "efaa56388eb957869a5462847efcbb5f9684d13d7c34066ca33ff04d5cfdbc01",
+    "page-13.png": "d4dd1ab3ff7772c8cd75cb3b8d04bfe3d3177eaeb8c0e7e62d8916220736d7d1",
+    "page-14.png": "32fcdce3491784efaa1f2264d41769af5d3287cfff9c0610c7b79be8ea55cfd9",
+    "page-15.png": "5a00892fdc6ca574e62bd1ab9d6054c84471040da2fee542d3a80241a70dacf3",
+    "page-16.png": "9e0d4c3c42c8d3ef595b7b0f523ef6fe1b97424d9dcae128c13e37be60db1172",
+    "page-17.png": "d3551df8b3d3216e5e46a896807165007589778e278acf5441442931e956ee54",
+    "page-18.png": "e32980a400174c38605ff794a747eaef483c8257268efbc2dca1c19f7c4195e9",
+    "page-19.png": "26edd3a86d44c331f6186422fe2406075bafdf65e261b7590bed9976e69470bb",
+    "page-20.png": "50b00e75e61c57fe250ee5a57736de58842fcd2ed9b1f0683b5cc0d82fd077d7",
+    "page-21.png": "872418632bd81f603a8e7a5886d786386da8c8f10f69b3fcc4808047533bd98f"
+  },
+  "inspection": "Every page visually inspected. Final edits were rerendered; unchanged pages were matched by image hash and changed pages reinspected. Tables, plots, equation alignment, page boundaries, headings, URLs, and citations were checked. Bibliography entries are kept together across page boundaries.",
+  "warnings_or_clipping_observed": false
+}

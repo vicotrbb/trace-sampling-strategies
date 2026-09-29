@@ -1,0 +1,134 @@
+XDG_CACHE_HOME=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/cache MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib .venv/bin/python scripts/analyze.py --raw data/raw/homelab
+{
+  "cells": 70,
+  "offered_traces": 1400000,
+  "offered_spans": 7042000,
+  "full_cpu_mean": 0.766,
+  "full_rss_mib_mean": 184.125,
+  "full_json_bytes_mean": 57644008,
+  "max_schedule_lag_s": 0.003693714737892151,
+  "min_ingress_s": 9.950064774602652,
+  "max_ingress_s": 9.957792591303587,
+  "all_complete": true
+}
+.venv/bin/python scripts/summarize_probes.py data/raw/homelab --write
+{
+  "status": "PASS",
+  "validated_probes": 6,
+  "early_drops_buffer16": 184.0
+}
+XDG_CACHE_HOME=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/cache MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib .venv/bin/python scripts/analyze_revision.py --raw data/raw/revision-20260924
+{
+  "live_cells": 60,
+  "calibration_tests": 16,
+  "matched_probes": 48,
+  "offline_cells": 800,
+  "macros": {
+    "LiveCells": "60",
+    "LiveRequests": "180,000",
+    "LiveFaults": "5,400",
+    "LiveHeadAccuracy": "10.1",
+    "LiveTailAccuracy": "69.4",
+    "CalibrationRejects": "0",
+    "HoeffdingRadius": "89.8",
+    "CommonHeadSemanticCorrect": "52",
+    "CommonTailSemanticCorrect": "45",
+    "CommonSemanticCases": "600",
+    "LiveMaxLagMS": "21.02"
+  }
+}
+.venv/bin/python scripts/analyze_cost_study.py data/raw/final-cost-20260925/confirm-v1
+{
+  "cells": 96,
+  "groups": 12,
+  "contrasts": 18,
+  "summary": "/Users/victorbona/Code/Research/trace-sampling-strategies/data/derived/final-cost-20260925/cost-summary.json"
+}
+XDG_CACHE_HOME=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/cache MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib .venv/bin/python scripts/plot_cost_study.py
+.venv/bin/python scripts/inspect_cost_serialization.py data/raw/final-cost-20260925/confirm-v1
+{
+  "dual-100-bypass": {
+    "batches": 300,
+    "resource_groups": 600,
+    "scope_groups": 600,
+    "spans": 15000,
+    "json_bytes": 4989300
+  },
+  "dual-100-tail10": {
+    "batches": 59,
+    "resource_groups": 580,
+    "scope_groups": 580,
+    "spans": 1450,
+    "json_bytes": 686900
+  },
+  "dual-100-tail100": {
+    "batches": 60.125,
+    "resource_groups": 6000,
+    "scope_groups": 6000,
+    "spans": 15000,
+    "json_bytes": 7050002.5
+  },
+  "dual-1000-bypass": {
+    "batches": 60,
+    "resource_groups": 600,
+    "scope_groups": 600,
+    "spans": 15000,
+    "json_bytes": 4984500
+  },
+  "dual-1000-tail10": {
+    "batches": 59,
+    "resource_groups": 580,
+    "scope_groups": 580,
+    "spans": 1450,
+    "json_bytes": 686900
+  },
+  "dual-1000-tail100": {
+    "batches": 60,
+    "resource_groups": 6000,
+    "scope_groups": 6000,
+    "spans": 15000,
+    "json_bytes": 7050000
+  },
+  "file-100-bypass": {
+    "batches": 300,
+    "resource_groups": 600,
+    "scope_groups": 600,
+    "spans": 15000,
+    "json_bytes": 4989300
+  },
+  "file-100-tail10": {
+    "batches": 59,
+    "resource_groups": 580,
+    "scope_groups": 580,
+    "spans": 1450,
+    "json_bytes": 686900
+  },
+  "file-100-tail100": {
+    "batches": 60,
+    "resource_groups": 6000,
+    "scope_groups": 6000,
+    "spans": 15000,
+    "json_bytes": 7050000
+  },
+  "file-1000-bypass": {
+    "batches": 60,
+    "resource_groups": 600,
+    "scope_groups": 600,
+    "spans": 15000,
+    "json_bytes": 4984500
+  },
+  "file-1000-tail10": {
+    "batches": 59,
+    "resource_groups": 580,
+    "scope_groups": 580,
+    "spans": 1450,
+    "json_bytes": 686900
+  },
+  "file-1000-tail100": {
+    "batches": 60,
+    "resource_groups": 6000,
+    "scope_groups": 6000,
+    "spans": 15000,
+    "json_bytes": 7050000
+  }
+}

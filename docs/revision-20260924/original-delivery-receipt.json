@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-09-23T22:18:42.467216+00:00",
+  "namespace": "trace-sampling-study-20260923",
+  "context": "homelab",
+  "namespace_removed": true,
+  "nodes_ready": [
+    "homelab-01",
+    "homelab-02"
+  ],
+  "main_runner_sha256": "3d97385826d910440b29831b4dfe585be384a8c6b894a2a8e310bf05fd27b9ff",
+  "sensitivity_runner_sha256": "47fe6c05505e93efccb0639fab48b176111646c3914ab8eca768a742723fb4db",
+  "pdf_sha256": "80d830d0b54f47b0a1d74996572ad2d95fad0e65ad81335b41d0eeec1b75936a",
+  "underlying_unique_trace_ids": 100000,
+  "main_cells": 70,
+  "sensitivity_probes": 6,
+  "pdf_pages": 22
+}

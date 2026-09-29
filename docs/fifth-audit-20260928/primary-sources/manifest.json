@@ -1,0 +1,30 @@
+{
+  "retrieved_date": "2026-09-28",
+  "version": "v1.76.0",
+  "sources": [
+    {
+      "file": "cmd_collector_app_span_processor.go",
+      "url": "https://raw.githubusercontent.com/jaegertracing/jaeger/v1.76.0/cmd/collector/app/span_processor.go",
+      "sha256": "f29fb5cf771847c422449b20832a2b45e7e34df075db089e1de4b1f4a03a4a13",
+      "bytes": 13117
+    },
+    {
+      "file": "cmd_collector_app_handler_otlp_receiver.go",
+      "url": "https://raw.githubusercontent.com/jaegertracing/jaeger/v1.76.0/cmd/collector/app/handler/otlp_receiver.go",
+      "sha256": "80e4d5bcea769a4ed038ad156146531837598ca2a07b2e36ec1935751f583df2",
+      "bytes": 5085
+    },
+    {
+      "file": "cmd_collector_app_metrics.go",
+      "url": "https://raw.githubusercontent.com/jaegertracing/jaeger/v1.76.0/cmd/collector/app/metrics.go",
+      "sha256": "88a844f2a6dc9f13d1a59024cf00d8258e7a331d72d7c3a488faf6a9a0c34310",
+      "bytes": 13970
+    },
+    {
+      "file": "go.mod",
+      "url": "https://raw.githubusercontent.com/jaegertracing/jaeger/v1.76.0/go.mod",
+      "sha256": "c08516bdb7ad6964629d1933db0077a2beb3117dab23fde93a8b509ffc41bbab",
+      "bytes": 20348
+    }
+  ]
+}

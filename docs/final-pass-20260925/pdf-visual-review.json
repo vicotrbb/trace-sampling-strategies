@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-09-25T07:37:08.272944+00:00",
+  "review_type": "Internal visual inspection of every rendered page",
+  "pdf": "output/pdf/how-much-can-we-sample.pdf",
+  "pdf_sha256": "774a296b0325829ad2839aedc98c59eb3596085f7d21c699c4e049522c872548",
+  "pages_inspected": 35,
+  "page_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "renderer": "pdftoppm (Poppler 26.07.0)",
+  "render_dpi": 110,
+  "inspection_method": "Two-page sheets at native rendered resolution; all pages viewed. After bibliography punctuation changes, pages 22-24 were viewed again and all other rendered page hashes were unchanged.",
+  "notes": [
+    "Title, author, abstract, headings, equations, proofs, figures, tables, references, and appendix inspected.",
+    "No clipped or overlapping content, missing symbols, unreadable chart labels, or broken table boundaries observed.",
+    "Bibliography duplicate punctuation and W3C capitalization corrected before final inspection."
+  ],
+  "page_images": [
+    {
+      "page": 1,
+      "render_path": "tmp/final-pass-render/page-01.png",
+      "sha256": "9f89a596d7d00ea0324a43d423c17d0365b2eeb5398021179da09747a3cbbe77",
+      "size_bytes": 233855
+    },
+    {
+      "page": 2,
+      "render_path": "tmp/final-pass-render/page-02.png",
+      "sha256": "33ca2eb49c861a36d8ad7cd0d7ad1976705ae10b62e5b4832e7fbc38e2ac9e2f",
+      "size_bytes": 285650
+    },
+    {
+      "page": 3,
+      "render_path": "tmp/final-pass-render/page-03.png",
+      "sha256": "9234cdac0837e1a64da782abd003dadf19eaac4bd70ed8b521f2654b66e4fc27",
+      "size_bytes": 295969
+    },
+    {
+      "page": 4,
+      "render_path": "tmp/final-pass-render/page-04.png",
+      "sha256": "a711260becdb9bdaf583a032814a69fd9ae4b7236bf64c2cdd6f8568ed52fb0a",
+      "size_bytes": 187820
+    },
+    {
+      "page": 5,
+      "render_path": "tmp/final-pass-render/page-05.png",
+      "sha256": "e458a72d362812a73300aa77d8146993bf49b2f21f21738c1211c7489f654ec2",
+      "size_bytes": 272544
+    },
+    {
+      "page": 6,
+      "render_path": "tmp/final-pass-render/page-06.png",
+      "sha256": "7ed0d515da0fe3c5be21ad5aef9ca891620a5701b7d473c96fefe5c5654a9e53",
+      "size_bytes": 278207
+    },
+    {
+      "page": 7,
+      "render_path": "tmp/final-pass-render/page-07.png",
+      "sha256": "2ef12a6c9a599742cc09e9eb20597effd7ac7f49b87c0a03e408015742775513",
+      "size_bytes": 341472
+    },
+    {
+      "page": 8,
+      "render_path": "tmp/final-pass-render/page-08.png",
+      "sha256": "3142fa7999b4f26b892b3a07fc59833c74d6140958e67357a8b2c640ae8bd1e8",
+      "size_bytes": 256238
+    },
+    {
+      "page": 9,
+      "render_path": "tmp/final-pass-render/page-09.png",
+      "sha256": "4bde0c74b63250ea65a64b6724883389a7d12a21b5b1c4114be11ae99d415ce3",
+      "size_bytes": 318387
+    },
+    {
+      "page": 10,
+      "render_path": "tmp/final-pass-render/page-10.png",
+      "sha256": "14335df926f5523519a9671b1f3041392365898d73057a11e5d744f8b1041590",
+      "size_bytes": 231608
+    },
+    {
+      "page": 11,
+      "render_path": "tmp/final-pass-render/page-11.png",
+      "sha256": "6d213e681e62d699e9cce65cea4075bae49ccda8ff58ef127c8a97e85f06828e",
+      "size_bytes": 253944
+    },
+    {
+      "page": 12,
+      "render_path": "tmp/final-pass-render/page-12.png",
+      "sha256": "78aa6dfc50d278b6e36527bb03516dcd9063865d1bd0f83d9169f3bc2822bb72",
+      "size_bytes": 257723
+    },
+    {
+      "page": 13,
+      "render_path": "tmp/final-pass-render/page-13.png",
+      "sha256": "4f440e35dc67be26723b6c32ab44a1586ab02ad3921231fb202da2b8989ca76b",
+      "size_bytes": 295084
+    },
+    {
+      "page": 14,
+      "render_path": "tmp/final-pass-render/page-14.png",
+      "sha256": "9cb22022f10301a54cf1d15c6cbdc01744d35fe67669f9b1aa3139a2b3d6914c",
+      "size_bytes": 216885
+    },
+    {
+      "page": 15,
+      "render_path": "tmp/final-pass-render/page-15.png",
+      "sha256": "aed70276586d3e12e9373ea65ddcbc5424f9ac0b2d61917b0e93a26a05f33188",
+      "size_bytes": 240846
+    },
+    {
+      "page": 16,
+      "render_path": "tmp/final-pass-render/page-16.png",
+      "sha256": "7d45ee3982bb87e59a11f2635a08c0b24c06229be77dc553eeb0f68e12f6a11d",
+      "size_bytes": 330250
+    },
+    {
+      "page": 17,
+      "render_path": "tmp/final-pass-render/page-17.png",
+      "sha256": "409aaf588970c851f79434baa7c51db7202a1017cf0e9bfab5efe7c633b488e2",
+      "size_bytes": 148650
+    },
+    {
+      "page": 18,
+      "render_path": "tmp/final-pass-render/page-18.png",
+      "sha256": "c3b44846af5e78fc2eb345de3d559c9eab83b043489986875817c9abc2db6a86",
+      "size_bytes": 275292
+    },
+    {
+      "page": 19,
+      "render_path": "tmp/final-pass-render/page-19.png",
+      "sha256": "f6dd109335b31ca4b0c11689ee66cbf5968673e8892f870740555cfcefec134b",
+      "size_bytes": 303714
+    },
+    {
+      "page": 20,
+      "render_path": "tmp/final-pass-render/page-20.png",
+      "sha256": "fc316272f272f52ce8cc31fb101a8c252786938c948fd67362bd3101f2574445",
+      "size_bytes": 288264
+    },
+    {
+      "page": 21,
+      "render_path": "tmp/final-pass-render/page-21.png",
+      "sha256": "da37bcb0e8eb65053f5387e5e443a26a0752f98aa616e864bc90c02bb0af1d1f",
+      "size_bytes": 312171
+    },
+    {
+      "page": 22,
+      "render_path": "tmp/final-pass-render/page-22.png",
+      "sha256": "07a04bef92ff2d06918923143a14993036555dadb6993abcd35b33cd19e4eacd",
+      "size_bytes": 311619
+    },
+    {
+      "page": 23,
+      "render_path": "tmp/final-pass-render/page-23.png",
+      "sha256": "d97c2b806da205965e8dea85764fd4a3c0fa23da9a42165957084c5131dfe850",
+      "size_bytes": 301741
+    },
+    {
+      "page": 24,
+      "render_path": "tmp/final-pass-render/page-24.png",
+      "sha256": "b6f9e887f8a41b5548f6db9418a585c98b4c74e900cea29a87fcd074418326b2",
+      "size_bytes": 229394
+    },
+    {
+      "page": 25,
+      "render_path": "tmp/final-pass-render/page-25.png",
+      "sha256": "86d8dc511f800d241dbe7f2fd859e0c47a238768fe0c648568837dfbf3288191",
+      "size_bytes": 235465
+    },
+    {
+      "page": 26,
+      "render_path": "tmp/final-pass-render/page-26.png",
+      "sha256": "d2f30116ee228b5d518cb158c88c3ee1736ae9d1a969e22bc9cca93ac0d7a41d",
+      "size_bytes": 243689
+    },
+    {
+      "page": 27,
+      "render_path": "tmp/final-pass-render/page-27.png",
+      "sha256": "59e3a552646f905d774ec49b3180029db727be39fb9745534ead6c23c129ab53",
+      "size_bytes": 256835
+    },
+    {
+      "page": 28,
+      "render_path": "tmp/final-pass-render/page-28.png",
+      "sha256": "0a4917ab5892994dc537e8467a15a40d658279182d93b95ac9c85aa7f25e9a23",
+      "size_bytes": 280125
+    },
+    {
+      "page": 29,
+      "render_path": "tmp/final-pass-render/page-29.png",
+      "sha256": "d10362548a0d6c5327c0a6753ee99d39049b18867181578effb4664f1189fe2e",
+      "size_bytes": 327814
+    },
+    {
+      "page": 30,
+      "render_path": "tmp/final-pass-render/page-30.png",
+      "sha256": "171eb981f3639dcd2af40ce279b8c897032d483c5d2db3c199fc1be2fd465eb8",
+      "size_bytes": 251558
+    },
+    {
+      "page": 31,
+      "render_path": "tmp/final-pass-render/page-31.png",
+      "sha256": "1f14de84503ca04476dd0ca35f36ab0fe6bd2aab4a9e49da15081ec5113ec224",
+      "size_bytes": 285446
+    },
+    {
+      "page": 32,
+      "render_path": "tmp/final-pass-render/page-32.png",
+      "sha256": "31a435a3327f30817f634578253f87566516d292c6661681cd1f8d114d6f42f2",
+      "size_bytes": 270523
+    },
+    {
+      "page": 33,
+      "render_path": "tmp/final-pass-render/page-33.png",
+      "sha256": "fb1d85baeaf08110edfe1ef2e0390dcf37b3bbdf7f5dd4b62cc624aab32a02fa",
+      "size_bytes": 211081
+    },
+    {
+      "page": 34,
+      "render_path": "tmp/final-pass-render/page-34.png",
+      "sha256": "b1a27fbee580788cc5af6d2a9d76eb6d5d997269b25999ff699d6ebc3883686a",
+      "size_bytes": 154355
+    },
+    {
+      "page": 35,
+      "render_path": "tmp/final-pass-render/page-35.png",
+      "sha256": "0422cfc74cec950f8dbe6ff7db0d09ee6978945183af14f2a1315ae86fca6d3d",
+      "size_bytes": 182887
+    }
+  ]
+}

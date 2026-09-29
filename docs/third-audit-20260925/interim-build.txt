@@ -1,0 +1,928 @@
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 15 June 2025. Version 4.87.
+Latexmk: making output directory '../tmp/third-audit-draft'
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'pdflatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft"  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/article.
+cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/size11.c
+lo))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/geometry/geom
+etry.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/keyv
+al.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/iftex/ifvte
+x.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/iftex/iftex
+.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/fontenc.
+sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/etoolbox/etoo
+lbox.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype-pdftex.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype.cfg))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsma
+th.sty
+For additional information on amsmath, use the `?' option.
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amste
+xt.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsge
+n.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsbs
+y.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsop
+n.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/amss
+ymb.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/amsf
+onts.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amscls/amsthm
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/booktabs/book
+tabs.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/grap
+hicx.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/grap
+hics.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/trig
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics-cfg/
+graphics.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics-def/
+pdftex.def)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/tools/array.s
+ty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/tools/longtab
+le.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/xurl/xurl.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/url/url.sty))
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/needspace/nee
+dspace.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/natbib/natbib
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/hype
+rref.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/kvsetkeys/kvs
+etkeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/kvdefinekey
+s/kvdefinekeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/pdfescape/p
+dfescape.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/ltxcmds/ltx
+cmds.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/pdftexcmds/
+pdftexcmds.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/infwarerr/i
+nfwarerr.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hycolor/hycol
+or.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/name
+ref.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/refcount/refc
+ount.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/gettitlestr
+ing/gettitlestring.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/kvoptions/kvo
+ptions.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/stringenc/s
+tringenc.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/pd1e
+nc.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/intcalc/int
+calc.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/puen
+c.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/bitset/bits
+et.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/bigintcalc/
+bigintcalc.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/hpdf
+tex.def
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/rerunfilechec
+k/rerunfilecheck.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/uniquecount
+er/uniquecounter.sty))) (./measurements.tex) (./revision-measurements.tex)
+(./cost-measurements.tex) (./second-audit-measurements.tex)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/l3backend/l3b
+ackend-pdftex.def)
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+cmr.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/context/base/mkii/s
+upp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/epstopdf-pkg/
+epstopdf-base.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/latexconfig/e
+pstopdf-sys.cfg)) (./main.out) (./main.out)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/umsa
+.fd)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+msa.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/umsb
+.fd)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+msb.cfg) (./abstract.tex) (./intro-related.tex
+
+Package natbib Warning: Citation `sigelman2010dapper' on page 1 undefined on in
+put line 2.
+
+
+Package natbib Warning: Citation `kaldor2017canopy' on page 1 undefined on inpu
+t line 2.
+
+
+Package natbib Warning: Citation `otelSampling' on page 1 undefined on input li
+ne 2.
+
+[1{/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/map/pdftex/updm
+ap/pdftex.map}{/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/enc
+/dvips/cm-super/cm-super-t1.enc}]
+
+Package natbib Warning: Citation `W3CTraceContext' on page 2 undefined on input
+ line 20.
+
+
+Package natbib Warning: Citation `OTelSamplingSpec' on page 2 undefined on inpu
+t line 20.
+
+
+Package natbib Warning: Citation `Hindsight2023' on page 2 undefined on input l
+ine 20.
+
+
+Package natbib Warning: Citation `jaegerSampling211' on page 2 undefined on inp
+ut line 20.
+
+
+Package natbib Warning: Citation `otelTailSampling0136' on page 2 undefined on 
+input line 22.
+
+
+Package natbib Warning: Citation `otelBatch0136' on page 2 undefined on input l
+ine 22.
+
+
+Package natbib Warning: Citation `otelFile0136' on page 2 undefined on input li
+ne 22.
+
+
+Package natbib Warning: Citation `otelOtlpHttp0136' on page 2 undefined on inpu
+t line 22.
+
+
+Package natbib Warning: Citation `lascasas2019sifter' on page 2 undefined on in
+put line 25.
+
+
+Package natbib Warning: Citation `huang2021sieve' on page 2 undefined on input 
+line 25.
+
+
+Package natbib Warning: Citation `huang2024trastrainer' on page 2 undefined on 
+input line 25.
+
+
+Package natbib Warning: Citation `xie2025tracepicker' on page 2 undefined on in
+put line 25.
+
+[2]
+
+Package natbib Warning: Citation `sambasivan2011spectroscope' on page 3 undefin
+ed on input line 28.
+
+
+Package natbib Warning: Citation `yu2021microrank' on page 3 undefined on input
+ line 28.
+
+
+Package natbib Warning: Citation `li2021tracerca' on page 3 undefined on input 
+line 28.
+
+
+Package natbib Warning: Citation `coehlo2012uncertainty' on page 3 undefined on
+ input line 31.
+
+
+Package natbib Warning: Citation `HorvitzThompson1952' on page 3 undefined on i
+nput line 31.
+
+
+Package natbib Warning: Citation `nistPairedObservations' on page 3 undefined o
+n input line 31.
+
+
+Package natbib Warning: Citation `clopper1934confidence' on page 3 undefined on
+ input line 31.
+
+
+Package natbib Warning: Citation `nistExactBinomial' on page 3 undefined on inp
+ut line 31.
+
+
+Package natbib Warning: Citation `reichelt2026tracingoverhead' on page 3 undefi
+ned on input line 31.
+
+) (./theory.tex [3]
+
+LaTeX Warning: Reference `app:formal' on page 4 undefined on input line 13.
+
+[4]
+
+Package natbib Warning: Citation `Little1961' on page 5 undefined on input line
+ 58.
+
+) (./methods.tex
+
+LaTeX Warning: Reference `tab:design' on page 5 undefined on input line 3.
+
+[5]
+
+Package natbib Warning: Citation `otelPythonSampler137' on page 6 undefined on 
+input line 34.
+
+
+Package natbib Warning: Citation `jaegerDeployment176' on page 6 undefined on i
+nput line 36.
+
+
+Package natbib Warning: Citation `jaegerCli176' on page 6 undefined on input li
+ne 36.
+
+[6]
+
+Package natbib Warning: Citation `otelProbabilistic0136' on page 7 undefined on
+ input line 47.
+
+[7]
+
+LaTeX Warning: Reference `eq:tailbudget' on page 8 undefined on input line 63.
+
+
+LaTeX Warning: Reference `eq:simultaneous' on page 8 undefined on input line 68
+.
+
+[8]) (./results.tex
+
+LaTeX Warning: Reference `tab:matched' on page 9 undefined on input line 3.
+
+
+Package natbib Warning: Citation `otelTailSampling0136' on page 9 undefined on 
+input line 23.
+
+
+LaTeX Warning: Reference `tab:ablation' on page 9 undefined on input line 25.
+
+[9] (./load-results.tex
+
+LaTeX Warning: Reference `fig:load-sweep' on page 10 undefined on input line 1.
+
+
+
+LaTeX Warning: Reference `tab:load-high' on page 10 undefined on input line 3.
+
+(./load-high-rows.tex)
+
+LaTeX Warning: Reference `eq:savings' on page 10 undefined on input line 29.
+
+) [10] [11 <./figures/load-sweep.pdf>]
+
+LaTeX Warning: Reference `eq:savings' on page 12 undefined on input line 59.
+
+
+LaTeX Warning: Reference `tab:cost-contrasts' on page 12 undefined on input lin
+e 61.
+
+(./cost-contrast-rows.tex)
+
+Package natbib Warning: Citation `otelTailProcessor0136' on page 12 undefined o
+n input line 78.
+
+
+LaTeX Warning: Reference `tab:task-strata' on page 12 undefined on input line 8
+3.
+
+[12]
+
+LaTeX Warning: Reference `fig:task-diagnosis' on page 13 undefined on input lin
+e 85.
+
+
+LaTeX Warning: Reference `tab:task-diagnosis' on page 13 undefined on input lin
+e 85.
+
+(./task-diagnosis-rows.tex)
+
+LaTeX Warning: Reference `tab:task-diagnosis' on page 13 undefined on input lin
+e 108.
+
+
+LaTeX Warning: Reference `tab:task-diagnosis' on page 13 undefined on input lin
+e 108.
+
+(./task-strata-rows.tex)) (./discussion.tex [13] [14 <./figures/task-diagnosis.
+pdf>]) [15] (./conclusion.tex) (./main.bbl [16] [17] [18]) [19] (./appendix.tex
+(./formal-appendix.tex
+
+LaTeX Warning: Reference `eq:binomial' on page 20 undefined on input line 5.
+
+
+LaTeX Warning: Reference `eq:tailbudget' on page 20 undefined on input line 17.
+
+
+
+LaTeX Warning: Reference `eq:loss-bound' on page 20 undefined on input line 29.
+
+
+[20]
+
+Package natbib Warning: Citation `clopper1934confidence' on page 21 undefined o
+n input line 35.
+
+
+Package natbib Warning: Citation `nistExactBinomial' on page 21 undefined on in
+put line 35.
+
+
+LaTeX Warning: Reference `eq:simultaneous' on page 21 undefined on input line 3
+9.
+
+
+LaTeX Warning: Reference `eq:cp-inversion' on page 21 undefined on input line 4
+1.
+
+))
+
+Package natbib Warning: There were undefined citations.
+
+[21]
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )</opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20260301/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cella
+r/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20260301/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texliv
+e/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/hom
+ebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy8.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20260301/share/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></opt/homebrew/Cellar/texliv
+e/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></opt/home
+brew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfbx1
+200.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfbx1440.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-di
+st/fonts/type1/public/cm-super/sfrm1000.pfb></opt/homebrew/Cellar/texlive/20260
+301/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/homebrew/Ce
+llar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm1728.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/font
+s/type1/public/cm-super/sfti1095.pfb></opt/homebrew/Cellar/texlive/20260301/sha
+re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></opt/homebrew/Cellar/te
+xlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on /Users/victorbona/Code/Research/trace-sampling-strategies/tmp
+/third-audit-draft/main.pdf (21 pages, 477177 bytes).
+Transcript written on /Users/victorbona/Code/Research/trace-sampling-strategies
+/tmp/third-audit-draft/main.log.
+Latexmk: Getting log file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.log'
+Latexmk: Examining '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.fls'
+Latexmk: Examining '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.log'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.bbl' for 'pdflatex'
+Create bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main'...
+Rule 'bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main':  Reasons for rerun
+Category 'other':
+  Rerun of 'bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main' forced or previously required:
+    Reason or flag: 'Initial set up of rule'
+
+------------
+Run number 1 of rule 'bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main'
+------------
+Latexmk: Change directory to '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/Users/victorbona/Code/Research/trace-sampling-strategies/paper:/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft:'
+  BSTINPUTS='/Users/victorbona/Code/Research/trace-sampling-strategies/paper:'.
+------------
+Running 'bibtex  "main.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026/Homebrew)
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Latexmk: Change directory back to '/Users/victorbona/Code/Research/trace-sampling-strategies/paper'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.aux
+  /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.bbl
+  /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.out
+
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft"  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/article.
+cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/size11.c
+lo))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/geometry/geom
+etry.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/keyv
+al.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/iftex/ifvte
+x.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/iftex/iftex
+.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/fontenc.
+sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/etoolbox/etoo
+lbox.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype-pdftex.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype.cfg))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsma
+th.sty
+For additional information on amsmath, use the `?' option.
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amste
+xt.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsge
+n.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsbs
+y.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsop
+n.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/amss
+ymb.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/amsf
+onts.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amscls/amsthm
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/booktabs/book
+tabs.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/grap
+hicx.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/grap
+hics.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/trig
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics-cfg/
+graphics.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics-def/
+pdftex.def)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/tools/array.s
+ty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/tools/longtab
+le.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/xurl/xurl.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/url/url.sty))
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/needspace/nee
+dspace.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/natbib/natbib
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/hype
+rref.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/kvsetkeys/kvs
+etkeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/kvdefinekey
+s/kvdefinekeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/pdfescape/p
+dfescape.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/ltxcmds/ltx
+cmds.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/pdftexcmds/
+pdftexcmds.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/infwarerr/i
+nfwarerr.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hycolor/hycol
+or.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/name
+ref.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/refcount/refc
+ount.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/gettitlestr
+ing/gettitlestring.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/kvoptions/kvo
+ptions.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/stringenc/s
+tringenc.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/pd1e
+nc.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/intcalc/int
+calc.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/puen
+c.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/bitset/bits
+et.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/bigintcalc/
+bigintcalc.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/hpdf
+tex.def
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/rerunfilechec
+k/rerunfilecheck.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/uniquecount
+er/uniquecounter.sty))) (./measurements.tex) (./revision-measurements.tex)
+(./cost-measurements.tex) (./second-audit-measurements.tex)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/l3backend/l3b
+ackend-pdftex.def)
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+cmr.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/context/base/mkii/s
+upp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/epstopdf-pkg/
+epstopdf-base.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/latexconfig/e
+pstopdf-sys.cfg))
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.out)
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.out)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/umsa
+.fd)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+msa.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/umsb
+.fd)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+msb.cfg) (./abstract.tex) (./intro-related.tex [1{/opt/homebrew/Cellar/texlive/
+20260301/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}{/opt/homebrew/Cel
+lar/texlive/20260301/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+] [2]) (./theory.tex [3] [4]) (./methods.tex [5] [6]
+
+Package natbib Warning: Citation `otelProbabilistic0136' on page 7 undefined on
+ input line 47.
+
+[7]) (./results.tex [8] [9] (./load-results.tex (./load-high-rows.tex) [10])
+(./cost-contrast-rows.tex) [11 <./figures/load-sweep.pdf>]
+(./task-diagnosis-rows.tex) (./task-strata-rows.tex)) (./discussion.tex
+[12] [13 <./figures/task-diagnosis.pdf>] [14]) (./conclusion.tex) [15]
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.bbl [16] [17] [18]) [19] (./appendix.tex (./formal-appendix.tex [20]))
+
+Package natbib Warning: There were undefined citations.
+
+[21]
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )</opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20260301/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cella
+r/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20260301/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texliv
+e/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/hom
+ebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy8.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20260301/share/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></opt/homebrew/Cellar/texliv
+e/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></opt/home
+brew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfbx1
+200.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfbx1440.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-di
+st/fonts/type1/public/cm-super/sfrm1000.pfb></opt/homebrew/Cellar/texlive/20260
+301/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/homebrew/Ce
+llar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm1728.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/font
+s/type1/public/cm-super/sfti1095.pfb></opt/homebrew/Cellar/texlive/20260301/sha
+re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></opt/homebrew/Cellar/te
+xlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on /Users/victorbona/Code/Research/trace-sampling-strategies/tmp
+/third-audit-draft/main.pdf (21 pages, 478780 bytes).
+Transcript written on /Users/victorbona/Code/Research/trace-sampling-strategies
+/tmp/third-audit-draft/main.log.
+Latexmk: Getting log file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.log'
+Latexmk: Examining '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.fls'
+Latexmk: Examining '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.log'
+Latexmk: Found input bbl file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.bbl'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main'...
+Rule 'bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main':  Reasons for rerun
+Changed files or newly in use/created:
+  /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.aux
+
+------------
+Run number 2 of rule 'bibtex /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main'
+------------
+Latexmk: Change directory to '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/Users/victorbona/Code/Research/trace-sampling-strategies/paper:/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft:'
+  BSTINPUTS='/Users/victorbona/Code/Research/trace-sampling-strategies/paper:'.
+------------
+Running 'bibtex  "main.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026/Homebrew)
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Latexmk: Change directory back to '/Users/victorbona/Code/Research/trace-sampling-strategies/paper'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  /Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.aux
+
+------------
+Run number 3 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft"  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/article.
+cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/size11.c
+lo))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/geometry/geom
+etry.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/keyv
+al.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/iftex/ifvte
+x.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/iftex/iftex
+.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/base/fontenc.
+sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/etoolbox/etoo
+lbox.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype-pdftex.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mic
+rotype.cfg))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsma
+th.sty
+For additional information on amsmath, use the `?' option.
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amste
+xt.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsge
+n.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsbs
+y.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsmath/amsop
+n.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/amss
+ymb.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/amsf
+onts.sty))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amscls/amsthm
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/booktabs/book
+tabs.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/grap
+hicx.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/grap
+hics.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics/trig
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics-cfg/
+graphics.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/graphics-def/
+pdftex.def)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/tools/array.s
+ty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/tools/longtab
+le.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/xurl/xurl.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/url/url.sty))
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/needspace/nee
+dspace.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/natbib/natbib
+.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/hype
+rref.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/kvsetkeys/kvs
+etkeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/kvdefinekey
+s/kvdefinekeys.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/pdfescape/p
+dfescape.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/ltxcmds/ltx
+cmds.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/pdftexcmds/
+pdftexcmds.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/infwarerr/i
+nfwarerr.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hycolor/hycol
+or.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/name
+ref.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/refcount/refc
+ount.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/gettitlestr
+ing/gettitlestring.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/kvoptions/kvo
+ptions.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/stringenc/s
+tringenc.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/pd1e
+nc.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/intcalc/int
+calc.sty)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/puen
+c.def)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/bitset/bits
+et.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/bigintcalc/
+bigintcalc.sty)))
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/hyperref/hpdf
+tex.def
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/rerunfilechec
+k/rerunfilecheck.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/uniquecount
+er/uniquecounter.sty))) (./measurements.tex) (./revision-measurements.tex)
+(./cost-measurements.tex) (./second-audit-measurements.tex)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/l3backend/l3b
+ackend-pdftex.def)
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+cmr.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/context/base/mkii/s
+upp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/epstopdf-pkg/
+epstopdf-base.sty
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/latexconfig/e
+pstopdf-sys.cfg))
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.out)
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.out)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/umsa
+.fd)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+msa.cfg)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/amsfonts/umsb
+.fd)
+(/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/microtype/mt-
+msb.cfg) (./abstract.tex) (./intro-related.tex [1{/opt/homebrew/Cellar/texlive/
+20260301/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}{/opt/homebrew/Cel
+lar/texlive/20260301/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+] [2]) (./theory.tex [3] [4]) (./methods.tex [5] [6] [7]) (./results.tex
+[8] [9] (./load-results.tex (./load-high-rows.tex) [10])
+(./cost-contrast-rows.tex) [11 <./figures/load-sweep.pdf>]
+(./task-diagnosis-rows.tex) (./task-strata-rows.tex)) (./discussion.tex
+[12] [13 <./figures/task-diagnosis.pdf>] [14]) (./conclusion.tex) [15]
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.bbl [16] [17] [18]) [19] (./appendix.tex (./formal-appendix.tex [20]))
+[21]
+(/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draf
+t/main.aux) )</opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20260301/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texliv
+e/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/hom
+ebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/2026
+0301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Ce
+llar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20260
+301/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></opt/homebrew/Ce
+llar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
+></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-
+super/sfbx1200.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/font
+s/type1/public/cm-super/sfbx1440.pfb></opt/homebrew/Cellar/texlive/20260301/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></opt/homebrew/Cellar/te
+xlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/
+homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/s
+frm1200.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1
+/public/cm-super/sfrm1728.pfb></opt/homebrew/Cellar/texlive/20260301/share/texm
+f-dist/fonts/type1/public/cm-super/sfti1095.pfb></opt/homebrew/Cellar/texlive/2
+0260301/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></opt/homebre
+w/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/cm-super/sftt1095
+.pfb>
+Output written on /Users/victorbona/Code/Research/trace-sampling-strategies/tmp
+/third-audit-draft/main.pdf (21 pages, 478594 bytes).
+Transcript written on /Users/victorbona/Code/Research/trace-sampling-strategies
+/tmp/third-audit-draft/main.log.
+Latexmk: Getting log file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.log'
+Latexmk: Examining '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.fls'
+Latexmk: Examining '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.log'
+Latexmk: Found input bbl file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.bbl'
+Latexmk: Log file says output to '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file '/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: All targets (/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/third-audit-draft/main.pdf) are up-to-date
+

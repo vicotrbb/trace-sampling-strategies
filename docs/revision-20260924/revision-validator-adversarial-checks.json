@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "source": "data/raw/revision-20260924/pilot-v2",
+  "restored_archive": "PASS",
+  "rejection_checks": [
+    {
+      "case": "missing request outcome",
+      "status": "REJECTED"
+    },
+    {
+      "case": "false recorded classification",
+      "status": "REJECTED"
+    },
+    {
+      "case": "CPU summary inconsistent with raw ticks",
+      "status": "REJECTED"
+    },
+    {
+      "case": "modified raw accepted-span counter",
+      "status": "REJECTED"
+    },
+    {
+      "case": "duplicate stored span",
+      "status": "REJECTED"
+    },
+    {
+      "case": "changed stored span content",
+      "status": "REJECTED"
+    },
+    {
+      "case": "changed executed source",
+      "status": "REJECTED"
+    },
+    {
+      "case": "leaked control despite internally consistent export digest",
+      "status": "REJECTED"
+    }
+  ]
+}

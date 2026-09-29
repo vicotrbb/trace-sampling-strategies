@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1.1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{xurl}
+\usepackage{needspace}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Trace Sampling at the Collector Boundary: Costs and Diagnostic Evidence},
+  pdfauthor={Victor Bona},
+  pdfsubject={Distributed tracing; sampling; diagnostic evidence; observability},
+  pdfkeywords={distributed tracing, head sampling, tail sampling, observability, OpenTelemetry, measurement study}
+}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\artifact}[1]{\nolinkurl{#1}}
+\makeatletter
+\newcommand{\tableinput}[1]{\@@input #1 }
+\makeatother
+\emergencystretch=1em
+
+\title{Trace Sampling at the Collector Boundary:\\Costs and Diagnostic Evidence}
+\author{Victor Bona\\[2pt]
+\small Independent Researcher, Blumenau, Brazil\\
+\small \texttt{victor.bona@hotmail.com}}
+\date{September 2026}
+
+\input{measurements.tex}
+\input{revision-measurements.tex}
+\input{cost-measurements.tex}
+\input{second-audit-measurements.tex}
+\input{third-audit-measurements.tex}
+\input{fifth-localization-measurements.tex}
+\input{fifth-measurements.tex}
+\begin{document}
+\maketitle
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+\noindent\textbf{Keywords:} distributed tracing; head sampling; tail sampling; diagnostic evidence; OpenTelemetry; reproducible evaluation.
+
+\input{intro-related.tex}
+
+\input{theory.tex}
+\input{methods.tex}
+\input{results.tex}
+\input{discussion.tex}
+\Needspace{7\baselineskip}
+\input{conclusion.tex}
+
+\section*{Data, code, and reproducibility statement}
+The research archive contains the manuscript, protocols, source freezes, configurations, compressed raw spans, timing and resource records, complete treatment results, and separately implemented validators. Its README gives reproduction commands and its claim-to-evidence map links claims to observations. An accompanying anonymous review package supplies manuscript sources, derived results, selected underlying records, and executable checks; its README defines the supported checks and omissions. File-level SHA256 checksums identify the packaged files. The complete archive had not been deposited in a public repository at the time of this manuscript.
+
+\section*{Ethics and disclosure}
+All workloads and fault scenarios were generated for this study; no customer data or human participants were involved. Workload execution and fault injection were confined to isolated namespaces of the authorized Kubernetes testbed. OpenAI Codex assisted the research workflow described in Section~\ref{sec:validation-method} and the preparation of the manuscript. The author is responsible for the claims, interpretation, and final manuscript.
+
+\begingroup
+\interlinepenalty=10000
+\setlength{\bibsep}{5pt plus 1pt}
+\bibliographystyle{plainnat}
+\bibliography{references}
+\endgroup
+\clearpage
+\appendix
+\input{mathematical-supplement.tex}
+\end{document}

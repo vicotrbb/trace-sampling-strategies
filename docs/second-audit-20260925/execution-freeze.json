@@ -1,0 +1,28 @@
+{
+  "frozen_utc": "2026-09-25T13:57:48.017192+00:00",
+  "context": "homelab",
+  "namespace": "trace-sampling-load-20260925",
+  "measured_load_rates": [
+    50,
+    2000,
+    8000,
+    20000
+  ],
+  "measured_load_cells": 80,
+  "diagnosis_incidents": 600,
+  "replay_trials_per_comparison": 5000,
+  "comparisons": 16,
+  "pilot_excluded": true,
+  "files": {
+    "experiments/second_audit/common.py": "21c7c34a59d4e56cad9cf4009324d2b4cc7b939a6397012561acbbe80f8fd6bc",
+    "experiments/second_audit/load_study.py": "110bc9f3b0ce3d4ff0c8106c629c0da47b27d444f5c2ebfa85e5ae8d442adaa5",
+    "experiments/second_audit/diagnosis_study.py": "165650742963eed8066390d7befa9ace0a31fe70e624b145e73ae13752666de6",
+    "experiments/second_audit/run_measured.py": "08f240e9a142817d93fd8f259c8eeb28351cca3bf7a4c2cdaf8aa7e9d031f075",
+    "experiments/second_audit/pod.yaml": "00f1e7fdbbfc1f38fe962ade3244b36d786f0c12ef8666ac1431c656b96e597b",
+    "scripts/verify_second_audit.py": "b9416d1229b66e6e7a7d698aa23787177f407f72c663df5b8234b7d92d0fc624",
+    "scripts/analyze_second_audit.py": "3659ff03c9c6a6713b5fb24660462956dbdc1d4f013835d4fb2933b981a61917",
+    "tests/verify_second_audit_validator.py": "5dd39d57f01bc184e3f3e10dcc8219b27b3c66ab88ebceb9726e2bf3cf5b180a",
+    "docs/second-audit-20260925/protocol.md": "ca0503f743afea5d5769cdcc5f1738b3b5758f8e2f2c82a1ef2c0310db9b6888",
+    "docs/second-audit-20260925/amendments.md": "01e658291e228ff91faafa8b8cac1a1c5349e87b8052571b752e746bab9078ce"
+  }
+}

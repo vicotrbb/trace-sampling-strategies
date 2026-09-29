@@ -1,0 +1,5 @@
+# Clarifications without changing the frozen design
+
+Recorded during execution on 2026-09-25. The frozen protocol's phrase "600 independent seeded episodes" denotes separate, disjoint random seeds for workload construction. It does not establish statistical independence of observed execution times on a shared runner. The manuscript uses "600 new incidents" and treats the observed corpus as fixed. The confidence calculation assumes independent randomized replay trials under its declared ideal model; it does not require independence among the archived incident timings. No workload, seed, sampling rule, endpoint, acceptance criterion, or comparison family changes.
+
+One local transfer began before the load pilot completed. That incomplete copy is retained under `data/raw/third-audit-20260925/transfer-snapshots/` and is excluded from analysis. The completed source-side pilot was subsequently copied to `load-pilot-v1` and independently validated. This was a transfer snapshot, not an additional experimental attempt.

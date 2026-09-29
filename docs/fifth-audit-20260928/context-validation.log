@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "raw_replay_rows": 240000,
+  "feasible_configurations_checked": 42,
+  "independently_recomputed_accuracy_and_paired_loss_mcse": 84,
+  "sdk_rows_from_raw_process_ticks": 4,
+  "sdk_cells_checked": 40,
+  "low_load_plotted_contrasts_recomputed": 8,
+  "frozen_primary_analysis_unchanged": true
+}

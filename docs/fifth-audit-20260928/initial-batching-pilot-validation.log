@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/victorbona/Code/Research/trace-sampling-strategies/scripts/verify_fifth_audit.py", line 178, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/victorbona/Code/Research/trace-sampling-strategies/scripts/verify_fifth_audit.py", line 177, in main
+    result=verify(a.archive);a.receipt.parent.mkdir(parents=True,exist_ok=True);a.receipt.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+  File "/Users/victorbona/Code/Research/trace-sampling-strategies/scripts/verify_fifth_audit.py", line 170, in verify
+    queries+=check_backend(p,d,ts,indices);maxlag=max(maxlag,result['max_lag_s']);throttle+=result['throttled_usec']
+             ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/victorbona/Code/Research/trace-sampling-strategies/scripts/verify_fifth_audit.py", line 82, in check_backend
+    if s['status']['code']==2:assert tags.get('error') is True
+       ~~~~~~~~~~~^^^^^^^^
+KeyError: 'code'

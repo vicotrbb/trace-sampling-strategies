@@ -1,0 +1,29 @@
+verified batching-dual-1000-tail100 block 83001
+verified batching-dual-100-full block 83001
+verified batching-dual-1000-full block 83001
+verified batching-dual-100-tail100 block 83001
+verified batching-dual-1000-tail100 block 83002
+verified batching-dual-1000-full block 83002
+verified batching-dual-100-full block 83002
+verified batching-dual-100-tail100 block 83002
+verified batching-dual-1000-full block 83003
+verified batching-dual-100-full block 83003
+verified batching-dual-100-tail100 block 83003
+verified batching-dual-1000-tail100 block 83003
+verified batching-dual-1000-full block 83004
+verified batching-dual-1000-tail100 block 83004
+verified batching-dual-100-full block 83004
+verified batching-dual-100-tail100 block 83004
+verified batching-dual-1000-full block 83005
+verified batching-dual-1000-tail100 block 83005
+verified batching-dual-100-full block 83005
+verified batching-dual-100-tail100 block 83005
+{
+  "status": "PASS",
+  "cells": 20,
+  "exported_spans_including_warmup": 7000000,
+  "backend_sample_traces": 640,
+  "max_schedule_lag_s": 0.007215807884932701,
+  "throttled_usec": 0,
+  "matched_input_payload_groups": 10
+}

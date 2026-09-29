@@ -1,0 +1,337 @@
+% Primary sources cited by the active manuscript. Access records are in the artifact.
+
+@techreport{sigelman2010dapper,
+  author      = {Benjamin H. Sigelman and Luiz Andr{\'e} Barroso and Mike Burrows and Pat Stephenson and Manoj Plakal and Donald Beaver and Saul Jaspan and Chandan Shanbhag},
+  title       = {{Dapper}, a Large-Scale Distributed Systems Tracing Infrastructure},
+  institution = {Google, Inc.},
+  number      = {dapper-2010-1},
+  year        = {2010},
+  month       = apr,
+  url         = {https://research.google.com/archive/papers/dapper-2010-1.pdf}
+}
+
+@inproceedings{kaldor2017canopy,
+  address = {New York, NY, USA},
+  author    = {Jonathan Kaldor and Jonathan Mace and Micha{\l} Bejda and Edison Gao and Wiktor Kuropatwa and Joe O'Neill and Kian Win Ong and Bill Schaller and Pingjia Shan and Brendan Viscomi and Vinod Venkataraman and Kaushik Veeraraghavan and Yee Jiun Song},
+  title     = {{Canopy}: An End-to-End Performance Tracing and Analysis System},
+  booktitle = {Proceedings of the 26th Symposium on Operating Systems Principles},
+  series    = {SOSP '17},
+  publisher = {Association for Computing Machinery},
+  year      = {2017},
+  pages     = {34--50},
+  doi       = {10.1145/3132747.3132749},
+  url       = {https://cs.brown.edu/people/jcmace/papers/kaldor2017canopy.pdf}
+}
+
+@inproceedings{lascasas2019sifter,
+  address = {New York, NY, USA},
+  author    = {Pedro Las-Casas and Giorgi Papakerashvili and Vaastav Anand and Jonathan Mace},
+  title     = {{Sifter}: Scalable Sampling for Distributed Traces, without Feature Engineering},
+  booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+  series    = {SoCC '19},
+  publisher = {Association for Computing Machinery},
+  year      = {2019},
+  pages     = {312--324},
+  doi       = {10.1145/3357223.3362736},
+  url       = {https://vaastavanand.com/assets/pdf/lascasas2019sifter.pdf}
+}
+
+@inproceedings{Hindsight2023,
+  author    = {Lei Zhang and Zhiqiang Xie and Vaastav Anand and Ymir Vigfusson and Jonathan Mace},
+  title     = {The Benefit of {Hindsight}: Tracing Edge-Cases in Distributed Systems},
+  booktitle = {20th USENIX Symposium on Networked Systems Design and Implementation (NSDI 23)},
+  publisher = {USENIX Association},
+  address   = {Boston, MA},
+  year      = {2023},
+  month     = apr,
+  pages     = {321--339},
+  isbn      = {978-1-939133-33-5},
+  url       = {https://www.usenix.org/conference/nsdi23/presentation/zhang-lei}
+}
+
+@article{xie2025tracepicker,
+  numpages = {22},
+  author    = {Shuaiyu Xie and Jian Wang and Maodong Li and Peiran Chen and Jifeng Xuan and Bing Li},
+  title     = {{TracePicker}: Optimization-Based Trace Sampling for Microservice-Based Systems},
+  journal   = {Proceedings of the ACM on Software Engineering},
+  volume    = {2},
+  number    = {FSE},
+  articleno = {FSE081},
+  pages     = {1802--1823},
+  year      = {2025},
+  doi       = {10.1145/3729351},
+  url       = {https://doi.org/10.1145/3729351}
+}
+
+@misc{otelSampling,
+  year = {n.d},
+  author  = {{OpenTelemetry Authors}},
+  title   = {Sampling},
+  url     = {https://opentelemetry.io/docs/concepts/sampling/},
+  urldate = {2026-09-23},
+  note    = {Living documentation; accessed 23 September 2026}
+}
+
+@misc{OTelSamplingSpec,
+  year = {n.d},
+  author  = {{OpenTelemetry Authors}},
+  title   = {Tracing {SDK}},
+  url     = {https://opentelemetry.io/docs/specs/otel/trace/sdk/},
+  urldate = {2026-09-23},
+  note    = {Living specification; accessed 23 September 2026}
+}
+
+@misc{otelTailSampling0136,
+  author       = {{OpenTelemetry Authors}},
+  title        = {Tail Sampling Processor},
+  howpublished = {OpenTelemetry Collector Contrib, source release v0.136.0},
+  year         = {2025},
+  url          = {https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.136.0/processor/tailsamplingprocessor/README.md},
+  urldate      = {2026-09-23},
+  note         = {Processor module used by Collector Contrib distribution v0.136.0; accessed 23 September 2026}
+}
+
+@techreport{W3CTraceContext,
+  author      = {{W3C Distributed Tracing Working Group}},
+  title       = {Trace Context},
+  institution = {World Wide Web Consortium},
+  type        = {{W3C} Recommendation},
+  year        = {2021},
+  month       = nov,
+  url         = {https://www.w3.org/TR/2021/REC-trace-context-1-20211123/},
+  note        = {23 November 2021}
+}
+
+@article{HorvitzThompson1952,
+  author  = {D. G. Horvitz and D. J. Thompson},
+  title   = {A Generalization of Sampling Without Replacement from a Finite Universe},
+  journal = {Journal of the American Statistical Association},
+  volume  = {47},
+  number  = {260},
+  pages   = {663--685},
+  year    = {1952},
+  doi     = {10.1080/01621459.1952.10483446},
+  url     = {https://www.tandfonline.com/doi/abs/10.1080/01621459.1952.10483446}
+}
+
+@article{Little1961,
+  author  = {John D. C. Little},
+  title   = {A Proof for the Queuing Formula: {$L=\lambda W$}},
+  journal = {Operations Research},
+  volume  = {9},
+  number  = {3},
+  pages   = {383--387},
+  year    = {1961},
+  doi     = {10.1287/opre.9.3.383},
+  url     = {https://pubsonline.informs.org/doi/abs/10.1287/opre.9.3.383}
+}
+
+@misc{nistPairedObservations,
+  year = {n.d},
+  author       = {{National Institute of Standards and Technology}},
+  title        = {Analysis of Paired Observations},
+  howpublished = {NIST/SEMATECH e-Handbook of Statistical Methods, Section 7.3.1.1},
+  url          = {https://www.itl.nist.gov/div898/handbook/prc/section3/prc311.htm},
+  urldate      = {2026-09-23},
+  note         = {Accessed 23 September 2026}
+}
+
+% Primary-source additions verified 2026-09-24.
+
+@inproceedings{huang2021sieve,
+  address = {Chicago, IL, USA},
+  author    = {Zicheng Huang and Pengfei Chen and Guangba Yu and Hongyang Chen and Zibin Zheng},
+  title     = {{Sieve}: Attention-based Sampling of End-to-End Trace Data in Distributed Microservice Systems},
+  booktitle = {2021 IEEE International Conference on Web Services (ICWS)},
+  year      = {2021},
+  pages     = {436--446},
+  publisher = {IEEE},
+  doi       = {10.1109/ICWS53863.2021.00063},
+  url       = {https://doi.org/10.1109/ICWS53863.2021.00063}
+}
+
+@article{huang2024trastrainer,
+  author    = {Haiyu Huang and Xiaoyu Zhang and Pengfei Chen and Zilong He and Zhiming Chen and Guangba Yu and Hongyang Chen and Chen Sun},
+  title     = {{TraStrainer}: Adaptive Sampling for Distributed Traces with System Runtime State},
+  journal   = {Proceedings of the ACM on Software Engineering},
+  volume    = {1},
+  number    = {FSE},
+  year      = {2024},
+  pages     = {473--493},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3643748},
+  url       = {https://doi.org/10.1145/3643748}
+}
+
+@inproceedings{coehlo2012uncertainty,
+  address = {Hollywood, CA},
+  numpages = {7},
+  author    = {Nate Coehlo and Arif Merchant and Murray Stokely},
+  title     = {Uncertainty in Aggregate Estimates from Sampled Distributed Traces},
+  booktitle = {2012 Workshop on Managing Systems Automatically and Dynamically},
+  series    = {MAD '12},
+  year      = {2012},
+  publisher = {USENIX Association},
+  url       = {https://www.usenix.org/conference/mad12/workshop-program/presentation/coehlo}
+}
+
+@inproceedings{reichelt2026tracingoverhead,
+  address = {New York, NY, USA},
+  author    = {David Georg Reichelt and Shinhyung Yang and Marcel Hansson and Wilhelm Hasselbring},
+  title     = {Benchmarking the Overhead of Distributed Tracing Agents},
+  booktitle = {Proceedings of the 17th ACM/SPEC International Conference on Performance Engineering},
+  series    = {ICPE '26},
+  year      = {2026},
+  pages     = {147--161},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3777884.3797004},
+  url       = {https://doi.org/10.1145/3777884.3797004}
+}
+
+@misc{otelPythonSampler137,
+  author       = {{OpenTelemetry Authors}},
+  title        = {{OpenTelemetry Python}: Trace Sampling Implementation},
+  year         = {2025},
+  howpublished = {Version 1.37.0 source code},
+  url          = {https://github.com/open-telemetry/opentelemetry-python/blob/v1.37.0/opentelemetry-sdk/src/opentelemetry/sdk/trace/sampling.py},
+  note         = {Accessed 2026-09-24}
+}
+
+@misc{jaegerDeployment176,
+  author       = {{Jaeger Authors}},
+  title        = {{Jaeger} 1.76: Deployment},
+  year         = {2025},
+  howpublished = {Version 1.76 documentation},
+  url          = {https://www.jaegertracing.io/docs/1.76/deployment/},
+  note         = {Release 1.76.0 published 2025-12-03; accessed 2026-09-24}
+}
+
+@misc{jaegerSpanProcessor176,
+  author = {{Jaeger Authors}},
+  title = {Collector Span Processor, Version 1.76.0},
+  year = {2025},
+  url = {https://github.com/jaegertracing/jaeger/blob/v1.76.0/cmd/collector/app/span_processor.go},
+  note = {Pinned source, accessed 28 September 2026}
+}
+
+@misc{jaegerCli176,
+  author       = {{Jaeger Authors}},
+  title        = {{Jaeger} 1.76: {CLI} Flags},
+  year         = {2025},
+  howpublished = {Version 1.76 documentation},
+  url          = {https://www.jaegertracing.io/docs/1.76/deployment/cli/},
+  note         = {Accessed 2026-09-24}
+}
+
+@misc{otelTailProcessor0136,
+  author = {{OpenTelemetry Authors}},
+  title = {Tail Sampling Processor: Decision and Forwarding Implementation},
+  year = {2025},
+  howpublished = {OpenTelemetry Collector Contrib, source release v0.136.0},
+  url = {https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.136.0/processor/tailsamplingprocessor/processor.go},
+  note = {Accessed 2026-09-25}
+}
+@misc{otelFile0136,
+  author = {{OpenTelemetry Authors}},
+  title = {File Exporter: Trace Consumption Implementation},
+  year = {2025},
+  howpublished = {OpenTelemetry Collector Contrib, source release v0.136.0},
+  url = {https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.136.0/exporter/fileexporter/file_exporter.go},
+  note = {Accessed 2026-09-25}
+}
+@misc{otelOtlpHttp0136,
+  author = {{OpenTelemetry Authors}},
+  title = {{OTLP/HTTP} Exporter},
+  year = {2025},
+  howpublished = {OpenTelemetry Collector, source release v0.136.0},
+  url = {https://github.com/open-telemetry/opentelemetry-collector/blob/v0.136.0/exporter/otlphttpexporter/README.md},
+  note = {Accessed 2026-09-25}
+}
+@inproceedings{yu2021microrank,
+  address = {New York, NY, USA},
+  author = {Guangba Yu and Pengfei Chen and Hongyang Chen and Zijie Guan and Zicheng Huang and Linxiao Jing and Tianjun Weng and Xinmeng Sun and Xiaoyun Li},
+  title = {{MicroRank}: End-to-End Latency Issue Localization with Extended Spectrum Analysis in Microservice Environments},
+  booktitle = {Proceedings of the Web Conference 2021},
+  publisher = {Association for Computing Machinery},
+  year = {2021},
+  pages = {3087--3098},
+  doi = {10.1145/3442381.3449905},
+  url = {https://yuxiaoba.github.io/files/WWW21/microrank.pdf}
+}
+@inproceedings{li2021tracerca,
+  address = {Tokyo, Japan},
+  author = {Zeyan Li and Junjie Chen and Rui Jiao and Nengwen Zhao and Zhijun Wang and Shuwei Zhang and Yanjun Wu and Long Jiang and Leiqin Yan and Zikai Wang and Zhekang Chen and Wenchi Zhang and Xiaohui Nie and Kaixin Sui and Dan Pei},
+  title = {Practical Root Cause Localization for Microservice Systems via Trace Analysis},
+  booktitle = {2021 IEEE/ACM 29th International Symposium on Quality of Service (IWQOS)},
+  publisher = {IEEE},
+  year = {2021},
+  pages = {1--10},
+  doi = {10.1109/IWQOS52092.2021.9521340},
+  url = {https://netman.aiops.org/wp-content/uploads/2021/05/1570705191.pdf}
+}
+@inproceedings{sambasivan2011spectroscope,
+  numpages = {14},
+  author = {Raja R. Sambasivan and Alice X. Zheng and Michael De Rosa and Elie Krevat and Spencer Whitman and Michael Stroucken and William Wang and Lianghong Xu and Gregory R. Ganger},
+  title = {Diagnosing Performance Changes by Comparing Request Flows},
+  booktitle = {8th USENIX Symposium on Networked Systems Design and Implementation (NSDI 11)},
+  publisher = {USENIX Association},
+  address = {Boston, MA},
+  year = {2011},
+  month = mar,
+  url = {https://www.usenix.org/conference/nsdi11/diagnosing-performance-changes-comparing-request-flows}
+}
+
+@misc{otelProbabilistic0136,
+  author = {{OpenTelemetry Authors}},
+  title = {Probabilistic Sampling Processor, Collector Contrib v0.136.0},
+  year = {2025},
+  howpublished = {\url{https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.136.0/processor/probabilisticsamplerprocessor}},
+  note = {Pinned implementation and configuration; accessed September 25, 2026}
+}
+
+@misc{huang2024mint,
+  author = {Haiyu Huang and Cheng Chen and Kunyi Chen and Pengfei Chen and Guangba Yu and Zilong He and Yilun Wang and Huxing Zhang and Qi Zhou},
+  title = {{Mint}: Cost-Efficient Tracing with All Requests Collection via Commonality and Variability Analysis},
+  year = {2024},
+  howpublished = {arXiv:2411.04605v1},
+  doi = {10.48550/arXiv.2411.04605},
+  url = {https://arxiv.org/abs/2411.04605v1},
+  note = {Version read: 7 November 2024; accessed 28 September 2026}
+}
+
+@misc{zhu2025unisage,
+  author = {Zhouruixing Zhu and Zhihan Jiang and Tianyi Yang and Pinjia He},
+  title = {{UniSage}: A Unified and Post-Analysis-Aware Sampling for Microservices},
+  year = {2026},
+  howpublished = {arXiv:2509.26336v2},
+  doi = {10.48550/arXiv.2509.26336},
+  url = {https://arxiv.org/abs/2509.26336v2},
+  note = {Version 2, 4 February 2026; accessed 28 September 2026}
+}
+
+@misc{yang2026gleaner,
+  author = {Yifan Yang and Aoyang Fang and Songhan Zhang and Pinjia He},
+  title = {{Gleaner}: A Semantically-Rich and Efficient Online Sampler for Microservice Diagnostics},
+  year = {2026},
+  howpublished = {arXiv:2604.16810v1},
+  doi = {10.48550/arXiv.2604.16810},
+  url = {https://arxiv.org/abs/2604.16810v1},
+  note = {Version read: 18 April 2026; accessed 28 September 2026}
+}
+
+@misc{otelSpanLifecycle,
+  author = {{OpenTelemetry Authors}},
+  title = {Tracing {API}: Span End and Lifetime},
+  year = {n.d.},
+  howpublished = {OpenTelemetry specification},
+  url = {https://opentelemetry.io/docs/specs/otel/trace/api/},
+  note = {Living specification; accessed 28 September 2026}
+}
+
+@misc{otelBatchProcessor0136,
+  author = {{OpenTelemetry Authors}},
+  title = {Batch Processor Implementation, Collector v0.136.0},
+  year = {2025},
+  howpublished = {\url{https://github.com/open-telemetry/opentelemetry-collector/blob/v0.136.0/processor/batchprocessor/batch_processor.go}},
+  note = {Pinned size-trigger, timeout, and trace-splitting implementation; accessed September 28, 2026}
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "validated_cells": 70,
+  "reconstructed_trace_occurrences": 288428,
+  "reconstructed_span_occurrences": 1465958,
+  "tail_cells_matching_independent_hash": 30,
+  "independent_raw_metric_checks": 70,
+  "unique_incidents_checked": 9240,
+  "historical_cpu_limitation": "Exact CPU start/end snapshots were not archived; monotone intermediate samples and reported endpoint differences are checked, not independently reconstructed."
+}

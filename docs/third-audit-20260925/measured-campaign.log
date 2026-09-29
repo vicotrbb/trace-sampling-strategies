@@ -1,0 +1,4 @@
+{"stage": 0, "command": ["diagnosis_study.py", "collect", "--output", "/work/outputs/diagnosis-confirm-v1"], "start_utc": "2026-09-25T17:10:21Z"}
+{"stage": 1, "command": ["diagnosis_study.py", "replay", "--corpus", "/work/outputs/diagnosis-confirm-v1", "--calibration", "/work/outputs/calibration-v1", "--output", "/work/outputs/diagnosis-replay-v1"], "start_utc": "2026-09-25T17:27:45Z"}
+{"stage": 2, "command": ["load_study.py", "--rates", "20000", "--output", "/work/outputs/load-confirm-v1"], "start_utc": "2026-09-25T17:28:19Z"}
+{"complete": true, "utc": "2026-09-25T17:50:50Z"}

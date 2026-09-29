@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-24T22:17:34.155291+00:00",
+  "timing": "Implementation snapshot during the ongoing live run, before calibration and matched-probe execution. Statistical rules were frozen earlier; this is not a claim that the analysis implementation predates all measurements.",
+  "files": {
+    "scripts/analyze_revision.py": "9f6128cd8db58c3175ea8e541e46f857102c211692a7c0037d7171776f3209c9",
+    "scripts/verify_revision.py": "992b919891a0ca1acbd45c9e0be40ca4577998e4f5820eb186cfdb2575d934da",
+    "scripts/verify_followups.py": "79589adfbef016aef370aa5ca641bf35451e2469a937f91f5b14bf81a3c65fc8",
+    "scripts/verify_artifact.py": "0a557901711616eab69b352db27810364fb12f5d6dab108fedc0a9faff3cbbdc",
+    "scripts/summarize_probes.py": "68cdb7103476f836ce0aa471fdbea5e6027b02ed868763b72f5a751950b03863",
+    "tests/verify_revision_validator.py": "fe82903e71686109c11348cf50aa61178c3f9798abba73ecb08394e51de0873d",
+    "tests/verify_validator.py": "de3413cfc00472346964bee1f16754e6f3546c2061eb9d16436b28f1037f2993"
+  },
+  "archive_sha256": "f418de2b5933b6361588025ee7c4f3efb36d5bfa9972808b028cc8d19f995455"
+}

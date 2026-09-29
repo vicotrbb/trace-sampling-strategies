@@ -1,0 +1,15 @@
+# Validation scope for the final revision
+
+The following boundaries control the claims in the revised article and its validation report.
+
+- The primary new workload, scorer, policy, analysis, validator, protocol, and amendment files were frozen before measured execution. They must retain the ten hashes in `execution-freeze.json`. Later checks and figure formatting are additional audit tools, not altered prospective procedures.
+- `verify_second_audit.py load` reconstructs every exported span, native selection, trace completeness, phase byte count, process CPU difference, sampled RSS, accepted/exported counters, and absence of recorded refusals, early drops, or failed exports.
+- `verify_second_audit.py replay` reconstructs every corpus prediction and every replay row. With `--analysis`, it checks losses, gains, retention, exact trial/comparison coverage, and confidence limits through binomial-tail inversion. This is separate code from the producer and analysis, but part of the same research workflow.
+- The post-freeze `verify_second_audit_contract.py` checks the literal design and trial counts, executed-source hashes, source-side copy checksums, the independently regenerated injected-delay ledger, pinned Collector identity and limits, pipeline settings, planned ingress counts, and send schedule receipts. It does not change or rerun the experiment.
+- The post-freeze `verify_load_summaries.py` reconstructs all sixteen treatment summaries and twelve paired contrasts, checking 136 mean/interval summaries. Numerical agreement does not establish the Student-t distributional assumptions.
+- The new corruption tests reject ten deliberate archive/summary errors in disposable copies. They exercise known faults rather than prove a validator free of all defects. The original, live, and controlled-export validation suites and Lean statements are also rerun.
+- CPU is process time at the declared boundary, not total node energy or a bill. Core equivalents divide measured process CPU by the nominal load-plus-drain interval. Peak RSS is a sampled maximum. Uncompressed JSON is not OTLP wire volume. Closure/restart receipts are not crash-durability tests.
+- The 600 localization incidents are observed application episodes on one deployment. The 5,000 trials per comparison are randomized selections from that fixed corpus. The confidence statement is conditional on the ideal iid replay model and does not certify future incidents, individual strata, or a continuous retention frontier.
+- Final manuscript checks require preserved template settings and section order, all citations and references resolved, no em dashes, clean compilation, inspection of every final PDF page, unchanged historical raw files and freezes, validated archives, and removal of the isolated experiment namespace.
+
+The report must distinguish completed checks from planned checks. No receipt, publication, peer review, independent replication, authenticated preregistration, or guarantee of scientific perfection is inferred from the existence of an artifact.

@@ -1,0 +1,14 @@
+The protected-only probes distinguish policy recognition from delivered evidence. Complete input preserves all 200 failed traces. The original late condition removes the early root ERROR and delays database leaves by five seconds, a combined marker/timing intervention. Without churn, both cached and uncached variants export nothing. With 300 normal traces inserted into a 256-entry buffer, uncached late leaves are processed as new arrivals and export 200 ERROR spans, but no complete witness; the nonsampled cache instead preserves the drop decision. The 16-entry burst buffer retains only sixteen failures and records 184 early drops (Table~\ref{tab:probes}).
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Probe & Buffer & IDs & Spans & Complete & Witnesses \\
+\midrule
+\tableinput{probe-rows.tex}
+\bottomrule
+\end{tabular}
+\caption{Original protected-only probes with 200 seven-span failures. Late conditions combine absent early root ERROR with five-second-delayed database leaves versus a two-second decision wait. Churn adds 300 normal traces. Counts distinguish error visibility from stipulated complete evidence.}
+\label{tab:probes}
+\end{table}

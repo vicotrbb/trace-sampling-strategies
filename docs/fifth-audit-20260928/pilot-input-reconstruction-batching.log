@@ -1,0 +1,7 @@
+input hashes verified batching-4000 (81100, 'warmup', False)
+input hashes verified batching-4000 (81100, 'measured', False)
+{
+  "status": "PASS",
+  "byte_identical_input_groups": 2,
+  "reconstructed_input_payloads": 6000
+}

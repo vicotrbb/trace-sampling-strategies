@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cells": 4,
+  "measured_requests": 2000,
+  "measured_faults": 60,
+  "export_trace_occurrences": 1342,
+  "export_span_occurrences": 6710,
+  "max_snapshot_span_s": 0.005381222814321518
+}

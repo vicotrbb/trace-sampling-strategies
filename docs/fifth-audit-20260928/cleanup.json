@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "context": "homelab",
+  "namespace": "trace-sampling-boundaries-20260928",
+  "namespace_absent_after_cleanup": true,
+  "utc": "2026-09-28T16:48:13.866478+00:00",
+  "scope": "Only this revision experiment namespace was deleted after source-side copy checksums and independent archive validation passed."
+}

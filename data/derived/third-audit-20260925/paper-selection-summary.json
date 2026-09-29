@@ -1,0 +1,628 @@
+{
+  "best_supported": {
+    "20-head": {
+      "window": 20,
+      "policy": "head",
+      "budget": 0.8,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4600,
+      "correct": 4507,
+      "losses": 197,
+      "gains": 104,
+      "net_loss": 0.0186,
+      "upper_loss_bound": 0.04859832575826569,
+      "meets_five_point_margin": true,
+      "abstentions": 0,
+      "retained_fraction": 0.801,
+      "mean_reference_retained": 16.0062,
+      "mean_incident_retained": 16.0338,
+      "descriptive_strata": {
+        "service-a-5-1": {
+          "n": 381,
+          "full_correct": 370,
+          "correct": 367,
+          "loss": 9,
+          "gain": 6
+        },
+        "service-a-15-1": {
+          "n": 383,
+          "full_correct": 383,
+          "correct": 383,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-1": {
+          "n": 414,
+          "full_correct": 381,
+          "correct": 371,
+          "loss": 16,
+          "gain": 6
+        },
+        "service-c-5-0.5": {
+          "n": 454,
+          "full_correct": 359,
+          "correct": 349,
+          "loss": 33,
+          "gain": 23
+        },
+        "service-c-5-1": {
+          "n": 438,
+          "full_correct": 431,
+          "correct": 416,
+          "loss": 18,
+          "gain": 3
+        },
+        "service-b-5-0.5": {
+          "n": 424,
+          "full_correct": 358,
+          "correct": 341,
+          "loss": 32,
+          "gain": 15
+        },
+        "service-b-15-1": {
+          "n": 430,
+          "full_correct": 430,
+          "correct": 430,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-1": {
+          "n": 404,
+          "full_correct": 404,
+          "correct": 404,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-15-0.5": {
+          "n": 400,
+          "full_correct": 400,
+          "correct": 388,
+          "loss": 12,
+          "gain": 0
+        },
+        "service-a-5-0.5": {
+          "n": 427,
+          "full_correct": 294,
+          "correct": 295,
+          "loss": 33,
+          "gain": 34
+        },
+        "service-a-15-0.5": {
+          "n": 434,
+          "full_correct": 416,
+          "correct": 396,
+          "loss": 20,
+          "gain": 0
+        },
+        "service-c-15-0.5": {
+          "n": 411,
+          "full_correct": 374,
+          "correct": 367,
+          "loss": 24,
+          "gain": 17
+        }
+      }
+    },
+    "20-tail": {
+      "window": 20,
+      "policy": "tail",
+      "budget": 0.8,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4600,
+      "correct": 4511,
+      "losses": 199,
+      "gains": 110,
+      "net_loss": 0.0178,
+      "upper_loss_bound": 0.049038746185873484,
+      "meets_five_point_margin": true,
+      "abstentions": 0,
+      "retained_fraction": 0.79998,
+      "mean_reference_retained": 15.652,
+      "mean_incident_retained": 16.3472,
+      "descriptive_strata": {
+        "service-a-5-1": {
+          "n": 381,
+          "full_correct": 370,
+          "correct": 364,
+          "loss": 10,
+          "gain": 4
+        },
+        "service-a-15-1": {
+          "n": 383,
+          "full_correct": 383,
+          "correct": 383,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-1": {
+          "n": 414,
+          "full_correct": 381,
+          "correct": 370,
+          "loss": 21,
+          "gain": 10
+        },
+        "service-c-5-0.5": {
+          "n": 454,
+          "full_correct": 359,
+          "correct": 345,
+          "loss": 32,
+          "gain": 18
+        },
+        "service-c-5-1": {
+          "n": 438,
+          "full_correct": 431,
+          "correct": 418,
+          "loss": 18,
+          "gain": 5
+        },
+        "service-b-5-0.5": {
+          "n": 424,
+          "full_correct": 358,
+          "correct": 337,
+          "loss": 37,
+          "gain": 16
+        },
+        "service-b-15-1": {
+          "n": 430,
+          "full_correct": 430,
+          "correct": 430,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-1": {
+          "n": 404,
+          "full_correct": 404,
+          "correct": 404,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-15-0.5": {
+          "n": 400,
+          "full_correct": 400,
+          "correct": 391,
+          "loss": 9,
+          "gain": 0
+        },
+        "service-a-5-0.5": {
+          "n": 427,
+          "full_correct": 294,
+          "correct": 291,
+          "loss": 35,
+          "gain": 32
+        },
+        "service-a-15-0.5": {
+          "n": 434,
+          "full_correct": 416,
+          "correct": 401,
+          "loss": 16,
+          "gain": 1
+        },
+        "service-c-15-0.5": {
+          "n": 411,
+          "full_correct": 374,
+          "correct": 377,
+          "loss": 21,
+          "gain": 24
+        }
+      }
+    },
+    "50-head": {
+      "window": 50,
+      "policy": "head",
+      "budget": 0.65,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4941,
+      "correct": 4825,
+      "losses": 132,
+      "gains": 16,
+      "net_loss": 0.0232,
+      "upper_loss_bound": 0.03413239410777659,
+      "meets_five_point_margin": true,
+      "abstentions": 0,
+      "retained_fraction": 0.650028,
+      "mean_reference_retained": 32.4804,
+      "mean_incident_retained": 32.5224,
+      "descriptive_strata": {
+        "service-a-5-1": {
+          "n": 381,
+          "full_correct": 381,
+          "correct": 379,
+          "loss": 2,
+          "gain": 0
+        },
+        "service-a-15-1": {
+          "n": 383,
+          "full_correct": 383,
+          "correct": 383,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-1": {
+          "n": 414,
+          "full_correct": 414,
+          "correct": 411,
+          "loss": 3,
+          "gain": 0
+        },
+        "service-c-5-0.5": {
+          "n": 454,
+          "full_correct": 442,
+          "correct": 419,
+          "loss": 26,
+          "gain": 3
+        },
+        "service-c-5-1": {
+          "n": 438,
+          "full_correct": 438,
+          "correct": 438,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-0.5": {
+          "n": 424,
+          "full_correct": 409,
+          "correct": 365,
+          "loss": 49,
+          "gain": 5
+        },
+        "service-b-15-1": {
+          "n": 430,
+          "full_correct": 430,
+          "correct": 430,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-1": {
+          "n": 404,
+          "full_correct": 404,
+          "correct": 404,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-15-0.5": {
+          "n": 400,
+          "full_correct": 400,
+          "correct": 397,
+          "loss": 3,
+          "gain": 0
+        },
+        "service-a-5-0.5": {
+          "n": 427,
+          "full_correct": 402,
+          "correct": 370,
+          "loss": 38,
+          "gain": 6
+        },
+        "service-a-15-0.5": {
+          "n": 434,
+          "full_correct": 427,
+          "correct": 426,
+          "loss": 3,
+          "gain": 2
+        },
+        "service-c-15-0.5": {
+          "n": 411,
+          "full_correct": 411,
+          "correct": 403,
+          "loss": 8,
+          "gain": 0
+        }
+      }
+    },
+    "50-tail": {
+      "window": 50,
+      "policy": "tail",
+      "budget": 0.65,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 4941,
+      "correct": 4823,
+      "losses": 134,
+      "gains": 16,
+      "net_loss": 0.0236,
+      "upper_loss_bound": 0.034582828958863866,
+      "meets_five_point_margin": true,
+      "abstentions": 0,
+      "retained_fraction": 0.649576,
+      "mean_reference_retained": 30.9154,
+      "mean_incident_retained": 34.0422,
+      "descriptive_strata": {
+        "service-a-5-1": {
+          "n": 381,
+          "full_correct": 381,
+          "correct": 380,
+          "loss": 1,
+          "gain": 0
+        },
+        "service-a-15-1": {
+          "n": 383,
+          "full_correct": 383,
+          "correct": 383,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-1": {
+          "n": 414,
+          "full_correct": 414,
+          "correct": 409,
+          "loss": 5,
+          "gain": 0
+        },
+        "service-c-5-0.5": {
+          "n": 454,
+          "full_correct": 442,
+          "correct": 410,
+          "loss": 36,
+          "gain": 4
+        },
+        "service-c-5-1": {
+          "n": 438,
+          "full_correct": 438,
+          "correct": 437,
+          "loss": 1,
+          "gain": 0
+        },
+        "service-b-5-0.5": {
+          "n": 424,
+          "full_correct": 409,
+          "correct": 366,
+          "loss": 47,
+          "gain": 4
+        },
+        "service-b-15-1": {
+          "n": 430,
+          "full_correct": 430,
+          "correct": 430,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-1": {
+          "n": 404,
+          "full_correct": 404,
+          "correct": 404,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-15-0.5": {
+          "n": 400,
+          "full_correct": 400,
+          "correct": 399,
+          "loss": 1,
+          "gain": 0
+        },
+        "service-a-5-0.5": {
+          "n": 427,
+          "full_correct": 402,
+          "correct": 365,
+          "loss": 41,
+          "gain": 4
+        },
+        "service-a-15-0.5": {
+          "n": 434,
+          "full_correct": 427,
+          "correct": 430,
+          "loss": 1,
+          "gain": 4
+        },
+        "service-c-15-0.5": {
+          "n": 411,
+          "full_correct": 411,
+          "correct": 410,
+          "loss": 1,
+          "gain": 0
+        }
+      }
+    },
+    "200-head": {
+      "window": 200,
+      "policy": "head",
+      "budget": 0.2,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 5000,
+      "correct": 4886,
+      "losses": 114,
+      "gains": 0,
+      "net_loss": 0.0228,
+      "upper_loss_bound": 0.030058502087573158,
+      "meets_five_point_margin": true,
+      "abstentions": 0,
+      "retained_fraction": 0.1997285,
+      "mean_reference_retained": 39.9122,
+      "mean_incident_retained": 39.9792,
+      "descriptive_strata": {
+        "service-a-5-1": {
+          "n": 381,
+          "full_correct": 381,
+          "correct": 381,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-a-15-1": {
+          "n": 383,
+          "full_correct": 383,
+          "correct": 383,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-1": {
+          "n": 414,
+          "full_correct": 414,
+          "correct": 413,
+          "loss": 1,
+          "gain": 0
+        },
+        "service-c-5-0.5": {
+          "n": 454,
+          "full_correct": 454,
+          "correct": 420,
+          "loss": 34,
+          "gain": 0
+        },
+        "service-c-5-1": {
+          "n": 438,
+          "full_correct": 438,
+          "correct": 437,
+          "loss": 1,
+          "gain": 0
+        },
+        "service-b-5-0.5": {
+          "n": 424,
+          "full_correct": 424,
+          "correct": 378,
+          "loss": 46,
+          "gain": 0
+        },
+        "service-b-15-1": {
+          "n": 430,
+          "full_correct": 430,
+          "correct": 430,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-1": {
+          "n": 404,
+          "full_correct": 404,
+          "correct": 404,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-15-0.5": {
+          "n": 400,
+          "full_correct": 400,
+          "correct": 397,
+          "loss": 3,
+          "gain": 0
+        },
+        "service-a-5-0.5": {
+          "n": 427,
+          "full_correct": 427,
+          "correct": 402,
+          "loss": 25,
+          "gain": 0
+        },
+        "service-a-15-0.5": {
+          "n": 434,
+          "full_correct": 434,
+          "correct": 434,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-0.5": {
+          "n": 411,
+          "full_correct": 411,
+          "correct": 407,
+          "loss": 4,
+          "gain": 0
+        }
+      }
+    },
+    "200-tail": {
+      "window": 200,
+      "policy": "tail",
+      "budget": 0.35,
+      "feasible": true,
+      "n": 5000,
+      "full_correct": 5000,
+      "correct": 4953,
+      "losses": 47,
+      "gains": 0,
+      "net_loss": 0.0094,
+      "upper_loss_bound": 0.014398328688967704,
+      "meets_five_point_margin": true,
+      "abstentions": 0,
+      "retained_fraction": 0.349132,
+      "mean_reference_retained": 58.0546,
+      "mean_incident_retained": 81.5982,
+      "descriptive_strata": {
+        "service-a-5-1": {
+          "n": 381,
+          "full_correct": 381,
+          "correct": 381,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-a-15-1": {
+          "n": 383,
+          "full_correct": 383,
+          "correct": 383,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-1": {
+          "n": 414,
+          "full_correct": 414,
+          "correct": 412,
+          "loss": 2,
+          "gain": 0
+        },
+        "service-c-5-0.5": {
+          "n": 454,
+          "full_correct": 454,
+          "correct": 436,
+          "loss": 18,
+          "gain": 0
+        },
+        "service-c-5-1": {
+          "n": 438,
+          "full_correct": 438,
+          "correct": 438,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-5-0.5": {
+          "n": 424,
+          "full_correct": 424,
+          "correct": 412,
+          "loss": 12,
+          "gain": 0
+        },
+        "service-b-15-1": {
+          "n": 430,
+          "full_correct": 430,
+          "correct": 430,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-1": {
+          "n": 404,
+          "full_correct": 404,
+          "correct": 404,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-b-15-0.5": {
+          "n": 400,
+          "full_correct": 400,
+          "correct": 400,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-a-5-0.5": {
+          "n": 427,
+          "full_correct": 427,
+          "correct": 412,
+          "loss": 15,
+          "gain": 0
+        },
+        "service-a-15-0.5": {
+          "n": 434,
+          "full_correct": 434,
+          "correct": 434,
+          "loss": 0,
+          "gain": 0
+        },
+        "service-c-15-0.5": {
+          "n": 411,
+          "full_correct": 411,
+          "correct": 411,
+          "loss": 0,
+          "gain": 0
+        }
+      }
+    }
+  }
+}

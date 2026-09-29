@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-28T16:51:29.411153+00:00",
+  "title": "Trace Sampling at the Collector Boundary: Costs and Diagnostic Evidence",
+  "pdf_sha256": "dcb4c759c6bffbc4c674d8163550befb998a17049fe704345e8cc6f7eeb5b5c3",
+  "pdf_pages": 21,
+  "extracted_whitespace_tokens": 7895,
+  "cited_references": 31,
+  "uncited_bibliography_entries": 0,
+  "figures": 3,
+  "tables": 6,
+  "template_author_main_section_order_preserved": true,
+  "all_prior_measurement_macros_unchanged": true,
+  "source_and_pdf_em_dashes": 0,
+  "tex_bibtex_warnings_bad_boxes": 0,
+  "previous_delivery_raw_files_unchanged": 7328,
+  "frozen_file_counts_unchanged": [
+    12,
+    7,
+    10,
+    9,
+    21,
+    17
+  ],
+  "new_measured_cells": 60,
+  "all_final_pages_visually_inspected": true,
+  "acm_pages_before_references": 10
+}

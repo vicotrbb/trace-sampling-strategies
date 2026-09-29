@@ -1,0 +1,18 @@
+\section{Proofs of the reference results}\label{app:formal}
+\paragraph{Witness visibility and thresholds.}
+Let $X_i$ indicate retention of witness $i$. Independent whole-trace selection gives
+$\Pr((X_1,\ldots,X_m)=x)=p^{|x|}(1-p)^{m-|x|}$.
+There are $\binom mi$ vectors with exactly $i$ retained witnesses; summing over $i\ge k$ proves Equation~\eqref{eq:binomial}. For $k=1$, failure means all $m$ witnesses are dropped, with probability $(1-p)^m$. Therefore
+$B_{m,1}(p)\ge1-\delta$ if and only if $p\ge1-\delta^{1/m}$, for $0<\delta<1$. For general $k$, differentiation gives
+\[
+ B'_{m,k}(p)=m\binom{m-1}{k-1}p^{k-1}(1-p)^{m-k}>0
+ \quad(0<p<1).
+\]
+Continuity and endpoint values zero and one give a unique threshold. If diagnosis needs one witness from each of $d$ disjoint sets, their independent success events multiply, yielding $\prod_{\ell=1}^{d}[1-(1-p)^{m_\ell}]$. In particular, $d$ indispensable traces survive with probability $p^d$. For any fixed $p<1$, this tends to zero as $d$ grows. The claim is about independent sampling; a correlated all-or-none policy would have a different law.
+
+\paragraph{Window counts.}
+For each window, summing its $w$ independent retention indicators gives a binomial count with mean $wp$. Disjoint windows depend on disjoint indicators, so their nonempty probabilities multiply to $[1-(1-p)^w]^2$. This is an availability calculation, not a formula for scorer accuracy. Nested windows within one sensitivity trial are dependent.
+
+\paragraph{Protected-tail budget.}
+Among $N\ge1$ traces, $\alpha N$ are protected and each of the remaining $(1-\alpha)N$ has inclusion probability $r$. Linearity gives expected retained count $N[\alpha+(1-\alpha)r]$. Solving for $r$ proves Equation~\eqref{eq:tailbudget}. When $0<\alpha<1$ and $b<1$, $b-r=\alpha(1-b)/(1-\alpha)>0$. The strict increase of $B_{m,k}$ then proves the unprotected-witness disadvantage. If $b<\alpha$, keeping all protected traces alone exceeds the budget. At $\alpha=1$, only full retention is feasible. Neither this argument nor trace-budget equality assumes equal trace byte sizes.
+

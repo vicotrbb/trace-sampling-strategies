@@ -1,0 +1,53 @@
+input hashes verified placement-confirm-v1 (82001, 'warmup', False)
+input hashes verified placement-confirm-v1 (82001, 'measured', False)
+input hashes verified placement-confirm-v1 (82001, 'warmup', True)
+input hashes verified placement-confirm-v1 (82001, 'measured', True)
+input hashes verified placement-confirm-v1 (82002, 'warmup', False)
+input hashes verified placement-confirm-v1 (82002, 'measured', False)
+input hashes verified placement-confirm-v1 (82002, 'warmup', True)
+input hashes verified placement-confirm-v1 (82002, 'measured', True)
+input hashes verified placement-confirm-v1 (82003, 'warmup', False)
+input hashes verified placement-confirm-v1 (82003, 'measured', False)
+input hashes verified placement-confirm-v1 (82003, 'warmup', True)
+input hashes verified placement-confirm-v1 (82003, 'measured', True)
+input hashes verified placement-confirm-v1 (82004, 'warmup', False)
+input hashes verified placement-confirm-v1 (82004, 'measured', False)
+input hashes verified placement-confirm-v1 (82004, 'warmup', True)
+input hashes verified placement-confirm-v1 (82004, 'measured', True)
+input hashes verified placement-confirm-v1 (82005, 'warmup', False)
+input hashes verified placement-confirm-v1 (82005, 'measured', False)
+input hashes verified placement-confirm-v1 (82005, 'warmup', True)
+input hashes verified placement-confirm-v1 (82005, 'measured', True)
+input hashes verified batching-confirm-v2 (83001, 'warmup', False)
+input hashes verified batching-confirm-v2 (83001, 'measured', False)
+input hashes verified batching-confirm-v2 (83002, 'warmup', False)
+input hashes verified batching-confirm-v2 (83002, 'measured', False)
+input hashes verified batching-confirm-v2 (83003, 'warmup', False)
+input hashes verified batching-confirm-v2 (83003, 'measured', False)
+input hashes verified batching-confirm-v2 (83004, 'warmup', False)
+input hashes verified batching-confirm-v2 (83004, 'measured', False)
+input hashes verified batching-confirm-v2 (83005, 'warmup', False)
+input hashes verified batching-confirm-v2 (83005, 'measured', False)
+{
+  "status": "PASS",
+  "frozen_file_counts_checked": {
+    "placement": 21,
+    "batching": 17
+  },
+  "cells": 60,
+  "summary_intervals_recomputed": 220,
+  "input_checks": [
+    {
+      "byte_identical_input_groups": 20,
+      "reconstructed_input_payloads": 28000
+    },
+    {
+      "byte_identical_input_groups": 10,
+      "reconstructed_input_payloads": 35000
+    }
+  ],
+  "native_metadata": {
+    "native_spans_checked": 1402880,
+    "added_json_bytes_per_span": 44
+  }
+}

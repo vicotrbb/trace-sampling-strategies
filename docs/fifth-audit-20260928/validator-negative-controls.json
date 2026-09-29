@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "mutation": "none",
+      "result": "accepted"
+    },
+    {
+      "mutation": "missing_span",
+      "result": "rejected"
+    },
+    {
+      "mutation": "wrong_cpu",
+      "result": "rejected"
+    },
+    {
+      "mutation": "wrong_selection_count",
+      "result": "rejected"
+    },
+    {
+      "mutation": "wrong_backend_count",
+      "result": "rejected"
+    }
+  ]
+}

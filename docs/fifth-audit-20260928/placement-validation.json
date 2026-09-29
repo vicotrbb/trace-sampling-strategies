@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cells": 40,
+  "exported_spans_including_warmup": 18200450,
+  "backend_sample_traces": 640,
+  "max_schedule_lag_s": 0.3096889346837983,
+  "throttled_usec": 0,
+  "matched_input_payload_groups": 20
+}

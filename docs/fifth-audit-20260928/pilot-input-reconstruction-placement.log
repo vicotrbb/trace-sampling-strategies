@@ -1,0 +1,9 @@
+input hashes verified placement-8000 (81000, 'warmup', False)
+input hashes verified placement-8000 (81000, 'measured', False)
+input hashes verified placement-8000 (81000, 'warmup', True)
+input hashes verified placement-8000 (81000, 'measured', True)
+{
+  "status": "PASS",
+  "byte_identical_input_groups": 4,
+  "reconstructed_input_payloads": 1600
+}

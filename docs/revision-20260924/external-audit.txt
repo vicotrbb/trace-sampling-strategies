@@ -1,0 +1,141 @@
+**My verdict: the paper is mathematically sound within its model, and its principal numerical results reconcile with the archived data. It is not yet a convincing, publication-ready answer to the broader production-observability questions in its title and RQs.** I found one substantive discrepancy between the described and implemented experiment, an unresolved calibration issue, and limitations in diagnostic validity, resource measurement, reproducibility checks, and novelty.
+
+I maintained the read-only boundary: no files were edited, artifacts regenerated, workloads deployed, or infrastructure changed.
+
+I examined the complete manuscript source and the existing 22-page reader PDF: :codex-file-citation{path="/Users/victorbona/Code/Research/trace-sampling-strategies/output/pdf/how-much-can-we-sample.pdf" purpose="source"}.
+
+**What independently checked out**
+
+I did not use the existing validation reports as proof. Separate read-only calculations established that:
+
+- All **780 files listed in `SHA256SUMS` match**. The two delivered PDFs are byte-identical.
+- The main archive contains exactly **five blocks × fourteen treatments**, with **100,000 distinct underlying trace IDs**. Per-cell results, the main summary, and console records agree.
+- Reconstructing every main compressed export yielded **288,428 retained trace occurrences and 1,465,958 spans**. Retained traces were complete; IDs, diagnostic evidence, and raw receiver/exporter counters reconciled.
+- All head selections and all **30 tail selections** match the documented hash rules.
+- Reconstructing the inputs in memory reproduced the saved truth ledgers, randomized schedules, transmitted payload-byte counts, and HTTP-request counts.
+- Resource summaries, incident counts, Wilson intervals, paired Student-\(t\) intervals, and threshold calculations recompute correctly.
+- All six sensitivity-probe output counts reconcile, including **184 early drops** in the sixteen-entry-buffer case.
+- All six Lean theorems checked successfully using the installed Lean 4.24.0 executable. The reported axiom dependencies are accurate.
+
+For example, my recomputation produced:
+
+| Nominal 10% treatment | Exported JSON saving | Collector CPU saving, paired 95% interval |
+|---|---:|---:|
+| Head | 89.9002% | 77.0040% [74.4212%, 79.5867%] |
+| Tail | 89.2039% | −47.8712% [−52.5967%, −43.1457%] |
+
+These support the manuscript’s rounded numbers. They establish measurements at the stated boundary, not total-system savings.
+
+**Findings, ordered by scientific consequence**
+
+1. **Moderate severity, confirmed experimental-description error: the late-span probe changes error markers as well as delivery timing.**
+
+   **Location:** [sensitivity.py:31](/Users/victorbona/Code/Research/trace-sampling-strategies/experiments/sensitivity.py:31), lines 31–42; [runner.py:115](/Users/victorbona/Code/Research/trace-sampling-strategies/experiments/runner.py:115); [probe-results.tex:1](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/probe-results.tex:1), corresponding to §7.5.
+
+   **Evidence:** The ordinary error corpus marks both the root and database spans ERROR. In the late treatment, the code delays the database span **and sets every earlier span’s status to OK**, removing the root’s error marker. The manuscript instead describes “delaying only” the error-bearing database leaves.
+
+   **Scientific consequence:** This is not a controlled comparison of timing alone against the complete control. The earlier root marker would itself satisfy the error-retention policy. The observed zero-retention result demonstrates delayed arrival of the **sole remaining policy-visible error marker**, a narrower and different intervention.
+
+   **Correction:** Explicitly document marker removal and describe the probe accordingly. To isolate the causal effect of delay, a future experiment should compare immediate and delayed delivery using the same leaf-only-error corpus, with root-error variants as separate controls. The existing counts need no correction; their interpretation does.
+
+2. **Moderate severity, unresolved question: agreement with the hash implementation does not establish Bernoulli calibration.**
+
+   **Location:** [results.tex:39](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/results.tex:39), §7.2; [methods.tex:34](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/methods.tex:34), lines 34–36; [discussion.tex:17](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/discussion.tex:17).
+
+   **Evidence:** I independently reproduced **19/100** recovered semantic incidents with \(m=5\) under 10% tail sampling, versus the model prediction **34.6746%**. The five block counts are **7, 2, 2, 4, 4**, each out of twenty incidents. Exact FNV reconstruction explains which traces were selected and rules out unexplained delivery loss.
+
+   An illustrative two-sided binomial test gives approximately **0.000715** for this stratum. That is not a prespecified global test: the archive contains **130 nondegenerate model comparisons**, with dependent treatments. A conservative adjustment across those comparisons would not reject at 5%. Therefore, this observation alone does **not** establish hash bias or a defective generator.
+
+   **Scientific consequence:** The paper correctly acknowledges the discrepancy, but the empirical experiment cannot be cited as establishing calibrated independent sampling across all strata. Furthermore, the head–tail comparison changes both the policy and the hash mechanism, so the magnitude of an observed difference cannot be attributed solely to budget redistribution.
+
+   **Correction:** Retain the discrepancy and the conditional wording. For stronger calibration claims, prespecify an additional study varying seeds, salts, and independent ID-generation streams, with an omnibus calibration procedure and a comparison controlling the random-priority mechanism. No such experiment was performed during this audit.
+
+3. **Major limitation for the broad research questions, diagnostic usefulness and “material deterioration” are stipulated proxies.**
+
+   **Location:** [theory.tex:4](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/theory.tex:4), lines 4–12; [methods.tex:29](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/methods.tex:29), lines 29–31; [discussion.tex:12](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/discussion.tex:12).
+
+   **Evidence:** Incidents are offline groupings of synthetic traces. Recovery means obtaining a specified number of complete traces with injected attributes. The corroboration requirement \(k=3\) is not derived from an actual diagnostic task, and 95% is a chosen reliability objective. No operator or independent diagnostic system attempts root-cause identification.
+
+   **Scientific consequence:** RQ4 is answered as a mathematical inversion of a declared evidence-retention objective. It does not empirically identify the point at which diagnosis becomes materially worse. Similarly, RQ2 establishes preservation of constructed witnesses rather than comparative diagnostic effectiveness. The manuscript discloses this accurately; the limitation remains consequential despite that disclosure.
+
+   **Correction:** Either narrow the RQs and contribution consistently to **complete-witness recovery**, or validate the witness criterion against independently scored diagnostic tasks using representative failures. That validation should test whether witnesses are sufficient and whether requiring complete traces unnecessarily rejects diagnostically useful partial traces.
+
+4. **Moderate severity, methodological limitation: resource measurements are short-run, Collector-only comparisons with asymmetric placement of sampling work.**
+
+   **Location:** [runner.py:266](/Users/victorbona/Code/Research/trace-sampling-strategies/experiments/runner.py:266), lines 266–285; [methods.tex:38](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/methods.tex:38), lines 38–46; [results.tex:55](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/results.tex:55).
+
+   **Evidence:** Head hashing and input preparation occur in the Python runner before the measured Collector interval. Tail decision work occurs inside the measured Collector. Each cell contains approximately ten seconds of ingress and four seconds of flushing. The tail buffer allows 50,000 IDs, while each main cell supplies only 20,000. All five blocks ran on one shared node within roughly eighteen minutes.
+
+   **Scientific consequence:** The CPU comparison is valid for **Collector process consumption**, but it is not an equal-boundary comparison of total sampling overhead. The experiment also does not establish steady-state memory, capacity, sustained throughput, backend savings, or monetary savings. Narrow paired intervals cannot represent deployment diversity. These qualifications are substantially acknowledged in the paper.
+
+   **Correction:** Keep the present percentages explicitly tied to the measured process and workload. A stronger RQ3 answer requires separate accounting for head-gate/SDK work, longer runs covering buffer turnover and stable behavior, repeated time periods, a load sweep, and a persistent backend. A production-cost comparison should also consider equal byte budgets, not only equal trace budgets.
+
+5. **Moderate severity, related-work and contribution-significance limitation.**
+
+   **Location:** [main.tex:65](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/main.tex:65), lines 65–80; [literature-review.md:50](/Users/victorbona/Code/Research/trace-sampling-strategies/docs/literature-review.md:50), lines 50–52.
+
+   **Evidence:** The literature review accurately distinguishes the metrics-oriented 2017 *Sieve*, but omits the directly relevant 2021 trace sampler bearing the same name. Its trace-sampling scope is documented in the [author’s university publication record](https://cse.sysu.edu.cn/en/node/2494). Other relevant omissions include [STEAM: Observability-Preserving Trace Sampling](https://www.microsoft.com/en-us/research/?p=991086) and [Uncertainty in Aggregate Estimates from Sampled Distributed Traces](https://www.usenix.org/system/files/mad12-final9.pdf).
+
+   More fundamentally, [Sifter](https://vaastavanand.com/assets/pdf/lascasas2019sifter.pdf) already distinguishes generation, transport, processing, and storage costs; [Hindsight](https://www.usenix.org/system/files/nsdi23-zhang-lei.pdf) directly addresses the specificity–overhead tradeoff.
+
+   **Scientific consequence:** The familiar probability identities and architectural cost distinction cannot carry the novelty argument. The defensible contribution is the particular reproducible baseline experiment and its organization around explicit witness requirements. Its significance beyond an explanatory technical study remains insufficiently established.
+
+   **Correction:** Disambiguate the two Sieve systems and add a focused comparison of objectives, selection units, diagnostic endpoints, cost boundaries, and assumptions. Identify precisely which empirical observation or method is new and why it matters. Reimplementing every advanced sampler is unnecessary unless comparative-superiority claims are added.
+
+6. **Low severity, confirmed reproducibility-check gaps, without an observed numerical failure.**
+
+   **Location:** [verify_artifact.py:83](/Users/victorbona/Code/Research/trace-sampling-strategies/scripts/verify_artifact.py:83), lines 83–96; [runner.py:285](/Users/victorbona/Code/Research/trace-sampling-strategies/experiments/runner.py:285), lines 285–320.
+
+   **Evidence:** The delivered validator checks counters stored inside `result.json`; it does not independently reparse the saved before/after metrics. Its incident loop checks reported entries without asserting complete, unique incident coverage. It also imports the experiment’s diagnostic evaluator.
+
+   The exact CPU start/finish snapshots are not saved as such, only their difference and periodic samples are retained. My separate checks found that the raw counters and all 132 incident entries per cell reconcile, and periodic CPU deltas agree with reported values within one 0.01-second tick.
+
+   **Scientific consequence:** A successful `make verify` is weaker evidence than the supporting prose might suggest. Exact CPU endpoint reconstruction is unavailable, although the archived samples corroborate the reported measurement.
+
+   **Correction:** Strengthen the validator to parse raw counters, enforce complete incident coverage, and check diagnostic evidence independently. Future collection should preserve exact endpoint snapshots and bind each cell to its executed-source hash. These are auditability improvements, not reasons to discard the current results.
+
+7. **Low severity, mathematical statement needs an explicit nonempty-population assumption.**
+
+   **Location:** [theory.tex:78](/Users/victorbona/Code/Research/trace-sampling-strategies/paper/theory.tex:78), Theorem 4.6.
+
+   **Evidence:** The statement guarantees the existence of a singleton witness from the expected-cardinality bound, but does not explicitly require \(N\ge1\). For an empty population, the budget condition holds and no singleton exists. Proposition 4.7 correctly states its nonempty-population assumption.
+
+   **Scientific consequence:** This is a domain qualification, not a failure of the intended averaging argument or any experimental conclusion.
+
+   **Correction:** Add \(N\ge1\), and make explicit that the independent-sampling impossibility quantifies over arbitrarily large finite populations and evidence requirements.
+
+**Assessment of the mathematics and formalization**
+
+Apart from that domain qualification, I found no substantive error in the mathematical arguments I checked:
+
+| Argument | Assessment |
+|---|---|
+| Binomial witness recovery and \(1-(1-p)^m\) | Correct under fixed witnesses and independent whole-trace retention. |
+| Threshold inversion and strict monotonicity | Correct, including \(k=1\), \(k=m\), and endpoint behavior. |
+| Disjoint evidence-type conjunction | Correct; the warning about overlapping sets is necessary and accurate. |
+| Poisson arrival formulation | Correct thinning calculation; it appropriately permits no witnesses even at full retention. |
+| Protected/background budget tradeoff | Correct for the defined expected-cardinality budget, including infeasibility below protected mass. |
+| Mixed protected/unprotected witnesses | Correct reduction to a smaller binomial problem. |
+| Upstream irrecoverability | Correct for monotone predicates and downstream subsets; the shared-randomness counterexample is valid. |
+| Independent-sampling impossibility and correlated minimax bound | Correct with the stated population qualifications. The all-or-none qualification avoids a false universal impossibility claim. |
+| Additive byte accounting and Horvitz–Thompson total | Correct under the stated conditions. |
+| Cost equations and occupancy discussion | Valid conditional models; they do not constitute empirical hardware or capacity laws. |
+
+The Lean artifact establishes exactly a small discrete core: witness monotonicity, downstream implication, singleton loss, the weighted complement recurrence, and positivity/strict loss. It does **not** formalize the binomial probability space, real-valued threshold results, statistical coverage, or Collector behavior. The manuscript and proof README describe that boundary honestly.
+
+Primary-source checks supported the central attributions to Dapper, X-Trace, Pivot Tracing, Canopy, Sifter, TracePicker, Hindsight, OpenTelemetry, and the statistical foundations. I found no substantive fabricated citation among those checked. The official [release manifest](https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-releases/v0.136.0/distributions/otelcol-contrib/manifest.yaml) also confirms the v0.136.0 tail-processor module.
+
+**Final verdict by research question**
+
+| Question | Verdict |
+|---|---|
+| **RQ1: sampling rate and failure visibility** | **Sound conditional mathematical answer.** Archived selection and recovery counts are supported. Empirical Bernoulli calibration remains unresolved in the highlighted stratum. |
+| **RQ2: head versus tail diagnostic preservation** | **Supported for the two specified policies and constructed witnesses.** No general ranking or demonstrated diagnostic-effectiveness advantage follows. |
+| **RQ3: infrastructure savings** | **Partially answered.** Collector CPU/RSS and serialization results are supported; total infrastructure savings were not measured. |
+| **RQ4: discard before material diagnostic deterioration** | **Answered for a stipulated witness-recovery criterion, not empirically for diagnosis.** The thresholds are correct; their operational inputs and meaning require validation. |
+
+**Overall scientific validity:** credible as a narrowly scoped mechanism study with correct elementary mathematics and internally consistent archived measurements. I found no fatal mathematical defect or mismatch in the principal reported results. The strongest weaknesses concern what those results establish, rather than their arithmetic.
+
+**Publication readiness:** I would request **major revision for a research-paper submission**. Correct the probe description, sharpen the contribution against prior work, and either narrow the research questions or add evidence addressing diagnostic validity and sustained system costs. A carefully scoped explanatory technical report is much closer to readiness.
+
+**Checks I could not complete:** I did not rerun workloads, fresh-install dependencies, rebuild the paper, or repeat the Monte Carlo experiment. I inspected existing page previews but did not regenerate them, so I cannot independently certify their correspondence to the current PDF. Upstream retrieval of the pinned probability/latency Go files failed; the archived probability implementation was inspected, but its byte-for-byte upstream identity was not verified. The local protocol hash establishes content integrity, not an independently authenticated pre-experiment timestamp. The archive supports that all planned cells are present; it cannot prove that no unarchived attempts occurred. Literature checking was focused rather than exhaustive, and this audit does not establish production generality or acceptance at any venue.

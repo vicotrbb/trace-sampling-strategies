@@ -1,0 +1,39 @@
+\section{Proofs of the reference results}\label{app:formal}
+\paragraph{Witness visibility and thresholds.}
+Let $X_i$ indicate retention of witness $i$. Independent whole-trace selection gives
+$\Pr((X_1,\ldots,X_m)=x)=p^{|x|}(1-p)^{m-|x|}$.
+There are $\binom mi$ vectors with exactly $i$ retained witnesses; summing over $i\ge k$ proves Equation~\eqref{eq:binomial}. For $k=1$, failure means all $m$ witnesses are dropped, with probability $(1-p)^m$. Therefore
+$B_{m,1}(p)\ge1-\delta$ if and only if $p\ge1-\delta^{1/m}$, for $0<\delta<1$. For general $k$, differentiation gives
+\[
+ B'_{m,k}(p)=m\binom{m-1}{k-1}p^{k-1}(1-p)^{m-k}>0
+ \quad(0<p<1).
+\]
+Continuity and endpoint values zero and one give a unique threshold. If diagnosis needs one witness from each of $d$ disjoint sets, their independent success events multiply, yielding $\prod_{\ell=1}^{d}[1-(1-p)^{m_\ell}]$. In particular, $d$ indispensable traces survive with probability $p^d$. For any fixed $p<1$, this tends to zero as $d$ grows. The claim is about independent sampling; a correlated all-or-none policy would have a different law.
+
+\paragraph{Window counts.}
+For each window, summing its $w$ independent retention indicators gives a binomial count with mean $wp$. Disjoint windows depend on disjoint indicators, so their nonempty probabilities multiply to $[1-(1-p)^w]^2$. This is an availability calculation, not a formula for scorer accuracy. Nested windows within one sensitivity trial are dependent; the simultaneous-loss argument below allows that dependence between comparisons.
+
+\paragraph{Protected-tail budget.}
+Among $N\ge1$ traces, $\alpha N$ are protected and each of the remaining $(1-\alpha)N$ has inclusion probability $r$. Linearity gives expected retained count $N[\alpha+(1-\alpha)r]$. Solving for $r$ proves Equation~\eqref{eq:tailbudget}. When $0<\alpha<1$ and $b<1$, $b-r=\alpha(1-b)/(1-\alpha)>0$. The strict increase of $B_{m,k}$ then proves the unprotected-witness disadvantage. If $b<\alpha$, keeping all protected traces alone exceeds the budget. At $\alpha=1$, only full retention is feasible. Neither this argument nor trace-budget equality assumes equal trace byte sizes.
+
+\paragraph{Conditional loss coverage.}
+Condition on the entire incident corpus, truth labels, scorer, policies, and trial law. Write $B,A\in\{0,1\}$ for full and sampled correctness. The four possible pairs satisfy $B-A=B(1-A)-(1-B)A$. Taking expectations gives
+\begin{equation}\label{eq:loss-bound}
+ \Delta_a=\mathbb E[Y_a]-\mathbb E[G_a]\le q_a:=\Pr(Y_a=1),
+\end{equation}
+without assuming a perfect baseline, monotone accuracy, or independence between $A$ and $B$.
+
+For a fixed feasible comparison, independent identically distributed incident/mask draws make $Y=B(1-A)$ Bernoulli with probability $q$, so $X=\sum_{t=1}^{n}Y_t$ is binomial. Let $n,M\ge1$ be integers, $0<\eta<1$, and $a=\eta/M$. For integer $0\le x<n$, define $U(x)$ as the unique solution of
+\begin{equation}\label{eq:cp-inversion}
+ F_{n,U(x)}(x):=\sum_{k=0}^{x}\binom nk U(x)^k[1-U(x)]^{n-k}=a;
+\end{equation}
+set $U(n)=1$. For $x<n$, the lower tail is continuous and strictly decreasing from one to zero as its probability argument ranges from zero to one, proving existence and uniqueness. Thus $U(X)<q$ implies $F_{n,q}(X)<a$. For this finite-support binomial variable with CDF $F$, $\Pr(F(X)<a)\le a$: the event is a lower set ending at the largest value whose cumulative probability is below $a$, or is empty. Thus $\Pr(q\le U(X))\ge1-a$. This is the one-sided exact binomial limit~\cite{clopper1934confidence,nistExactBinomial}. Equivalently, for $x<n$,
+\[
+ U(x)=\operatorname{BetaQuantile}_{1-a}(x+1,n-x).
+\]
+Taking the union bound over at most $M$ feasible comparisons gives probability at least $1-Ma=1-\eta$ that every $q_a\le U_a$. Since $\Delta_a\le q_a$ pointwise in the parameter space,
+\begin{equation}\label{eq:simultaneous}
+ \Pr\{\Delta_a\le q_a\le U_a\text{ for every feasible }a\}\ge1-\eta.
+\end{equation} Dependence between comparisons does not invalidate this step. Infeasible comparisons consume their prespecified error allocation without a claim.
+
+The simultaneous event permits reporting the largest discard among tested configurations whose $U_a\le\epsilon$, for a fixed margin $\epsilon$. It does not cover untested rates, a continuous frontier, individual incidents, or future deployments. For zero losses, Equation~\eqref{eq:cp-inversion} gives $U(0)=1-(\eta/M)^{1/n}$. Additional replay trials can reduce this conditional Monte Carlo uncertainty; they do not increase the number of independently observed application incidents.

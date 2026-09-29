@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-28T15:52:18.410689+00:00",
+  "stage": "before full-duration amended pilots",
+  "files": {
+    "docs/fifth-audit-20260928/batching-amendment-2.md": "cd5e8e7abae3aa10aa5b23cb0feef88cc67a5af88ca2fc65fba7cb44a416602c",
+    "experiments/fifth_audit_v2/analyze_fifth_current.py": "223ffa0338c775a0525d02177d6960be8f339748560b7f88f041d5709562a5ee",
+    "experiments/fifth_audit_v2/pod.yaml": "dda7e60659d8390f70a27b595c1bf30d186b8b1808cf6b755121fe3fda7a663c",
+    "experiments/fifth_audit_v2/protocol-amendment.md": "cd5e8e7abae3aa10aa5b23cb0feef88cc67a5af88ca2fc65fba7cb44a416602c",
+    "experiments/fifth_audit_v2/run_measured.py": "824766cbfe52e6a383a3e7dcd0b8b7b412b6ae3203884933a3a29238563ad638",
+    "experiments/fifth_audit_v2/run_pilots.py": "5e46a2e8e799975b304463889509da6d8207abc57f99d00db9a7e293b5636c3c",
+    "experiments/fifth_audit_v2/runtime.py": "21c7c34a59d4e56cad9cf4009324d2b4cc7b939a6397012561acbbe80f8fd6bc",
+    "experiments/fifth_audit_v2/study.py": "48e2bd39179b27a548c58c53c063845616bc6b48b5ec6e233f8417f329fefd06",
+    "experiments/fifth_audit_v2/verify_fifth_batched.py": "706ee4e3cdbe152d3d0d87956de3513f7d09c3209c6cb2573e96096e0db4efbe",
+    "scripts/analyze_fifth_current.py": "223ffa0338c775a0525d02177d6960be8f339748560b7f88f041d5709562a5ee",
+    "scripts/verify_fifth_batched.py": "706ee4e3cdbe152d3d0d87956de3513f7d09c3209c6cb2573e96096e0db4efbe"
+  }
+}

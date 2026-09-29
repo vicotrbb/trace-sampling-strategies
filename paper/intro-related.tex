@@ -1,0 +1,31 @@
+\section{Introduction}\label{sec:introduction}
+Trace sampling is often configured as a percentage, yet that percentage does not identify the work avoided by an observability pipeline. A decision before Collector ingress can avoid receiving and decoding discarded spans. The same decision after ingress preserves those costs and introduces processor work. A stateful tail sampler also changes when traces are released, affecting batches and export framing. Consequently, two configurations that retain the same traces can have different costs, and even retaining every trace can change CPU consumption.
+
+Distributed tracing systems have long balanced information retention against overhead~\cite{sigelman2010dapper,kaldor2017canopy}. Contemporary samplers additionally optimize diagnostic utility using structural diversity, runtime state, or analysis results~\cite{lascasas2019sifter,huang2024trastrainer,zhu2025unisage}. These objectives make it necessary to separate three measurements: retained trace count, resource consumption at a specified component, and evidence available to a specified diagnostic task.
+
+This paper studies that separation through matched controls in OpenTelemetry. The principal comparisons vary identical uniform selections before and inside the Collector, export path, batch timeout, and offered load. Retain-all tail controls reveal costs that retained span counts cannot explain. A controlled localization example then illustrates how evidence-window size and selection policy affect a specified diagnostic task.
+
+We address four questions:
+\begin{enumerate}
+\item \textbf{RQ1:} How does sampler placement change Collector cost when uniform policies retain identical trace IDs?
+\item \textbf{RQ2:} How do batching and exporter configuration affect Collector cost at equal span retention?
+\item \textbf{RQ3:} How do offered load and sampling policy affect Collector CPU, memory, and exported volume?
+\item \textbf{RQ4:} In a controlled localization example, how do window size and selection policy affect available evidence and accuracy?
+\end{enumerate}
+
+The contribution is an empirical account of these interactions for a pinned Collector and explicitly measured configurations. Matching trace IDs controls selection content in RQ1; replaying identical input controls the workload in RQ2; randomized runtime blocks characterize repeatability. The localization example supplies a transparent task whose evidence requirements can be inspected. The scope is a component-level measurement study of established policies, with elementary probability results supplying its reference model.
+
+\section{Background and related work}\label{sec:related}
+\paragraph{Collection architecture and cost.}
+A trace links causally related spans through a propagated context~\cite{W3CTraceContext}. Head sampling can avoid recording and exporting spans when performed in the software development kit (SDK); a gate after span construction can avoid only subsequent work~\cite{OTelSamplingSpec,otelSampling}. Our pre-ingress gate measures the Collector boundary. Centralized tail processing receives spans from the full offered stream. Retroactive architectures such as Hindsight instead retrieve selected data from local buffers~\cite{Hindsight2023}, so the ingestion cost of our treatment is architecture-specific. Mint separates shared trace patterns from variable parameters at agents, retaining a compact representation of all requests and fuller information for selected ones~\cite{huang2024mint}. Its compressed representation and our whole-trace retention endpoint measure different forms of data reduction.
+
+\paragraph{Sampling for diagnostic utility.}
+Sifter favors traces poorly represented by its learned model~\cite{lascasas2019sifter}. Sieve combines structural and latency encoding with an adapted robust random cut forest~\cite{huang2021sieve}. TraStrainer uses runtime-state preferences and diversity~\cite{huang2024trastrainer}; TracePicker evaluates anomaly and trace-pattern preservation~\cite{xie2025tracepicker}. UniSage analyzes correlated telemetry before selecting traces and logs~\cite{zhu2025unisage}. Gleaner combines event-pair sets, including log information, with alarm-guided quotas and diversity selection~\cite{yang2026gleaner}. These systems establish diagnostic utility as a sampling objective. Our matched policies expose collection and export effects that a comparison of retention fractions alone leaves unresolved; the study does not rank these alternative algorithms.
+
+\paragraph{Diagnostic evidence and delivery.}
+Spectroscope compares request flows across normal and problem periods~\cite{sambasivan2011spectroscope}. MicroRank and TraceRCA use richer localization procedures involving reference behavior and service relationships~\cite{yu2021microrank,li2021tracerca}. Our three-candidate median-change task is an illustrative model of reference-dependent evidence, rather than an implementation of either localizer.
+
+Complete delivery is a separate prerequisite. The pinned tail processor makes decisions after a wait measured from the first received span; its default is 30\,s. Buffers, decision caches, and late arrivals can change what is actually exported~\cite{otelTailSampling0136}. Our supporting delivery probes use a deliberately shorter two-second wait and controlled arrival order. They demonstrate these documented mechanisms, while the principal resource experiments use complete-trace arrivals. Span completion and arrival order must be distinguished: OpenTelemetry permits children to remain active after a parent ends~\cite{otelSpanLifecycle}.
+
+\paragraph{Measurement and uncertainty.}
+Tracing-overhead measurement requires attention to recorded content and measurement boundaries~\cite{reichelt2026tracingoverhead}. Coehlo et al. examine uncertainty in sampled trace aggregates~\cite{coehlo2012uncertainty}; unequal-probability weighting can estimate totals but cannot recover a discarded evidence item~\cite{HorvitzThompson1952}. We use paired runtime comparisons for resource effects~\cite{nistPairedObservations} and Monte Carlo standard errors to describe randomized-replay precision conditional on the fixed localization corpus.

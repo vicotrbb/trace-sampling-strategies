@@ -1,0 +1,7 @@
+.venv/bin/python scripts/analyze_fifth_current.py --raw data/raw/fifth-audit-20260928 --out data/derived/fifth-audit-20260928
+placement 40 cells analyzed
+batching 20 cells analyzed
+XDG_CACHE_HOME=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/cache MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib .venv/bin/python scripts/render_fifth_revision.py
+Rendered eight placement rows, ten paired cost contrasts, and four SDK rows.
+XDG_CACHE_HOME=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/cache MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib .venv/bin/python scripts/render_fifth_localization.py
+Descriptive localization: 42 feasible configurations, unchanged 5,000-trial inputs.

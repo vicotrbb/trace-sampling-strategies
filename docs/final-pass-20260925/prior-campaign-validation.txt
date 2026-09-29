@@ -1,0 +1,437 @@
+.venv/bin/python scripts/verify_artifact.py data/raw/homelab
+{
+  "status": "PASS",
+  "validated_cells": 70,
+  "reconstructed_trace_occurrences": 288428,
+  "reconstructed_span_occurrences": 1465958,
+  "tail_cells_matching_independent_hash": 30,
+  "independent_raw_metric_checks": 70,
+  "unique_incidents_checked": 9240,
+  "historical_cpu_limitation": "Exact CPU start/end snapshots were not archived; monotone intermediate samples and reported endpoint differences are checked, not independently reconstructed."
+}
+.venv/bin/python scripts/summarize_probes.py data/raw/homelab
+{
+  "status": "PASS",
+  "validated_probes": 6,
+  "early_drops_buffer16": 184.0
+}
+.venv/bin/python scripts/verify_revision.py data/raw/revision-20260924/confirm-v1
+{
+  "status": "PASS",
+  "cells": 60,
+  "measured_requests": 180000,
+  "measured_faults": 5400,
+  "export_trace_occurrences": 84021,
+  "export_span_occurrences": 420105,
+  "unique_trace_ids_including_warmup": 70000,
+  "unique_measured_trace_ids": 60000,
+  "max_snapshot_span_s": 0.00650816410779953
+}
+.venv/bin/python scripts/verify_followups.py data/raw/revision-20260924
+{
+  "status": "PASS",
+  "sources": {
+    "followup_source_matches": 5,
+    "frozen_file_matches": 12
+  },
+  "calibration": {
+    "cells": 480,
+    "unique_ids": 600000,
+    "reconstructed_hash_decisions": 4800000
+  },
+  "matched": {
+    "cells": 48,
+    "matched_payload_groups": 6,
+    "early_drop_receipts": [
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      }
+    ]
+  },
+  "offline": {
+    "curve_cells": 800,
+    "ablation_cells": 100,
+    "ablation_predictions": 300000
+  }
+}

@@ -1,0 +1,7 @@
+lean proofs/TraceSampling.lean
+'TraceSampling.witnesses_mono' depends on axioms: [propext, Quot.sound]
+'TraceSampling.downstream_cannot_repair' depends on axioms: [propext, Quot.sound]
+'TraceSampling.singleton_lost' depends on axioms: [propext]
+'TraceSampling.seen_partition' depends on axioms: [propext, Quot.sound]
+'TraceSampling.missed_positive' does not depend on any axioms
+'TraceSampling.positive_discard_has_missed_word' depends on axioms: [propext, Quot.sound]

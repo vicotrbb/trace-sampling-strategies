@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "unaltered_pilot_passed": true,
+  "rejected_cases": [
+    {
+      "case": "missing_cell",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "source_substitution",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "cpu_summary_without_raw_ticks",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "changed_policy",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "trace_attribute_with_updated_hash",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "backend_parent",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "accepted_counter",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "input_schedule_hash",
+      "rejected": true,
+      "error_type": "AssertionError"
+    }
+  ]
+}

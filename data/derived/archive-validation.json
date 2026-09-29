@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "validated_cells": 70,
+  "reconstructed_trace_occurrences": 288428,
+  "reconstructed_span_occurrences": 1465958,
+  "tail_cells_matching_independent_hash": 30
+}

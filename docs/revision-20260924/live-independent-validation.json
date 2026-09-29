@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "cells": 60,
+  "measured_requests": 180000,
+  "measured_faults": 5400,
+  "export_trace_occurrences": 84021,
+  "export_span_occurrences": 420105,
+  "unique_trace_ids_including_warmup": 70000,
+  "unique_measured_trace_ids": 60000,
+  "max_snapshot_span_s": 0.00650816410779953
+}

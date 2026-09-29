@@ -1,0 +1,20 @@
+[
+  {
+    "file": "fnvhasher.go",
+    "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/processor/probabilisticsamplerprocessor/fnvhasher.go",
+    "sha256": "4a9e73a567fda181d80f350e695f6abb0c1cc8896bebcc39bec3972e73256d50",
+    "retrieved_utc_date": "2026-09-25"
+  },
+  {
+    "file": "probabilistic-readme.md",
+    "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/processor/probabilisticsamplerprocessor/README.md",
+    "sha256": "048f03a9e4fdf06985bc3355925c543da2ad0e55d61118e947b0d1f9eee8a72c",
+    "retrieved_utc_date": "2026-09-25"
+  },
+  {
+    "file": "sampler_mode.go",
+    "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/processor/probabilisticsamplerprocessor/sampler_mode.go",
+    "sha256": "98386b99907d57173ac18d62068c873c69a020c3ba03036fd73f8e24e3877653",
+    "retrieved_utc_date": "2026-09-25"
+  }
+]

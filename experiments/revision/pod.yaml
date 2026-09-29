@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: trace-sampling-revision-20260924
+  labels:
+    purpose: trace-sampling-paper-revision
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: revision-runner
+  namespace: trace-sampling-revision-20260924
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: homelab-01
+  shareProcessNamespace: true
+  restartPolicy: Never
+  terminationGracePeriodSeconds: 40
+  containers:
+    - name: runner
+      image: python:3.12.10-slim@sha256:fd95fa221297a88e1cf49c55ec1828edd7c5a428187e67b5d1805692d11588db
+      command: ["python", "-c", "import time; time.sleep(43200)"]
+      env:
+        - {name: STUDY_CONTEXT, value: homelab}
+        - {name: PYTHONUNBUFFERED, value: "1"}
+        - {name: STUDY_WORK, value: /work}
+        - {name: PG_DSN, value: "host=127.0.0.1 dbname=study user=study password=study-local-only"}
+      resources:
+        requests: {cpu: "1", memory: 1Gi}
+        limits: {cpu: "4", memory: 4Gi}
+      volumeMounts:
+        - {name: work, mountPath: /work}
+    - name: postgres
+      image: postgres:17.6-alpine@sha256:ef257d85f76e48da1c64832459b59fcaba1a4dac97bf5d7450c77753542eee94
+      args: ["-c", "shared_buffers=64MB", "-c", "max_connections=100"]
+      env:
+        - {name: POSTGRES_DB, value: study}
+        - {name: POSTGRES_USER, value: study}
+        - {name: POSTGRES_PASSWORD, value: study-local-only}
+        - {name: PGDATA, value: /pg/data}
+      resources:
+        requests: {cpu: "250m", memory: 128Mi}
+        limits: {cpu: "1", memory: 768Mi}
+      volumeMounts:
+        - {name: pg, mountPath: /pg}
+  volumes:
+    - name: work
+      emptyDir: {sizeLimit: 12Gi}
+    - name: pg
+      emptyDir: {sizeLimit: 2Gi}

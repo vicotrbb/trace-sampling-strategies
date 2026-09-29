@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-25T17:07:06.746153+00:00",
+  "stage": "before calibration and functional pilots",
+  "files": {
+    "experiments/third_audit/diagnosis_study.py": "2a8f565a4cf92998ec9ee1dd6e2cfaae5c784051a9a39ffae4d9e4b9930af054",
+    "experiments/third_audit/load_study.py": "992356d8586725e9b54ee059cea0c23a45d866b17b41d400a68105bfc2fbdb70",
+    "experiments/third_audit/common.py": "21c7c34a59d4e56cad9cf4009324d2b4cc7b939a6397012561acbbe80f8fd6bc",
+    "experiments/third_audit/run_measured.py": "076b8c01c5bdeb58b90ac5c44c576fe973c0434f2802d9f9a397bb7007e682c1",
+    "experiments/third_audit/run_pilots.py": "30b01175692314256d9e8b649599a1d24fa46a4349c1c1d6e72b10632d5717a6",
+    "experiments/third_audit/pod.yaml": "9d3eaa143d37ca35bf4867f2ec6f1d72772282e022d05051e479a97c35138ad4",
+    "docs/third-audit-20260925/protocol.md": "480ffda828ed48bd39d58e3f3c2d377f9e5ae80702f5d37e0d1903786ae5285c",
+    "scripts/analyze_third_audit.py": "1123eded4c9820effe72d372aeee17b109ebd087efb11acbfc893bfb9f913816",
+    "scripts/verify_third_audit.py": "65023f4124239d9852d1fdbcf922e3f0a64c941ca6df8ca908db11ee521daad7"
+  }
+}

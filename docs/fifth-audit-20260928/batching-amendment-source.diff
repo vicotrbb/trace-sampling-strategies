@@ -1,0 +1,45 @@
+--- experiments/fifth_audit/study.py
++++ experiments/fifth_audit_v2/study.py
+@@ -121,7 +121,7 @@
+ 
+ def cell(base,block,kind,export,timeout,policy,rate,pilot):
+     out=base/f'block-{block}'/f'{kind}-{export}-{timeout}-{policy}';out.mkdir(parents=True,exist_ok=False)
+-    warm=5 if kind=='placement' else 10;duration=5 if pilot else (30 if kind=='placement' else 60);drain=5
++    warm=5 if kind=='placement' else 10;duration=60 if pilot else (30 if kind=='placement' else 60);drain=5
+     prepared={phase:payloads(kind,block,phase,rate*seconds,policy) for phase,seconds in [('warmup',warm),('measured',duration)]}
+     d={'block':block,'kind':kind,'export':export,'timeout_ms':timeout,'policy':policy,'rate_traces_s':rate,'warmup_s':warm,
+        'duration_s':duration,'drain_s':drain,'origin_ns':ORIGIN,'pilot':pilot,'utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),
+@@ -205,6 +205,7 @@
+         compress(out/'traces.jsonl')
+ 
+ def run(args):
++    assert args.kind=='batching', 'This amendment applies only to the batching extension'
+     allowed();setup();base=args.output;base.mkdir(parents=True,exist_ok=False)
+     shutil.copytree(HERE,base/'executed-source',ignore=shutil.ignore_patterns('__pycache__'))
+     shutil.copytree('/work/input',base/'input')
+--- scripts/verify_fifth_audit.py
++++ scripts/verify_fifth_batched.py
+@@ -97,7 +97,7 @@
+         for name,digest in d['source_sha256'].items():assert sha(base/'executed-source'/name)==digest
+         cfg=read(p/'config.json');size,maximum=(1024,2048) if kind=='placement' else (256,512)
+         assert d['drain_s']==5 and d['warmup_s']==(5 if kind=='placement' else 10)
+-        assert d['duration_s']==(5 if d['pilot'] else (30 if kind=='placement' else 60))
++        assert d['duration_s']==(60 if kind=='batching' else (5 if d['pilot'] else 30))
+         assert cfg['service']['pipelines']['traces']['processors']==(['probabilistic_sampler'] if policy=='collector10' else ['tail_sampling'] if policy.startswith('tail') else [])+['batch']
+         assert cfg['processors']['batch']=={'timeout':f'{timeout}ms','send_batch_size':size,'send_batch_max_size':maximum}
+         assert set(cfg['exporters'])==({'file','otlphttp'} if export=='dual' else {'file'})
+--- scripts/analyze_fifth_audit.py
++++ scripts/analyze_fifth_current.py
+@@ -9,9 +9,9 @@
+     return {'n':n,'values':xs,'mean':mean,'lower':mean-radius,'upper':mean+radius}
+ 
+ def main():
+-    p=argparse.ArgumentParser();p.add_argument('--raw',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True)
+-    for kind in ['placement','batching']:
+-        base=a.raw/f'{kind}-confirm-v1';rows=[json.loads(x.read_text()) for x in sorted(base.glob('block-*/*/result.json'))]
++    p=argparse.ArgumentParser();p.add_argument('--raw',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--kind',choices=['placement','batching','both'],default='both');a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True)
++    for kind in (['placement','batching'] if a.kind=='both' else [a.kind]):
++        base=a.raw/('placement-confirm-v1' if kind=='placement' else 'batching-confirm-v2');rows=[json.loads(x.read_text()) for x in sorted(base.glob('block-*/*/result.json'))]
+         planned=json.loads((base/'plan.json').read_text());assert len(rows)==len(planned)==(40 if kind=='placement' else 20)
+         groups={};contrasts={};blocks=sorted({x['block'] for x in rows})
+         def select(export,timeout,policy):return sorted([x for x in rows if (x['export'],x['timeout_ms'],x['policy'])==(export,timeout,policy)],key=lambda x:x['block'])

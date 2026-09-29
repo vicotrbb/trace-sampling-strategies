@@ -1,0 +1,25 @@
+{
+  "original_entries": 49,
+  "cited_entries": 31,
+  "removed_keys": [
+    "clopper1934confidence",
+    "fonseca2007xtrace",
+    "hoeffding1963probability",
+    "holm1979",
+    "jaegerApis176",
+    "jaegerMonitoring176",
+    "jaegerSampling211",
+    "mace2015pivot",
+    "nistBonferroni",
+    "nistExactBinomial",
+    "nistProportionIntervals",
+    "otelBatch0136",
+    "otelProbabilitySampling",
+    "otelPythonIdGenerator137",
+    "otelPythonTracer137",
+    "scipyChisquare1162",
+    "thalheim2017sieveMetrics",
+    "wilson1927probable"
+  ],
+  "preserved_in": "docs/fifth-audit-20260928/unused-bibliography.bib"
+}

@@ -1,0 +1,1870 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-25T14:31:47.083861+00:00",
+  "scope": "Post-collection descriptive framing inspection, additional to frozen primary analysis",
+  "cells": 96,
+  "rows": [
+    {
+      "block": 51001,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51001,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51001,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51001,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51001,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51001,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51001,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51001,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51001,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51001,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51001,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51001,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51002,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51002,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51002,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51002,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51002,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51002,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51002,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51002,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51002,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51002,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51002,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51002,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51003,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51003,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51003,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51003,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51003,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51003,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51003,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51003,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51003,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51003,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51003,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51003,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51004,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51004,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51004,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 61,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050020
+    },
+    {
+      "block": 51004,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51004,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51004,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51004,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51004,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51004,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51004,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51004,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51004,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51005,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51005,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51005,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51005,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51005,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51005,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51005,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51005,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51005,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51005,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51005,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51005,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51006,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51006,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51006,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51006,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51006,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51006,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51006,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51006,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51006,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51006,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51006,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51006,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51007,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51007,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51007,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51007,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51007,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51007,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51007,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51007,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51007,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51007,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51007,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51007,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51008,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51008,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51008,
+      "export": "dual",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51008,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51008,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51008,
+      "export": "dual",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51008,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "bypass",
+      "batches": 300,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4989300
+    },
+    {
+      "block": 51008,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51008,
+      "export": "file",
+      "timeout_ms": 100,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    },
+    {
+      "block": 51008,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "bypass",
+      "batches": 60,
+      "resource_groups": 600,
+      "scope_groups": 600,
+      "spans": 15000,
+      "json_bytes": 4984500
+    },
+    {
+      "block": 51008,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail10",
+      "batches": 59,
+      "resource_groups": 580,
+      "scope_groups": 580,
+      "spans": 1450,
+      "json_bytes": 686900
+    },
+    {
+      "block": 51008,
+      "export": "file",
+      "timeout_ms": 1000,
+      "sampler": "tail100",
+      "batches": 60,
+      "resource_groups": 6000,
+      "scope_groups": 6000,
+      "spans": 15000,
+      "json_bytes": 7050000
+    }
+  ],
+  "groups": {
+    "dual-100-bypass": {
+      "batches": {
+        "values": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "mean": 300
+      },
+      "resource_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "scope_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300
+        ],
+        "mean": 4989300
+      }
+    },
+    "dual-100-tail10": {
+      "batches": {
+        "values": [
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59
+        ],
+        "mean": 59
+      },
+      "resource_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "scope_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "spans": {
+        "values": [
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450
+        ],
+        "mean": 1450
+      },
+      "json_bytes": {
+        "values": [
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900
+        ],
+        "mean": 686900
+      }
+    },
+    "dual-100-tail100": {
+      "batches": {
+        "values": [
+          60,
+          60,
+          60,
+          61,
+          60,
+          60,
+          60,
+          60
+        ],
+        "mean": 60.125
+      },
+      "resource_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "scope_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          7050000,
+          7050000,
+          7050000,
+          7050020,
+          7050000,
+          7050000,
+          7050000,
+          7050000
+        ],
+        "mean": 7050002.5
+      }
+    },
+    "dual-1000-bypass": {
+      "batches": {
+        "values": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "mean": 60
+      },
+      "resource_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "scope_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500
+        ],
+        "mean": 4984500
+      }
+    },
+    "dual-1000-tail10": {
+      "batches": {
+        "values": [
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59
+        ],
+        "mean": 59
+      },
+      "resource_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "scope_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "spans": {
+        "values": [
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450
+        ],
+        "mean": 1450
+      },
+      "json_bytes": {
+        "values": [
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900
+        ],
+        "mean": 686900
+      }
+    },
+    "dual-1000-tail100": {
+      "batches": {
+        "values": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "mean": 60
+      },
+      "resource_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "scope_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000
+        ],
+        "mean": 7050000
+      }
+    },
+    "file-100-bypass": {
+      "batches": {
+        "values": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "mean": 300
+      },
+      "resource_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "scope_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300,
+          4989300
+        ],
+        "mean": 4989300
+      }
+    },
+    "file-100-tail10": {
+      "batches": {
+        "values": [
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59
+        ],
+        "mean": 59
+      },
+      "resource_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "scope_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "spans": {
+        "values": [
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450
+        ],
+        "mean": 1450
+      },
+      "json_bytes": {
+        "values": [
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900
+        ],
+        "mean": 686900
+      }
+    },
+    "file-100-tail100": {
+      "batches": {
+        "values": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "mean": 60
+      },
+      "resource_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "scope_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000
+        ],
+        "mean": 7050000
+      }
+    },
+    "file-1000-bypass": {
+      "batches": {
+        "values": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "mean": 60
+      },
+      "resource_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "scope_groups": {
+        "values": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "mean": 600
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500,
+          4984500
+        ],
+        "mean": 4984500
+      }
+    },
+    "file-1000-tail10": {
+      "batches": {
+        "values": [
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59
+        ],
+        "mean": 59
+      },
+      "resource_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "scope_groups": {
+        "values": [
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580,
+          580
+        ],
+        "mean": 580
+      },
+      "spans": {
+        "values": [
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450,
+          1450
+        ],
+        "mean": 1450
+      },
+      "json_bytes": {
+        "values": [
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900,
+          686900
+        ],
+        "mean": 686900
+      }
+    },
+    "file-1000-tail100": {
+      "batches": {
+        "values": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "mean": 60
+      },
+      "resource_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "scope_groups": {
+        "values": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000
+        ],
+        "mean": 6000
+      },
+      "spans": {
+        "values": [
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000
+        ],
+        "mean": 15000
+      },
+      "json_bytes": {
+        "values": [
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000,
+          7050000
+        ],
+        "mean": 7050000
+      }
+    }
+  }
+}

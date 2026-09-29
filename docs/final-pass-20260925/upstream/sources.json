@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-25T05:19:46.590290+00:00",
+  "sources": {
+    "batch-README.md": {
+      "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector/v0.136.0/processor/batchprocessor/README.md",
+      "sha256": "0cd68ee973079afee20e58fcb408bc38d94f20c9788cbc47eb613e0b901d9ed3",
+      "bytes": 5150
+    },
+    "otlphttp-README.md": {
+      "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector/v0.136.0/exporter/otlphttpexporter/README.md",
+      "sha256": "10335bedba1a1b3d514edf4d8be850653ea09bda3de7330c02fd1c61ff2c2264",
+      "bytes": 4314
+    },
+    "file_exporter.go": {
+      "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/exporter/fileexporter/file_exporter.go",
+      "sha256": "99039256f63b9183d99aef28421c2e5e6419e8dff4ad593eedf49ed5bdfdc013",
+      "bytes": 2074
+    },
+    "tail_processor.go": {
+      "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/processor/tailsamplingprocessor/processor.go",
+      "sha256": "0f9a5583fb791cfe85e7776eabbad20298acc82df641eb65eb3cf7cff53b9da5",
+      "bytes": 25455
+    },
+    "tail-README.md": {
+      "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/processor/tailsamplingprocessor/README.md",
+      "sha256": "7244331378787a6f2a33cd0fc1a2e9523513a7e7adebabe0d7bdb10901044fbf",
+      "bytes": 27848
+    }
+  }
+}

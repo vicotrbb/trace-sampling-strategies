@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-25T17:09:33.404373+00:00",
+  "status": "PASS",
+  "n": 5000,
+  "family_size": 48,
+  "per_comparison_error": 0.0010416666666666667,
+  "zero_loss_upper": 0.0013724439930344087,
+  "maximum_passing_losses": 203,
+  "maximum_passing_upper": 0.0499188970365608,
+  "next_count_upper": 0.050138793368220594,
+  "probability_of_passing_at_true_loss": {
+    "0.03": 0.9999880076454896,
+    "0.04": 0.6036967679562077,
+    "0.045": 0.06951970862531974,
+    "0.05": 0.000955887862226227
+  },
+  "interpretation": "Power concerns harmful changes; ignoring gains can remain conservative even as replay count grows."
+}

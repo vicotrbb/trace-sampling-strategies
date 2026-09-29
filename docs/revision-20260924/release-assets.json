@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.136.0/otelcol-contrib_0.136.0_linux_amd64.tar.gz",
+    "sha256": "e642146998b9559929c34f5b85525e27ca6430585e2951fa88a403ff5ebf9f47",
+    "bytes": 89328743
+  },
+  {
+    "url": "https://github.com/jaegertracing/jaeger/releases/download/v1.76.0/jaeger-1.76.0-linux-amd64.tar.gz",
+    "sha256": "cab3ead06a837ee519c16a4394b323e58b66b4f2f8f82c0db0dfb81035def72e",
+    "bytes": 140998095
+  }
+]

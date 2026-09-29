@@ -1,0 +1,155 @@
+{
+  "cells": [
+    {
+      "pilot": "pilot-v1",
+      "app": "checkout",
+      "regime": "bursty",
+      "policy": "full",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.00029509600996924235,
+      "measured_protected_fraction": 0.02
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "checkout",
+      "regime": "bursty",
+      "policy": "tail",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.003986199110746824
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "checkout",
+      "regime": "bursty",
+      "policy": "head",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.00036838489770918414
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "checkout",
+      "regime": "steady",
+      "policy": "full",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.00033537119626991796,
+      "measured_protected_fraction": 0.02
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "checkout",
+      "regime": "steady",
+      "policy": "tail",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0004240289330481595
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "checkout",
+      "regime": "steady",
+      "policy": "head",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0003248350322246907
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "documents",
+      "regime": "steady",
+      "policy": "full",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0036420486867427826,
+      "measured_protected_fraction": 0.02
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "documents",
+      "regime": "steady",
+      "policy": "tail",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0003347040712835536
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "documents",
+      "regime": "steady",
+      "policy": "head",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0002268716692924444
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "documents",
+      "regime": "bursty",
+      "policy": "full",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0035005588531493714,
+      "measured_protected_fraction": 0.02
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "documents",
+      "regime": "bursty",
+      "policy": "tail",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.00017931684851646423
+    },
+    {
+      "pilot": "pilot-v1",
+      "app": "documents",
+      "regime": "bursty",
+      "policy": "head",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0002458320856093543
+    },
+    {
+      "pilot": "pilot-v2",
+      "app": "checkout",
+      "regime": "bursty",
+      "policy": "full",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.00019162410497663984,
+      "measured_protected_fraction": 0.02
+    },
+    {
+      "pilot": "pilot-v2",
+      "app": "checkout",
+      "regime": "bursty",
+      "policy": "tail",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0001968294382095337
+    },
+    {
+      "pilot": "pilot-v2",
+      "app": "documents",
+      "regime": "bursty",
+      "policy": "full",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.00031780904531508725,
+      "measured_protected_fraction": 0.02
+    },
+    {
+      "pilot": "pilot-v2",
+      "app": "documents",
+      "regime": "bursty",
+      "policy": "tail",
+      "valid": true,
+      "false_accusations": 0,
+      "max_schedule_lag_s": 0.0008794991672047558
+    }
+  ],
+  "decision": "PASS; retain 50 requests/s, 250 ms predicate, and fixed background .08/.98"
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "key": "kaldor2017canopy",
+    "source": "sources/canopy-crossref.json",
+    "address_field": "New York, NY, USA",
+    "address_kind": "publisher location"
+  },
+  {
+    "key": "lascasas2019sifter",
+    "source": "sources/sifter-crossref.json",
+    "address_field": "New York, NY, USA",
+    "address_kind": "publisher location"
+  },
+  {
+    "key": "reichelt2026tracingoverhead",
+    "source": "sources/icpe-overhead-crossref.json",
+    "address_field": "New York, NY, USA",
+    "address_kind": "publisher location"
+  },
+  {
+    "key": "yu2021microrank",
+    "source": "sources/microrank-crossref.json",
+    "address_field": "New York, NY, USA",
+    "address_kind": "publisher location"
+  },
+  {
+    "key": "huang2021sieve",
+    "source": "sources/sieve-crossref.json",
+    "address_field": "Chicago, IL, USA",
+    "address_kind": "conference location"
+  },
+  {
+    "key": "li2021tracerca",
+    "source": "sources/tracerca-crossref.json",
+    "address_field": "Tokyo, Japan",
+    "address_kind": "conference location"
+  },
+  {
+    "key": "coehlo2012uncertainty",
+    "address": "Hollywood, CA",
+    "address_source": "https://www.usenix.org/conference/mad12",
+    "numpages": 7,
+    "page_count_source": "https://www.usenix.org/system/files/mad12-final9.pdf"
+  },
+  {
+    "key": "sambasivan2011spectroscope",
+    "numpages": 14,
+    "page_count_source": "docs/second-audit-20260925/literature/spectroscope-2011.pdf"
+  },
+  {
+    "key": "xie2025tracepicker",
+    "numpages": 22,
+    "page_count_source": "Published pages 1802 through 1823, already verified in the retained source review"
+  }
+]

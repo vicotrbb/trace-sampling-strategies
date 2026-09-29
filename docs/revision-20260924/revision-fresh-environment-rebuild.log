@@ -1,0 +1,20 @@
+XDG_CACHE_HOME=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/cache MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib /private/tmp/trace-sampling-analysis-venv-20260924/bin/python scripts/analyze_revision.py --raw data/raw/revision-20260924
+{
+  "live_cells": 60,
+  "calibration_tests": 16,
+  "matched_probes": 48,
+  "offline_cells": 800,
+  "macros": {
+    "LiveCells": "60",
+    "LiveRequests": "180,000",
+    "LiveFaults": "5,400",
+    "LiveHeadAccuracy": "10.1",
+    "LiveTailAccuracy": "69.4",
+    "CalibrationRejects": "0",
+    "HoeffdingRadius": "89.8",
+    "CommonHeadSemanticCorrect": "52",
+    "CommonTailSemanticCorrect": "45",
+    "CommonSemanticCases": "600",
+    "LiveMaxLagMS": "21.02"
+  }
+}

@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: trace-sampling-boundaries-20260928
+  labels: {purpose: trace-sampling-fifth-audit}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: study-runner
+  namespace: trace-sampling-boundaries-20260928
+spec:
+  nodeSelector: {kubernetes.io/hostname: homelab-01}
+  restartPolicy: Never
+  terminationGracePeriodSeconds: 40
+  containers:
+    - name: runner
+      image: python:3.12.10-slim@sha256:fd95fa221297a88e1cf49c55ec1828edd7c5a428187e67b5d1805692d11588db
+      command: [python, -c, 'import time; time.sleep(43200)']
+      env:
+        - {name: STUDY_CONTEXT, value: homelab}
+        - {name: PYTHONUNBUFFERED, value: '1'}
+      resources:
+        requests: {cpu: '1', memory: 1Gi}
+        limits: {cpu: '6', memory: 10Gi}
+      volumeMounts:
+        - {name: work, mountPath: /work}
+  volumes:
+    - name: work
+      emptyDir: {sizeLimit: 30Gi}

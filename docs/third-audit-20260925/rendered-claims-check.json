@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "cohort_rows": 3,
+  "supported_rows": 6,
+  "boundary_rows": 4,
+  "generated_macro_names_valid": 25,
+  "selection_criterion": "minimum qualifying rate among the complete declared grid"
+}

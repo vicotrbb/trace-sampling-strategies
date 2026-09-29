@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "corpus_episodes": 600,
+  "trials_per_comparison": 5000,
+  "comparison_rows": 80000,
+  "protected_fraction": 0.0028333333333333335,
+  "full_correct": 568,
+  "intervals_recomputed_by_binomial_inversion": true
+}

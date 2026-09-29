@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rejected_mutations": [
+    "missing incident",
+    "duplicate incident",
+    "raw counter tampering"
+  ],
+  "restored_archive": "PASS"
+}

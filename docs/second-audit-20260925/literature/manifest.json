@@ -1,0 +1,427 @@
+{
+  "scope": "Public primary-source retrieval; no access-control bypass",
+  "attempts": [
+    {
+      "requested_url": "https://netman.aiops.org/wp-content/uploads/2021/05/1570705191.pdf",
+      "retrieved_utc": "2026-09-25T13:32:12.998520+00:00",
+      "result": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "requested_url": "https://yuxiaoba.github.io/publications",
+      "retrieved_utc": "2026-09-25T13:32:12.999144+00:00",
+      "result": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "requested_url": "https://dl.acm.org/doi/pdf/10.1145/3611643.3613881",
+      "retrieved_utc": "2026-09-25T13:32:12.999217+00:00",
+      "result": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "requested_url": "https://doi.org/10.1109/ICWS53863.2021.00063",
+      "retrieved_utc": "2026-09-25T13:32:12.999261+00:00",
+      "result": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "requested_url": "https://raw.githubusercontent.com/IntelligentDDS/MicroRank/main/README.md",
+      "retrieved_utc": "2026-09-25T13:32:12.999481+00:00",
+      "result": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "requested_url": "https://www.microsoft.com/en-us/research/publication/steam-observability-preserving-trace-sampling/",
+      "retrieved_utc": "2026-09-25T13:32:13.025656+00:00",
+      "result": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "requested_url": "https://netman.aiops.org/wp-content/uploads/2021/05/1570705191.pdf",
+      "retrieved_utc": "2026-09-25T13:32:38.145373+00:00",
+      "status": 200,
+      "final_url": "https://netman.aiops.org/wp-content/uploads/2021/05/1570705191.pdf",
+      "content_type": "application/pdf",
+      "file": "tracerca-2021.pdf",
+      "bytes": 445064,
+      "sha256": "413861593b0eb4dd8d184bdf2b522110a5a65520f46135ae83a75cb087a438a7",
+      "result": "archived",
+      "original_sha256": "771c24d01c594aff53560489093a6de38c87fb43f513c0a8f120aee7cc6b151e",
+      "original_bytes": 395604,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/second-audit-20260925/literature/tracerca-2021.pdf"
+    },
+    {
+      "requested_url": "https://yuxiaoba.github.io/publications",
+      "retrieved_utc": "2026-09-25T13:32:38.145717+00:00",
+      "status": 200,
+      "final_url": "https://yuxiaoba.github.io/publications",
+      "content_type": "text/html; charset=utf-8",
+      "file": "guangba-publications.html",
+      "bytes": 518782,
+      "sha256": "8d6c525760bf513692fdb3070f94b4edbfad14158ae2e31d101cda8864f19e60",
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://dl.acm.org/doi/pdf/10.1145/3611643.3613881",
+      "retrieved_utc": "2026-09-25T13:32:38.145855+00:00",
+      "result": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "requested_url": "https://doi.org/10.1109/ICWS53863.2021.00063",
+      "retrieved_utc": "2026-09-25T13:32:38.145902+00:00",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/9590295/",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sieve-publisher.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "archived",
+      "content_status": "Empty HTTP 202 response; no full text retrieved"
+    },
+    {
+      "requested_url": "https://raw.githubusercontent.com/IntelligentDDS/MicroRank/main/README.md",
+      "retrieved_utc": "2026-09-25T13:32:38.145958+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/IntelligentDDS/MicroRank/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "file": "microrank-readme.md",
+      "bytes": 3422,
+      "sha256": "77d14d2836c149c1eee10f6033198a36beeb52fb6c81017004d4ef3e7ac76e6f",
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://www.microsoft.com/en-us/research/publication/steam-observability-preserving-trace-sampling/",
+      "retrieved_utc": "2026-09-25T13:32:38.216487+00:00",
+      "status": 200,
+      "final_url": "https://www.microsoft.com/en-us/research/publication/steam-observability-preserving-trace-sampling/",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "steam-microsoft.html",
+      "bytes": 177308,
+      "sha256": "c416a9d8432486d8b87e5f7a92ee021d6412dd0c121f5617939de8c80109e3fa",
+      "result": "archived",
+      "original_sha256": "d0dae65e87342ae980212a7d289f76130ce5d95e67113235d9871d69241b1678",
+      "original_bytes": 177314,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/second-audit-20260925/literature/steam-microsoft.html"
+    },
+    {
+      "requested_url": "https://yuxiaoba.github.io/files/ICWS21/sieve.pdf",
+      "retrieved_utc": "2026-09-25T13:34:41.005693+00:00",
+      "status": 200,
+      "final_url": "https://yuxiaoba.github.io/files/ICWS21/sieve.pdf",
+      "content_type": "application/pdf",
+      "file": "sieve-2021.pdf",
+      "bytes": 803169,
+      "sha256": "9805d9e041b5d7f9314d6500f7f779a75141c6c478601e6fa5550b60d0a6f884",
+      "result": "archived",
+      "original_sha256": "910edbed715ebc4c5ea8b58543e10edf2759cded6df1954301d216e817bd4303",
+      "original_bytes": 757003,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/second-audit-20260925/literature/sieve-2021.pdf"
+    },
+    {
+      "requested_url": "https://yuxiaoba.github.io/files/WWW21/microrank.pdf",
+      "retrieved_utc": "2026-09-25T13:34:41.005904+00:00",
+      "status": 200,
+      "final_url": "https://yuxiaoba.github.io/files/WWW21/microrank.pdf",
+      "content_type": "application/pdf",
+      "file": "microrank-2021.pdf",
+      "bytes": 1280143,
+      "sha256": "3100372c21801f2465d82ad39993abaa0e642af31836186642ed6a86baec4bf0",
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://shilinhe.github.io/publications.html",
+      "retrieved_utc": "2026-09-25T13:34:41.005973+00:00",
+      "status": 200,
+      "final_url": "https://shilinhe.github.io/publications.html",
+      "content_type": "text/html; charset=utf-8",
+      "file": "shilin-publications.html",
+      "bytes": 19973,
+      "sha256": "f57af00cab3cdac2310bbcc8f5a1cd82719182107243931aa033a209fd8f953c",
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.crossref.org/works/10.1145%2F3611643.3613881",
+      "retrieved_utc": "2026-09-25T13:36:11.439440+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1145%2F3611643.3613881",
+      "content_type": "application/json",
+      "file": "steam-crossref.json",
+      "sha256": "f47bc95d110df0bb6b2ad48d8d8f63ef8ba838d0ceebd8a20f8ac9081a7e63ed",
+      "bytes": 17775,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.openalex.org/works/https://doi.org/10.1145/3611643.3613881",
+      "retrieved_utc": "2026-09-25T13:36:11.439642+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1145/3611643.3613881",
+      "content_type": "application/json",
+      "file": "steam-openalex-discovery.json",
+      "sha256": "d1eaa285ff7b9131a9a0e0ae42acbed603a73cc18eb4d23e7767fa3b0c55b1e2",
+      "bytes": 19450,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.github.com/repos/shilinhe/shilinhe.github.io",
+      "retrieved_utc": "2026-09-25T13:36:11.439727+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/shilinhe/shilinhe.github.io",
+      "content_type": "application/json; charset=utf-8",
+      "file": "shilin-site-repository.json",
+      "sha256": "ace6017c57ceeb555da6681b6b928cc3264b4e3954fd5f1a8d73ddcb372e839c",
+      "bytes": 5432,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.github.com/repos/IntelligentDDS/MicroRank",
+      "retrieved_utc": "2026-09-25T13:36:11.439782+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/IntelligentDDS/MicroRank",
+      "content_type": "application/json; charset=utf-8",
+      "file": "microrank-repository.json",
+      "sha256": "7711889da9057de644ef484dfff692e258528a047430845286f41101cf26eebc",
+      "bytes": 6677,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.github.com/repos/ShilinHe/shilinhe.github.io/git/trees/master?recursive=1",
+      "retrieved_utc": "2026-09-25T13:37:03.291581+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/ShilinHe/shilinhe.github.io/git/trees/master?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "file": "shilin-site-tree.json",
+      "sha256": "175b8d5497624c8f61330c76143e366ffe1fb46139fe880beb06df464e4fedad",
+      "bytes": 4152,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.github.com/repos/IntelligentDDS/MicroRank/git/trees/main?recursive=1",
+      "retrieved_utc": "2026-09-25T13:37:03.291827+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/IntelligentDDS/MicroRank/git/trees/main?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "file": "microrank-tree.json",
+      "sha256": "468adb20cbfd51ab6312d6d9f6c3531d2cd4fcb8450fac2e4e927009aecc9468",
+      "bytes": 2246,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.crossref.org/works/10.1109%2FICWS53863.2021.00063",
+      "retrieved_utc": "2026-09-25T13:37:03.291894+00:00",
+      "result": "unavailable",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "requested_url": "https://api.crossref.org/works?query.title=Practical%20Root%20Cause%20Localization%20for%20Microservice%20Systems%20via%20Trace%20Analysis&rows=1",
+      "retrieved_utc": "2026-09-25T13:37:03.291937+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works?query.title=Practical%20Root%20Cause%20Localization%20for%20Microservice%20Systems%20via%20Trace%20Analysis&rows=1",
+      "content_type": "application/json",
+      "file": "tracerca-crossref.json",
+      "sha256": "5caf16ea2a38cde84156a4f894d3d78b25f5fff6bd06801783c566c95bd038b2",
+      "bytes": 7647,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://raw.githubusercontent.com/IntelligentDDS/MicroRank/efd85e8e6f0fad30f6f8aaf0555e3324d8f5f982/preprocess_data.py",
+      "retrieved_utc": "2026-09-25T13:37:55.562899+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/IntelligentDDS/MicroRank/efd85e8e6f0fad30f6f8aaf0555e3324d8f5f982/preprocess_data.py",
+      "content_type": "text/plain; charset=utf-8",
+      "file": "microrank-preprocess_data.py",
+      "sha256": "c121ea7c4ac800eeec8f0f7f59c56339fac829c330ee606976c62c8f3fa998e8",
+      "bytes": 15939,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://raw.githubusercontent.com/IntelligentDDS/MicroRank/efd85e8e6f0fad30f6f8aaf0555e3324d8f5f982/anormaly_detector.py",
+      "retrieved_utc": "2026-09-25T13:37:55.563105+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/IntelligentDDS/MicroRank/efd85e8e6f0fad30f6f8aaf0555e3324d8f5f982/anormaly_detector.py",
+      "content_type": "text/plain; charset=utf-8",
+      "file": "microrank-anormaly_detector.py",
+      "sha256": "69136ab5d88c3021fbaddf31992bdbaf4e08ed508a59633adeb038d9cb9919dd",
+      "bytes": 4421,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.crossref.org/works/10.1109%2FICWS53863.2021.00063",
+      "retrieved_utc": "2026-09-25T13:37:55.836234+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1109%2FICWS53863.2021.00063",
+      "content_type": "application/json",
+      "file": "sieve-crossref.json",
+      "sha256": "d6263f7f5766e65d658a727cb4e853ba8078b4c8bc895312c017df28a37605c5",
+      "bytes": 6694,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://api.crossref.org/works/10.1145%2F3442381.3449905",
+      "retrieved_utc": "2026-09-25T13:37:55.864457+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1145%2F3442381.3449905",
+      "content_type": "application/json",
+      "file": "microrank-crossref.json",
+      "sha256": "84b5e531c108d701c4fcec7bdf6f5401373e45374c10a46efdfe51dfd85e3b1a",
+      "bytes": 12708,
+      "result": "archived"
+    },
+    {
+      "requested_url": "https://static.usenix.org/event/nsdi11/tech/full_papers/Sambasivan.pdf",
+      "retrieved_utc": "2026-09-25T13:40:05.979397+00:00",
+      "status": 200,
+      "final_url": "https://static.usenix.org/event/nsdi11/tech/full_papers/Sambasivan.pdf",
+      "content_type": "application/pdf",
+      "file": "spectroscope-2011.pdf",
+      "sha256": "31f9cb432e02c8a2a6b08f18f4eaf708521918ffe891483b8d8d44c89b921a15",
+      "bytes": 434840,
+      "result": "archived",
+      "original_sha256": "e8c9482bcc305695f51f83d978987a28a025dfee5dfa50b79a4670d8b866f4d4",
+      "original_bytes": 452418,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/second-audit-20260925/literature/spectroscope-2011.pdf"
+    },
+    {
+      "requested_url": "https://api.github.com/repos/IntelligentDDS/MicroRank/git/ref/heads/main",
+      "retrieved_utc": "2026-09-25T13:41:42.381921+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/IntelligentDDS/MicroRank/git/ref/heads/main",
+      "content_type": "application/json; charset=utf-8",
+      "file": "microrank-main-ref.json",
+      "sha256": "b5007df75a8d63356df52e60eb1e44866774caa3693b76142dff5bc27ce9d3f4",
+      "bytes": 355,
+      "result": "archived"
+    }
+  ],
+  "web_access_attempts": [
+    {
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3611643.3613881",
+      "tool": "web.run",
+      "result": "Internal Error; no PDF retrieved",
+      "date": "2026-09-25"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/3611643.3613881",
+      "tool": "web.run",
+      "result": "Internal Error; no full text retrieved",
+      "date": "2026-09-25"
+    },
+    {
+      "url": "https://dl.acm.org/doi/full/10.1145/3611643.3613881",
+      "tool": "web.run",
+      "result": "Internal Error; no full text retrieved",
+      "date": "2026-09-25"
+    },
+    {
+      "url": "https://2023.esec-fse.org/details/fse-2023-industry/22/-Remote-STEAM-Observability-Preserving-Trace-Sampling",
+      "tool": "web.run",
+      "result": "Primary abstract and DOI read; no accessible full paper found",
+      "date": "2026-09-25"
+    }
+  ],
+  "full_text_status": {
+    "sieve-2021": {
+      "pdf": "sieve-2021.pdf",
+      "status": "author-hosted PDF archived",
+      "pdf_pages": 11,
+      "reading_scope": "Full paper; Table VI visually inspected"
+    },
+    "steam-2023": {
+      "status": "Full text unavailable through checked routes; primary abstract and metadata only"
+    },
+    "microrank-2021": {
+      "pdf": "microrank-2021.pdf",
+      "status": "author-hosted PDF archived",
+      "pdf_pages": 12,
+      "reading_scope": "Problem formulation, healthy-reference method, ranking definition, and evaluation design; relevant author code"
+    },
+    "tracerca-2021": {
+      "pdf": "tracerca-2021.pdf",
+      "status": "author-laboratory-hosted PDF archived",
+      "pdf_pages": 10,
+      "reading_scope": "Introduction, Section III methods, Section IV design and evaluation endpoints"
+    },
+    "spectroscope-2011": {
+      "pdf": "spectroscope-2011.pdf",
+      "status": "publisher-hosted PDF archived",
+      "pdf_pages": 14,
+      "reading_scope": "Sections 1-5, with focus on healthy/problem period comparison and timing analysis"
+    }
+  },
+  "derivatives": [
+    {
+      "file": "sieve-2021.txt",
+      "source_file": "sieve-2021.pdf",
+      "method": "pdftotext",
+      "bytes": 58220,
+      "sha256": "7a906a9dbe2d376b397a0e3902f8b3796fe2e416cda107ce2f7c50cd4e5dc12f",
+      "original_sha256": "c6176de53462e1074aa5166b9329c12cb8d4b46c33d2ceea910ece48522a2724",
+      "original_bytes": 58222,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/second-audit-20260925/literature/sieve-2021.txt"
+    },
+    {
+      "file": "microrank-2021.txt",
+      "source_file": "microrank-2021.pdf",
+      "method": "pdftotext",
+      "bytes": 76229,
+      "sha256": "e258fb5f024097a01c1fbbceead88684e62ec34bd907ae0962ec060a9d045021"
+    },
+    {
+      "file": "tracerca-2021.txt",
+      "source_file": "tracerca-2021.pdf",
+      "method": "pdftotext",
+      "bytes": 60902,
+      "sha256": "110888de66756f62ea5f4b840334f505690f36a4614ce89bfd9437ac70e0fc8a",
+      "original_sha256": "e274bf605024e38f59a4ce735ca63e332a665ffe5cd7b7ba74a4e6b038a38ccb",
+      "original_bytes": 60961,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/second-audit-20260925/literature/tracerca-2021.txt"
+    },
+    {
+      "file": "spectroscope-2011.txt",
+      "source_file": "spectroscope-2011.pdf",
+      "method": "pdftotext",
+      "bytes": 72308,
+      "sha256": "eb80e389d3ebf11575123e83134d46bf65ea3fac38ee7d344af8d7b26d0b42f6",
+      "original_sha256": "b2ed165d40066fd0774fb988ec3cb8a4b378a54bc3185859ee6fb7b7ca0043a4",
+      "original_bytes": 72321,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/second-audit-20260925/literature/spectroscope-2011.txt"
+    },
+    {
+      "file": "sieve-page10.png",
+      "source_file": "sieve-2021.pdf",
+      "method": "pdftoppm -f 10 -l 10 -scale-to 1600 -png -singlefile",
+      "bytes": 477755,
+      "sha256": "ca1736c15443c69983911ea49933b10a8bc8d671cf96286c8262102b1ee9e943"
+    }
+  ],
+  "verified_utc": "2026-09-25T13:44:43.238303+00:00",
+  "local_punctuation_normalization": {
+    "date_utc": "2026-09-28T18:33:44.896444+00:00",
+    "report": "docs/punctuation-normalization-20260928/report.md",
+    "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+    "original_archive_sha256": "b79c2ec952699843dc71b09674d981246e3bb2b6ad4fbf553f59a0850325832c",
+    "note": "Retrieval dates describe the original downloads. Current hashes describe the normalized local copies. Original bytes remain in the archive."
+  }
+}

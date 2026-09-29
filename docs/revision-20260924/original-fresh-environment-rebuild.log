@@ -1,0 +1,42 @@
+/private/tmp/trace-sampling-analysis-venv-20260924/bin/python scripts/verify_artifact.py data/raw/homelab
+{
+  "status": "PASS",
+  "validated_cells": 70,
+  "reconstructed_trace_occurrences": 288428,
+  "reconstructed_span_occurrences": 1465958,
+  "tail_cells_matching_independent_hash": 30,
+  "independent_raw_metric_checks": 70,
+  "unique_incidents_checked": 9240,
+  "historical_cpu_limitation": "Exact CPU start/end snapshots were not archived; monotone intermediate samples and reported endpoint differences are checked, not independently reconstructed."
+}
+/private/tmp/trace-sampling-analysis-venv-20260924/bin/python scripts/summarize_probes.py data/raw/homelab
+{
+  "status": "PASS",
+  "validated_probes": 6,
+  "early_drops_buffer16": 184.0
+}
+MPLCONFIGDIR=/Users/victorbona/Code/Research/trace-sampling-strategies/tmp/matplotlib /private/tmp/trace-sampling-analysis-venv-20260924/bin/python scripts/analyze.py --raw data/raw/homelab
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/victorbona/.cache/fontconfig
+	/Users/victorbona/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+{
+  "cells": 70,
+  "offered_traces": 1400000,
+  "offered_spans": 7042000,
+  "full_cpu_mean": 0.766,
+  "full_rss_mib_mean": 184.125,
+  "full_json_bytes_mean": 57644008,
+  "max_schedule_lag_s": 0.003693714737892151,
+  "min_ingress_s": 9.950064774602652,
+  "max_ingress_s": 9.957792591303587,
+  "all_complete": true
+}
+/private/tmp/trace-sampling-analysis-venv-20260924/bin/python scripts/summarize_probes.py data/raw/homelab --write
+{
+  "status": "PASS",
+  "validated_probes": 6,
+  "early_drops_buffer16": 184.0
+}

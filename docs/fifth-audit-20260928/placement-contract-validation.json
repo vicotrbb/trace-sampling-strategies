@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "frozen_file_counts_checked": {
+    "placement": 21
+  },
+  "cells": 40,
+  "summary_intervals_recomputed": 159,
+  "input_checks": [
+    {
+      "byte_identical_input_groups": 20,
+      "reconstructed_input_payloads": 28000
+    }
+  ],
+  "native_metadata": {
+    "native_spans_checked": 1402880,
+    "added_json_bytes_per_span": 44
+  }
+}

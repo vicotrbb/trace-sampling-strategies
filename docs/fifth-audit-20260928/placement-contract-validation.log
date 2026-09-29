@@ -1,0 +1,38 @@
+input hashes verified placement-confirm-v1 (82001, 'warmup', False)
+input hashes verified placement-confirm-v1 (82001, 'measured', False)
+input hashes verified placement-confirm-v1 (82001, 'warmup', True)
+input hashes verified placement-confirm-v1 (82001, 'measured', True)
+input hashes verified placement-confirm-v1 (82002, 'warmup', False)
+input hashes verified placement-confirm-v1 (82002, 'measured', False)
+input hashes verified placement-confirm-v1 (82002, 'warmup', True)
+input hashes verified placement-confirm-v1 (82002, 'measured', True)
+input hashes verified placement-confirm-v1 (82003, 'warmup', False)
+input hashes verified placement-confirm-v1 (82003, 'measured', False)
+input hashes verified placement-confirm-v1 (82003, 'warmup', True)
+input hashes verified placement-confirm-v1 (82003, 'measured', True)
+input hashes verified placement-confirm-v1 (82004, 'warmup', False)
+input hashes verified placement-confirm-v1 (82004, 'measured', False)
+input hashes verified placement-confirm-v1 (82004, 'warmup', True)
+input hashes verified placement-confirm-v1 (82004, 'measured', True)
+input hashes verified placement-confirm-v1 (82005, 'warmup', False)
+input hashes verified placement-confirm-v1 (82005, 'measured', False)
+input hashes verified placement-confirm-v1 (82005, 'warmup', True)
+input hashes verified placement-confirm-v1 (82005, 'measured', True)
+{
+  "status": "PASS",
+  "frozen_file_counts_checked": {
+    "placement": 21
+  },
+  "cells": 40,
+  "summary_intervals_recomputed": 159,
+  "input_checks": [
+    {
+      "byte_identical_input_groups": 20,
+      "reconstructed_input_payloads": 28000
+    }
+  ],
+  "native_metadata": {
+    "native_spans_checked": 1402880,
+    "added_json_bytes_per_span": 44
+  }
+}

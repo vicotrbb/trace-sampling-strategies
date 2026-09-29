@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+tmp/
+/data/raw/
+/releases/
+paper/*.aux
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+proofs/*.aux
+proofs/*.log
+proofs/*.out
+.DS_Store

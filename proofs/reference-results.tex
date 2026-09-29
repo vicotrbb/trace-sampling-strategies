@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Mathematical Supplement: Trace Sampling at the Collector Boundary},pdfauthor={Victor Bona}}
+\title{Mathematical Supplement:\\Trace Sampling at the Collector Boundary}
+\author{Victor Bona}
+\date{September 2026}
+\begin{document}
+\maketitle
+\noindent This supplement supplies the reference calculations used in the accompanying measurement paper. These are standard consequences of the stated models, not new probability results or proofs of Collector behavior. The separate Lean file checks only the restricted discrete statements identified in the proof README.
+
+\section{Independent whole-trace selection}
+Fix a finite population of $N\ge1$ traces and mutually independent retention indicators $X_i\sim\operatorname{Bernoulli}(p)$, with $p\in[0,1]$. For a set of $m$ interchangeable witnesses, $1\le k\le m\le N$, retaining at least $k$ has probability
+\begin{equation}\label{eq:binomial}
+B_{m,k}(p)=\sum_{i=k}^{m}\binom mi p^i(1-p)^{m-i}.
+\end{equation}
+For $0<p<1$, independence assigns probability $p^{|x|}(1-p)^{m-|x|}$ to each retention vector $x$. There are $\binom mi$ vectors with $i$ retained witnesses, giving the formula by summation. At $p=0$ and $p=1$ the probabilities are respectively zero and one, interpreted directly from the deterministic indicators.
+
+With one witness sufficient, failure means all witnesses were discarded, so $B_{m,1}(p)=1-(1-p)^m$. For $0<\delta<1$, success at least $1-\delta$ is equivalent to $p\ge1-\delta^{1/m}$. For the general threshold,
+\[
+B'_{m,k}(p)=m\binom{m-1}{k-1}p^{k-1}(1-p)^{m-k}>0\qquad(0<p<1).
+\]
+The identity follows by differentiating the sum and cancelling consecutive terms. Continuity, strict increase in the interior, and endpoint values zero and one give a unique probability threshold for any target strictly between zero and one.
+
+If success instead requires one witness from each of $d$ disjoint sets with sizes $m_1,\ldots,m_d\ge1$, the events depend on disjoint independent indicators. Their probabilities multiply to $\prod_{\ell=1}^{d}[1-(1-p)^{m_\ell}]$. In particular, retaining all $d\le N$ required traces has probability $p^d$. Across populations and tasks with no bound on $d$, any fixed $p<1$ gives $p^d\to0$. Thus no strictly positive lower bound on success holds uniformly over those tasks. This statement does not vary $d$ beyond a single fixed population's size and does not apply the independent-selection law to correlated all-or-none policies.
+
+\section{Evidence windows}
+For a window containing $w\ge1$ requests, the sum of its retention indicators is $\operatorname{Bin}(w,p)$ and has mean $wp$. For two disjoint windows of $w$ requests each, the retained counts are independent. Both are nonempty with probability $[1-(1-p)^w]^2$. Nested windows share indicators and are dependent. These identities concern evidence availability, not the accuracy of a localization procedure.
+
+\section{Protected-tail accounting}
+Let $P$ be the protected subset and $\alpha=|P|/N$. Retain every trace in $P$ and retain each other trace with probability $r\in[0,1]$. Linearity of expectation gives expected retained fraction
+\[
+b=\alpha+(1-\alpha)r.
+\]
+For $0\le\alpha<1$, feasibility requires $\alpha\le b\le1$ and solving yields $r=(b-\alpha)/(1-\alpha)$. If $0<\alpha<1$ and $b<1$, then $b-r=\alpha(1-b)/(1-\alpha)>0$. Under independent background decisions, the strict increase of $B_{m,k}$ establishes lower recovery for an entirely unprotected witness set than under independent uniform retention at probability $b$. If $b<\alpha$, retaining all protected traces alone exceeds the budget. At $\alpha=0$, $r=b$; at $\alpha=1$, only full retention is feasible.
+
+This accounting concerns expected trace counts. For fixed additive trace sizes $v_i$ and inclusion probabilities $\pi_i$, output volume satisfies $\mathbb E[\sum_i v_iX_i]=\sum_i v_i\pi_i$, without requiring independent indicators. Equal expected trace counts do not establish equal expected bytes when sizes or inclusion probabilities differ. Export framing, metadata, and compression need separate treatment.
+
+\section{Resource model and conditional precision}
+The paper's reference costs are $C_1=F+U+D$, $C_H=F+A_H+p(U+D)$, and $C_T=F+U+A_T+b_VD$, with nonnegative terms and retained byte fraction $b_V\in[0,1]$. Direct subtraction gives
+\[
+C_1-C_H=(1-p)(U+D)-A_H,\qquad
+C_1-C_T=(1-b_V)D-A_T.
+\]
+These are algebraic consequences of the model, which assumes fixed downstream cost per byte and unchanged grouping. They do not identify coefficients from total CPU or establish that an implementation obeys the approximation. Measured batching changes are one reason the approximation can fail.
+
+For a fixed incident corpus, let $B_i\in\{0,1\}$ be full-data correctness and $A_{i,a}\in\{0,1\}$ sampled correctness under configuration $a$, including abstention as incorrect. Draw incidents uniformly with replacement and independent sampling randomness across $n$ trials. Then $Z_{t,a}=B_{I_t}-A_{I_t,a}\in\{-1,0,1\}$ has mean $\Delta_a=\mathbb E[B_I]-\mathbb E[A_{I,a}]$ and $\operatorname{Var}(\overline Z_a)=\operatorname{Var}(Z_{t,a})/n$. The reported Monte Carlo standard error substitutes the sample standard deviation, giving $s_Z/\sqrt n$. The same calculation applies to sampled correctness. Shared priorities may correlate different configurations, but do not invalidate a marginal standard error under the declared independent-trial model. These errors describe conditional simulation precision; they do not quantify generalization to new incidents or certify a universal discard rate.
+\end{document}

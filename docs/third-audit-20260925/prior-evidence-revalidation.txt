@@ -1,0 +1,510 @@
+.venv/bin/python scripts/verify_artifact.py data/raw/homelab
+{
+  "status": "PASS",
+  "validated_cells": 70,
+  "reconstructed_trace_occurrences": 288428,
+  "reconstructed_span_occurrences": 1465958,
+  "tail_cells_matching_independent_hash": 30,
+  "independent_raw_metric_checks": 70,
+  "unique_incidents_checked": 9240,
+  "historical_cpu_limitation": "Exact CPU start/end snapshots were not archived; monotone intermediate samples and reported endpoint differences are checked, not independently reconstructed."
+}
+.venv/bin/python scripts/summarize_probes.py data/raw/homelab
+{
+  "status": "PASS",
+  "validated_probes": 6,
+  "early_drops_buffer16": 184.0
+}
+.venv/bin/python scripts/verify_revision.py data/raw/revision-20260924/confirm-v1
+{
+  "status": "PASS",
+  "cells": 60,
+  "measured_requests": 180000,
+  "measured_faults": 5400,
+  "export_trace_occurrences": 84021,
+  "export_span_occurrences": 420105,
+  "unique_trace_ids_including_warmup": 70000,
+  "unique_measured_trace_ids": 60000,
+  "max_snapshot_span_s": 0.00650816410779953
+}
+.venv/bin/python scripts/verify_followups.py data/raw/revision-20260924
+{
+  "status": "PASS",
+  "sources": {
+    "followup_source_matches": 5,
+    "frozen_file_matches": 12
+  },
+  "calibration": {
+    "cells": 480,
+    "unique_ids": 600000,
+    "reconstructed_hash_decisions": 4800000
+  },
+  "matched": {
+    "cells": 48,
+    "matched_payload_groups": 6,
+    "early_drop_receipts": [
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32001,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32003,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": true,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": true,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": true,
+        "early_drops": 44.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": false,
+        "late": false,
+        "cache": false,
+        "churn": false,
+        "early_drops": 0.0
+      },
+      {
+        "seed": 32002,
+        "root_error": true,
+        "late": true,
+        "cache": false,
+        "churn": true,
+        "early_drops": 244.0
+      }
+    ]
+  },
+  "offline": {
+    "curve_cells": 800,
+    "ablation_cells": 100,
+    "ablation_predictions": 300000
+  }
+}
+.venv/bin/python scripts/verify_cost_study.py data/raw/final-cost-20260925/pilot-v1
+{
+  "status": "PASS",
+  "cells": 12,
+  "measured_trace_occurrences": 6000,
+  "exported_spans_all": 29360,
+  "backend_spans_all": 14680,
+  "unique_input_traces": 3500,
+  "clock_ticks": 100,
+  "throttled_periods": 0,
+  "max_snapshot_span_s": 0.0006448216736316681,
+  "max_schedule_lag_s": 0.00023637637495993458,
+  "fixed_content_and_input_order_verified": true,
+  "native_selection_recomputed": true,
+  "exact_cpu_endpoints_recomputed": true,
+  "backend_content_verified": true
+}
+.venv/bin/python scripts/verify_cost_study.py data/raw/final-cost-20260925/confirm-v1
+{
+  "status": "PASS",
+  "cells": 96,
+  "measured_trace_occurrences": 288000,
+  "exported_spans_all": 1175200,
+  "backend_spans_all": 587600,
+  "unique_input_traces": 3500,
+  "clock_ticks": 100,
+  "throttled_periods": 0,
+  "max_snapshot_span_s": 0.0031567513942718506,
+  "max_schedule_lag_s": 0.0033360928297057058,
+  "fixed_content_and_input_order_verified": true,
+  "native_selection_recomputed": true,
+  "exact_cpu_endpoints_recomputed": true,
+  "backend_content_verified": true
+}
+.venv/bin/python scripts/verify_second_audit.py load data/raw/second-audit-20260925/load-confirm-v1
+{
+  "status": "PASS",
+  "cells": 80,
+  "exported_spans_including_warmup": 57855375,
+  "max_lag_s": 0.10854497015476383,
+  "throttled_usec": 0
+}
+.venv/bin/python scripts/verify_second_audit.py corpus data/raw/second-audit-20260925/diagnosis-confirm-v1
+{
+  "status": "PASS",
+  "episodes": 600,
+  "spans": 96000,
+  "full_correct": 568
+}
+.venv/bin/python scripts/verify_second_audit_contract.py
+{
+  "status": "PASS",
+  "scope": "all measured extensions",
+  "frozen_files_unchanged": 10,
+  "source_side_copy_checksums": 1601,
+  "unique_diagnosis_traces": 24000,
+  "programmed_leaf_delays_reconciled": 72000,
+  "minimum_observed_minus_programmed_ms": 0.006858321341264073,
+  "protected_traces_by_phase": {
+    "reference": 27,
+    "incident": 41
+  },
+  "fixed_trial_comparison_grid_verified": true,
+  "pinned_binary_limits_and_full_load_configuration_verified": true,
+  "planned_ingress_and_schedule_receipts_verified": true
+}
+lean proofs/TraceSampling.lean
+'TraceSampling.witnesses_mono' depends on axioms: [propext, Quot.sound]
+'TraceSampling.downstream_cannot_repair' depends on axioms: [propext, Quot.sound]
+'TraceSampling.singleton_lost' depends on axioms: [propext]
+'TraceSampling.seen_partition' depends on axioms: [propext, Quot.sound]
+'TraceSampling.missed_positive' does not depend on any axioms
+'TraceSampling.positive_discard_has_missed_word' depends on axioms: [propext, Quot.sound]

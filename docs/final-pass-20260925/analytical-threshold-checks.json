@@ -1,0 +1,25 @@
+{
+  "protected_traffic_fraction": "1/50",
+  "protected_fault_fraction": "2/3",
+  "loss_margin": "1/20",
+  "aggregate_background_threshold": "17/20",
+  "aggregate_tail_trace_budget": "853/1000",
+  "aggregate_tail_discard": "147/1000",
+  "per_family_tail_trace_budget": "951/1000",
+  "per_family_tail_discard": "49/1000",
+  "original_expected_tail_accuracy": "34/49",
+  "hoeffding_radius_n5_m160": 0.8983822175882501,
+  "minimum_blocks_for_radius_005": 1615,
+  "expected_accuracy_counterexample": {
+    "protected_failures": 2,
+    "unprotected_failures": 1,
+    "background_retention": "17/20",
+    "expected_accuracy": "19/20",
+    "realized_accuracy_support": [
+      "2/3",
+      "1"
+    ],
+    "probability_realized_accuracy_at_least_095": "17/20",
+    "method": "Exact rational proof arithmetic, not a new experimental observation"
+  }
+}

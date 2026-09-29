@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-28T14:39:09.554067+00:00",
+  "manifest_entries_checked": 7710,
+  "preexisting_mismatches": [
+    {
+      "file": "docs/fourth-audit-20260928/final-document-checks.json",
+      "manifest_sha256": "f8d569695bc9fbce3d93eb18171d3346b058b5f9a0bb1a0244929d64b59b216f",
+      "current_sha256": "d5927ebf195f6b56de8ea9779454d0702da48f2dc3e6ca7d26a200582a896662"
+    }
+  ],
+  "raw_or_frozen_source_mismatches": 0,
+  "backup_sha256": "af52d62e3e204139552270d8498a46efed540782e1205ddcd4fc65dbf250979d"
+}

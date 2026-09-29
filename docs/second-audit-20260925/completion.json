@@ -1,0 +1,35 @@
+{
+  "status": "COMPLETE",
+  "utc": "2026-09-25T15:25:41.056803+00:00",
+  "context": "homelab",
+  "namespace": "trace-sampling-load-20260925",
+  "freeze_utc": "2026-09-25T13:57:48.017192+00:00",
+  "measured_started_utc": "2026-09-25T13:58:10.127071+00:00",
+  "measured_complete_utc": "2026-09-25T15:10:39Z",
+  "load_cells": 80,
+  "diagnosis_incidents": 600,
+  "diagnosis_replay_rows": 80000,
+  "new_measured_source_side_files_verified": 1601,
+  "load_exported_spans_including_warmup": 57855375,
+  "previous_raw_files_unchanged": 4514,
+  "pdf_sha256": "4641b2673ccc6e03b7f5fffc5546c48ec144e59fe52b6e122b375e5bf65912be",
+  "pdf_pages": 21,
+  "pdf_whitespace_tokens": 8391,
+  "namespace_removed": true,
+  "nodes_ready": [
+    "homelab-01",
+    "homelab-02"
+  ],
+  "scope": "Internal validation and source review, not external replication or peer review",
+  "receipts": [
+    "load-validation.json",
+    "diagnosis-validation.json",
+    "contract-validation.json",
+    "load-summary-validation.json",
+    "corruption-checks.json",
+    "mathematical-checks.json",
+    "prior-evidence-revalidation.txt",
+    "pdf-visual-review.json",
+    "final-document-checks.json"
+  ]
+}

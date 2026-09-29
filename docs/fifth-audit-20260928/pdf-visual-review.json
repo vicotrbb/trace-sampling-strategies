@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-28T16:51:25.996307+00:00",
+  "pdf_path": "output/pdf/trace-sampling-collector-boundary.pdf",
+  "pdf_sha256": "dcb4c759c6bffbc4c674d8163550befb998a17049fe704345e8cc6f7eeb5b5c3",
+  "pages_inspected": 21,
+  "render": "pdftoppm -scale-to 1500 -png",
+  "inspection": "All pages were viewed for layout, clipping, equations, table alignment, figure labels, citations, and page breaks. After the final wording and spacing edits, all nine changed page images were viewed again; the other twelve are pixel-identical to the reviewed render.",
+  "page_images_sha256": {
+    "page-01.png": "23a7840559c53945944a4626a62c65a669225e4eca319c2b9ea95b582aa50b02",
+    "page-02.png": "3d8981abdfa48682d38bce782c1abbc5bf6c0b246e852561aad19617c300178c",
+    "page-03.png": "e5ec2a8aba15f6a27c112140cfb6a427562d646df64f68a5dc983454d9fe769d",
+    "page-04.png": "df48b8244db91291ebc1a03dec878c47e1a84f229f4f87452a13b818a8f85c32",
+    "page-05.png": "f9ceb044bec61b409d564d484221d467617963de919c24b8a96d47bfb43394f9",
+    "page-06.png": "3cf9a301b920461a455fc0f6ae2a83c6ad0f064a9f7f7c585f1a122f2a0538f6",
+    "page-07.png": "87756ed9590eed41db1f31f7c309fbda60e88a64e19b895841fcce4391db0462",
+    "page-08.png": "f437492fe227f908886304526eba79f33987e4e0cdb5eb487cd09618bbd8f3c9",
+    "page-09.png": "b68fb09293dd98646202c20276934be96a8579eb0d763fcec2b21be5b7556c51",
+    "page-10.png": "c01850762f06170477a568c6f43153926d4a4c224946c467ee3219eb476c9a84",
+    "page-11.png": "036c04e43d8be198911fed982c0b9bf91891d954ecbac2c020e9c5a256af9920",
+    "page-12.png": "a1bc6cd6c53444fe55e17aeddb012e902635f5271e2edd02312a676167202c0c",
+    "page-13.png": "8c001aa170efaba30517e326a7434fb2216f911d87c34416257fc7d11fba78a9",
+    "page-14.png": "fa8e955434018670dc16dda19d941c37116e3c1c6ea7aea157758dc29a7ad587",
+    "page-15.png": "3ce82674116ba0dc985f74cdcc10fac769acb65fd10106cd01bfe4fdec418566",
+    "page-16.png": "95bd470e841a4b59af9967f205fffd72af666435884d4dc26599aa567b161742",
+    "page-17.png": "12f7cc4efd8fcca0658356e90ced75e4be9de9a4e85e706ff2ccca58ef7f76bd",
+    "page-18.png": "0167a28960975af6d424cbb1e9104aa3759ff02f4fc1fdb6a9fc8c60f20dc547",
+    "page-19.png": "9433364b171141272475ca961305ac7213a116b1dec514d14cfb20956408fd99",
+    "page-20.png": "56bc572dcfac6116d26acd978db0afeddb5a7b5f8c0af5fa4d0c47768c317652",
+    "page-21.png": "64070711e6abc563d309fa5b49cc40a3ba917bfdd62906b80dc815c8c74745e3"
+  },
+  "issues_remaining": []
+}

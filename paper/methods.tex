@@ -1,0 +1,75 @@
+\section{Experimental method}\label{sec:methods}
+\subsection{Design and environment}
+Table~\ref{tab:design} identifies the experiments and their units. Each has a protocol and source freeze before measured execution, fixed seeds, randomized execution order, and archived functional pilots excluded from estimates. Resource experiments repeat runtime measurements; the localization example varies evidence on a fixed observed corpus.
+
+All workloads execute in isolated namespaces of a single-node Kubernetes testbed on one shared AMD Ryzen 7 5825U node: eight cores, sixteen logical CPUs, approximately 30.8\,GiB allocatable memory, Linux 6.6.68, and k3s v1.30.4+k3s1. Collector Contrib v0.136.0 and Python 3.12.10 are pinned. Resource transports use loopback; Collector and Jaeger use GOMAXPROCS=2. Placement and higher-load batching use six-CPU/10-GiB runner limits. The low-load exporter runner has four CPUs and 4\,GiB; load and localization runners have four CPUs and 6\,GiB. Contrasts pair treatments within campaigns; different campaigns are not pooled.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}p{.27\linewidth}>{\raggedright\arraybackslash}p{.38\linewidth}}
+\toprule
+Experiment & Measured units & Purpose \\
+\midrule
+Sampler placement & 40 cells, five blocks & Matched selections crossed with export path \\
+Exporter/batching & 96 cells, eight blocks & Fixed input at 250 offered spans/s \\
+Batching at higher load & 20 cells, five blocks & Retain-all versus bypass at 5,000 spans/s \\
+Load sweep & 80 cells, five blocks & Resource effects at 250--100,000 offered spans/s \\
+Live SDK comparison & 60 cells, five blocks & Application and Collector resource costs \\
+Localization example & 600 observed incidents & Nested windows and selection-dependent evidence \\
+\bottomrule
+\end{tabular}
+\caption{Runtime blocks and observed incidents are distinct units. The localization example has 5,000 conditional replay trials per configuration across forty-eight configurations. Supporting delivery probes are specified in Section~\ref{sec:delivery-results}.}
+\label{tab:design}
+\end{table}
+
+\subsection{Matched sampler placement}\label{sec:boundary-method}
+Five randomized blocks cross full retention, a pre-ingress uniform gate, an in-Collector probabilistic sampler before batching, and nominal 10\% tail with JSON-only or JSON-plus-Jaeger export. Each cell offers 8,000 complete five-span traces/s before selection. Every hundred traces contain one ERROR and one 400\,ms root; other roots last 10\,ms. SHA-256-derived trace IDs and phase/sequence attributes identify the synthetic input, grouped in requests of at most one hundred traces.
+
+The uniform treatments retain exactly the same IDs using the pinned probabilistic processor's \texttt{hash\_seed} mode, seed 1729, and configured 10\%~\cite{otelProbabilistic0136}. A separate FNV-1a32 implementation reconstructs selection from fourteen-bit buckets below 1638, corresponding to a uniform-bucket fraction of 9.9976\%. The in-Collector treatment receives the complete input and adds native sampling tracestate. The placement contrast therefore includes selection and metadata work as well as the avoided ingress.
+
+Tail protects ERROR or trace duration at least 250\,ms, and otherwise uses native probabilistic selection with background $0.08/0.98$. It has a two-second decision wait, 161,000 trace slots, and 1,288,000 entries per decision cache. Common batch settings are timeout 1,000\,ms, target 1,024 spans, and maximum 2,048. Each cell starts fresh processes and storage, warms up for five seconds, drains for five, measures thirty seconds of load, and drains for five more. Preparation, startup, trace queries, shutdown, and archival compression are outside the CPU endpoint.
+
+Excluded capacity pilots test 100,000, 40,000, then 10,000 offered spans/s, stopping at the highest rate that meets delivery, scheduling, and throttling criteria. At 100,000, Jaeger's successful-save count remains incomplete at the final scrape; 40,000 passes. Collector export acknowledgments alone are insufficient because the pinned Jaeger receiver queues backend work~\cite{jaegerSpanProcessor176}. Both warmup and final save counters must match all selected spans supplied to date, with zero save errors. The final CPU snapshot follows the counter scrape. CPU direction is not a rate-selection criterion.
+
+\subsection{Fixed-input exporter and batching intervention}\label{sec:export-method}
+A single archived checkout/steady corpus supplies 500 warmup and 3,000 measured requests with five spans each. It was recorded from an OpenTelemetry Python 1.37.0 application executing HTTP and PostgreSQL operations. Trace IDs, parent links, statuses, attributes, and durations are preserved; one common timestamp translation moves the corpus into the backend query window. Input payload bytes are identical across treatments. Replay offers ten complete traces every 200\,ms, or 250 spans/s.
+
+Eight randomized blocks cross JSON-only versus JSON-plus-Jaeger export, batch timeout 100 versus 1,000\,ms, and bypass versus retain-all tail versus nominal 10\% tail. Batch target 256/maximum 512, tail decision wait two seconds, capacity 512, and both decision caches 10,000 remain fixed. Both tail modes evaluate ERROR, latency, and background policies in the same order without first-match short circuiting. Retain-all tail sets the background probability to one; the sampled mode uses $0.08/0.98$.
+
+The additional exporter sends compressed OpenTelemetry Protocol (OTLP) HTTP protobuf to Jaeger 1.76.0 with local Badger storage~\cite{jaegerDeployment176,jaegerCli176,otelOtlpHttp0136}. The Collector exporter's queue and retries are disabled. Collector, Jaeger, and the store start fresh per cell; Jaeger also runs without receiving traces in JSON-only cells. Ten seconds of warmup and five of drain precede the sixty-second measured schedule and common five-second final drain. A twelve-cell setup pilot is excluded. Primary contrasts compare each tail mode with bypass within exporter/timeout combinations; every paired block is retained.
+
+The higher-load experiment crosses bypass and retain-all tail with the same two timeouts and dual export in five blocks. It cyclically replays the same SDK templates with distinct trace IDs and translated timestamps, preserving span content and appending phase/sequence/template identifiers. Requests still contain ten traces, now offered at 5,000 spans/s. All treatments within a block receive identical bytes. Tail slots/caches match the placement experiment; batch target/maximum remain 256/512. Warmup, measurement, and drain durations match the low-load experiment. The 256-span target is close to one second of the original 250-span/s stream, exposing timeout effects; the higher-load study retains that target, while placement retains the sweep's 1,024/2,048 settings for comparability. Cloned templates increase offered load, not the number of independently observed application requests.
+
+An initial five-second capacity pilot accepted 20,000 spans/s, but the first measured cell failed the final backend-save equality check, and execution stopped. A recorded amendment required full sixty-second pilots at the next predefined candidates: 10,000 failed the 0.5\,s scheduling-lag limit; 5,000 passed all four treatments. That rate was frozen before the twenty-cell campaign. This operating point is limited by the harness's pacing criterion, not an identified Collector capacity: the 10,000-span/s pilot completed delivery but missed generator scheduling, using ten-trace requests rather than placement's hundred-trace requests. The failed measured attempt and excluded pilots remain archived; none contributes to the paired estimates. Acceptance criteria and measurement windows were unchanged.
+
+\subsection{Offered-load sweep}\label{sec:load-method}
+The sweep uses the same synthetic five-span construction as the placement experiment at 50, 2,000, 8,000, and 20,000 traces/s. Five randomized blocks cross every rate with full retention, a pre-ingress BLAKE2b gate at 10\%, nominal 10\% tail, and retain-all tail. Tail capacity, caches, batching, and measurement durations match the placement experiment. The sweep's gate has a different hash from the matched placement controls, so its aggregate results are reported separately.
+
+An excluded setup pilot selected the upper rate by a predefined criterion: at least 0.25 mean Collector cores, scheduling lag below 0.5\,s, and complete delivery. The eighty measured cells use fixed settings at all rates. Selection, span content, and counters must reconcile without early drop, refusal, or failed export. Shutdown must add no output beyond the endpoint. CPU ticks, RSS samples, schedule lag, and throttling are archived for every cell.
+
+\paragraph{Separate SDK resource measurements.}
+A retained live study crosses checkout and document applications, steady and bursty arrivals averaging fifty requests/s, and full retention, SDK head, and tail policies in five randomized blocks, sixty cells in total. Python OpenTelemetry 1.37.0 applies parent-based trace-ID-ratio head selection at 10\%~\cite{otelPythonSampler137}. Each cell has ten seconds of warmup, sixty seconds of requests, and five seconds of final drain, using real HTTP and PostgreSQL operations, Collector export to Jaeger, and a JSON mirror. SQL errors, delayed queries, and domain-invariant faults each affect 1\% of measured requests. Application CPU sums gateway and worker process time. Its paired resource contrasts provide a separate boundary comparison.
+
+\subsection{Illustrative localization task}\label{sec:diagnosis-method}
+The example tests how retained reference evidence affects a specified scorer. A gateway visits three loopback HTTP leaf handlers in one Python process, with no nested leaf calls. Background delays are lognormal with median 8\,ms and log standard deviation 0.5. The driver constructs four-span OTLP-format traces from actual server timestamps and the enclosing request interval. All statuses are OK; cause labels and injection controls are absent from observed attributes. Sampling is ideal offline replay, without an SDK or Collector.
+
+The 600 incidents cross three affected services, added delays 5/15\,ms, affected-request probabilities 0.5/1, and fifty seeds per combination. Incident order is randomized, with at most eight workers. Each incident has 200 reference and 200 incident requests; nested prefixes of 20, 50, and 200 form paired views of the same incidents. The scorer predicts the candidate service with the largest retained median increase,
+\begin{equation}\label{eq:scorer}
+ h_s=\operatorname{median}(d_{s,\rm incident})-
+     \operatorname{median}(d_{s,\rm reference}).
+\end{equation}
+Even-count medians average the middle values; service-name order breaks ties. A nonpositive maximum still produces a prediction. Either empty window causes abstention, counted as incorrect. Both windows are sampled. All full-data errors remain. Candidate services and incident boundaries are supplied, so this is a closed-set localization task; a uniform random guess among the balanced candidates has accuracy one third.
+
+A disjoint 2,000-request healthy calibration fixes the nearest-rank 95th percentile of root duration before collecting incidents. Tail protects roots at or above this threshold. For each window size, the measured corpus-wide protected fraction determines $r$ through Equation~\eqref{eq:tailbudget}, equalizing expected trace budgets. The expected fractions are 5\%, 10\%, 20\%, 35\%, 50\%, 65\%, 80\%, and 95\%; infeasible tail budgets remain recorded. A separate twelve-incident functional pilot is excluded without tuning accuracy.
+
+There are 5,000 randomized replay trials per configuration. Trial $t$ uses Python \texttt{Random} with seed $1990000+t$ to draw an incident uniformly with replacement and 400 trace priorities shared across all windows, budgets, and policies. This implements the declared ideal iid replay model. Trials estimate a fixed-corpus average; they are not additional observed incidents.
+
+\subsection{Measurement, inference, and validation}\label{sec:validation-method}
+Collector CPU is user-plus-system process time over measured load and drain, from endpoint snapshots with 0.01\,s tick resolution. RSS is sampled approximately once per second in the low-load exporter experiment and every 500\,ms in the other replay experiments. JSON is uncompressed serialized output; accepted-span counts exclude transport framing. Placement and higher-load batching additionally report Jaeger CPU and their process sum. Generator CPU covers sending and monitoring during the window; input construction and pre-ingress selection occur in excluded preparation and are not timed. Complete JSON outputs are reconstructed independently. In these two experiments, backend save counters cover every selected span, while post-endpoint trace queries check sixteen selected traces per phase and dual-export cell. This is a content sample, not a durability test. Study cells execute sequentially, and archive transfers follow measured collection.
+
+For a resource contrast, the runtime block is the replication unit. Pointwise intervals are $\bar x\pm t_{0.975,n-1}s/\sqrt n$, with five or eight paired differences. The study reports every configured primary contrast and all blocks, without significance-based selection.
+
+For the localization example, we report sampled accuracy and paired net loss $\overline Z_a$, where $Z_{t,a}=B_{I_t}-A_{I_t,a}\in\{-1,0,1\}$ includes improvements as negative losses. Monte Carlo standard errors are $s/\sqrt{5000}$ using the sample standard deviation of correctness or paired loss. They measure precision over randomized replay conditional on the fixed corpus. Complete configuration results remain in the artifact.
+
+\paragraph{AI-assisted research workflow.}
+OpenAI Codex assisted protocol design, literature discovery, the workload and orchestration programs, analysis and validation code, mathematical derivations and proof code, and figure-generation code. Automated workloads collected the measurements in the Kubernetes testbed. Timings and resource counters are archived program observations. Codex also assisted manuscript drafting and revision. The validation implementations are part of the same AI-assisted research workflow, not external replication. Source freezes, raw observations, and executable checks make these steps inspectable. The author retains responsibility for the methods, claims, source attribution, and final text.

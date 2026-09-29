@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-28T14:53:36.455159+00:00",
+  "stage": "before amended pilots",
+  "files": {
+    "experiments/fifth_audit/pilot-amendment-1.md": "d453e3ce5e36e6ccf49aba6054a3ea8ea8e015834522146d9b48eff7cf607d09",
+    "experiments/fifth_audit/pod.yaml": "dda7e60659d8390f70a27b595c1bf30d186b8b1808cf6b755121fe3fda7a663c",
+    "experiments/fifth_audit/protocol.md": "189898c3b8fc7e20ff5832bbc10e890cad5532caeb4a09996ae71da4cf33c08e",
+    "experiments/fifth_audit/run_pilots.py": "044718b6fdbe6e65b38aaa0208a363a3114ebeebc7ae968196fd29a4090e270e",
+    "experiments/fifth_audit/runtime.py": "21c7c34a59d4e56cad9cf4009324d2b4cc7b939a6397012561acbbe80f8fd6bc",
+    "experiments/fifth_audit/study.py": "94086669d8cb045b4035d2b47bd020895040b99841dd77e1b57bb401dc223a70"
+  }
+}

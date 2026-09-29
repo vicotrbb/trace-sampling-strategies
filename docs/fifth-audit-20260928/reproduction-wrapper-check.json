@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-28T16:35:51.948532+00:00",
+  "checks": [
+    "bash syntax",
+    "Python driver syntax",
+    "amended archive, validator, analysis and freeze routing"
+  ],
+  "scope": "Assembled from exercised execution steps. The wrapper itself has not produced a second complete campaign.",
+  "files": {
+    "experiments/fifth_audit/run_homelab.sh": "f0093466c4fe5d05add4bd0a04568bf897242f3763a4a5519802bc40aeea72c1",
+    "experiments/fifth_audit/reproduce_placement_pilots.py": "388922a39ea6cb6a455478c75d9bf376d9a86c2bd35eec574c47478e7cae2edf",
+    "experiments/fifth_audit/reproduce_placement_measured.py": "7e7068cc847fd2d0c63c04c310bb94457888ab505e60c0088a7e050dd4f8db54"
+  }
+}

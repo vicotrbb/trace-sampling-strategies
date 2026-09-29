@@ -1,0 +1,56 @@
+{
+  "utc": "2026-09-28T13:57:51.661673+00:00",
+  "sources": [
+    {
+      "file": "mint.html",
+      "url": "https://arxiv.org/html/2411.04605v1",
+      "final_url": "https://arxiv.org/html/2411.04605v1",
+      "sha256": "b9b7b4828956c62f74253a257ae27c1a0093623aa87c7b23b4b3e67197e02065",
+      "bytes": 245653,
+      "status": "retrieved"
+    },
+    {
+      "file": "unisage.html",
+      "url": "https://arxiv.org/html/2509.26336v2",
+      "final_url": "https://arxiv.org/html/2509.26336v2",
+      "sha256": "57b9100e531764f294a9bb53e229bda83eb08aa5234049f270eb8c300b5c8926",
+      "bytes": 361341,
+      "status": "retrieved"
+    },
+    {
+      "file": "gleaner.html",
+      "url": "https://arxiv.org/html/2604.16810v1",
+      "final_url": "https://arxiv.org/html/2604.16810v1",
+      "sha256": "ec1107f97a73b3ae191c9c2fdff010199776eb29c25a6a3172767810d53249e0",
+      "bytes": 351515,
+      "status": "retrieved",
+      "original_sha256": "a8ddac0c0f2b1cd2bf4819458be4df41b0ab534f03879e894bc5d69ad9989a3b",
+      "original_bytes": 351523,
+      "local_copy_status": "punctuation-normalized reading copy",
+      "transformation": "Em dashes replaced with commas at the author request; no scientific values changed",
+      "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+      "original_archive_member": "docs/fourth-audit-20260928/sources/gleaner.html"
+    },
+    {
+      "file": "acm-authorship.html",
+      "url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "icpe-research.html",
+      "url": "https://icpe2027.spec.org/tracks-and-submissions/research-paper-track/",
+      "final_url": "https://icpe2027.spec.org/tracks-and-submissions/research-paper-track/",
+      "sha256": "4c65416fa074cd54813ea99c460ddcaffa43cb2eb93379cb29b51f40b6edc79e",
+      "bytes": 24911,
+      "status": "retrieved"
+    }
+  ],
+  "local_punctuation_normalization": {
+    "date_utc": "2026-09-28T18:33:44.894989+00:00",
+    "report": "docs/punctuation-normalization-20260928/report.md",
+    "original_archive": "docs/punctuation-normalization-20260928/before-normalization.tar.gz",
+    "original_archive_sha256": "b79c2ec952699843dc71b09674d981246e3bb2b6ad4fbf553f59a0850325832c",
+    "note": "Retrieval dates describe the original downloads. Current hashes describe the normalized local copies. Original bytes remain in the archive."
+  }
+}

@@ -1,0 +1,8 @@
+\section{Conclusion}\label{sec:conclusion}
+Trace sampling must be evaluated at an explicit collection boundary and against an explicit evidence objective. For RQ1, matched uniform selections show that sampler placement and export path change the sign and magnitude of Collector cost. Native uniform sampling increases CPU with JSON-only export and reduces it when the same pipeline also exports to Jaeger. Its matched pre-ingress gate avoids substantially more Collector work, while the separate SDK study measures savings within application processes.
+
+For RQ2, retain-all controls show that batching can change CPU even when every span survives. The low-load CPU reversal does not persist at the higher operating point, where bypass already forms size-triggered batches and tail increases cost at both timeouts. For RQ3, the load sweep shows that reduced exported volume can coexist with greater Collector CPU and memory. Trace retention, batch count, serialized bytes, and component cost therefore require separate measurements.
+
+The controlled localization example in RQ4 demonstrates that larger evidence windows and selection-dependent reference coverage change a fixed scorer's accuracy after sampling. Supporting delivery probes distinguish ideal selection from the effects of late spans, caches, and capacity. These observations define task and configuration dependencies rather than a universal discard threshold.
+
+The practical result is a method of comparison: match selections when testing placement, use retain-all controls when testing stateful processing, verify delivery, and evaluate the intended diagnostic task. The artifact supplies the inputs, raw observations, protocols, and checks needed to examine these results.

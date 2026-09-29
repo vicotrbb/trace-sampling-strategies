@@ -1,0 +1,78 @@
+{
+  "threshold_ms": 45.310353,
+  "baselines": {
+    "20": {
+      "episodes": 600,
+      "correct": 555
+    },
+    "50": {
+      "episodes": 600,
+      "correct": 593
+    },
+    "200": {
+      "episodes": 600,
+      "correct": 600
+    }
+  },
+  "alphas": {
+    "20": 0.135125,
+    "200": 0.13254166666666667,
+    "50": 0.13191666666666665
+  },
+  "best_supported": {
+    "20-head": {
+      "budget": 0.8,
+      "correct": 4507,
+      "losses": 197,
+      "gains": 104,
+      "upper_loss_bound": 0.04859832575826569,
+      "mean_reference_retained": 16.0062,
+      "mean_incident_retained": 16.0338
+    },
+    "20-tail": {
+      "budget": 0.8,
+      "correct": 4511,
+      "losses": 199,
+      "gains": 110,
+      "upper_loss_bound": 0.049038746185873484,
+      "mean_reference_retained": 15.652,
+      "mean_incident_retained": 16.3472
+    },
+    "50-head": {
+      "budget": 0.65,
+      "correct": 4825,
+      "losses": 132,
+      "gains": 16,
+      "upper_loss_bound": 0.03413239410777659,
+      "mean_reference_retained": 32.4804,
+      "mean_incident_retained": 32.5224
+    },
+    "50-tail": {
+      "budget": 0.65,
+      "correct": 4823,
+      "losses": 134,
+      "gains": 16,
+      "upper_loss_bound": 0.034582828958863866,
+      "mean_reference_retained": 30.9154,
+      "mean_incident_retained": 34.0422
+    },
+    "200-head": {
+      "budget": 0.2,
+      "correct": 4886,
+      "losses": 114,
+      "gains": 0,
+      "upper_loss_bound": 0.030058502087573158,
+      "mean_reference_retained": 39.9122,
+      "mean_incident_retained": 39.9792
+    },
+    "200-tail": {
+      "budget": 0.35,
+      "correct": 4953,
+      "losses": 47,
+      "gains": 0,
+      "upper_loss_bound": 0.014398328688967704,
+      "mean_reference_retained": 58.0546,
+      "mean_incident_retained": 81.5982
+    }
+  }
+}

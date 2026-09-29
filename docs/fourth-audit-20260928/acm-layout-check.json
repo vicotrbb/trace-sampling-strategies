@@ -1,0 +1,11 @@
+{
+  "purpose": "Internal ACM layout estimate; not an anonymized or submission-ready artifact",
+  "title": "Trace Sampling at the Collector Boundary: Costs and Diagnostic Evidence",
+  "pages_before_references": 8,
+  "total_pages": 11,
+  "main_body_within_ten_pages": true,
+  "references_forced_to_next_page": true,
+  "tables_and_figures_use_full_width_floats": true,
+  "source_template_unchanged": true,
+  "overfull_boxes": 0
+}

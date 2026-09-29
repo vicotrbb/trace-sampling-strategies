@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rejected": [
+    "missing remaining comparisons",
+    "duplicate comparison",
+    "wrong window",
+    "skipped trial"
+  ]
+}

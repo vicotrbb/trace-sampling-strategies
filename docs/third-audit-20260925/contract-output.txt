@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "frozen_files": 9,
+  "threshold_frozen_before_incidents": true,
+  "new_load_cells": 20,
+  "matched_full_ingress_phase_pairs": 20,
+  "uniform_selected_counts_match": true,
+  "load_summaries_independently_recomputed": 34,
+  "protected_window_counts_and_all_descriptive_strata_verified": true,
+  "source_side_copy_hashes": 1029,
+  "pinned_binary_and_runtime_limits_verified": true,
+  "utc": "2026-09-25T17:54:13.508976+00:00"
+}

@@ -1,0 +1,1011 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Node",
+            "metadata": {
+                "annotations": {
+                    "alpha.kubernetes.io/provided-node-ip": "192.168.50.132",
+                    "csi.volume.kubernetes.io/nodeid": "{\"driver.longhorn.io\":\"homelab-01\"}",
+                    "etcd.k3s.cattle.io/local-snapshots-timestamp": "2026-07-18T04:52:45-03:00",
+                    "k3s.io/hostname": "homelab-01",
+                    "k3s.io/internal-ip": "192.168.50.132",
+                    "k3s.io/node-args": "[\"server\",\"--token\",\"********\",\"--write-kubeconfig-mode\",\"0644\",\"--disable\",\"servicelb\",\"--disable\",\"traefik\",\"--disable\",\"local-storage\",\"--bind-address\",\"0.0.0.0\",\"--flannel-backend\",\"none\",\"--disable-network-policy\",\"--cluster-cidr\",\"10.42.0.0/16\",\"--tls-san\",\"192.168.50.132\",\"--tls-san\",\"192.168.50.133\",\"--server\",\"https://192.168.50.133:6443\",\"--disable-etcd\"]",
+                    "k3s.io/node-config-hash": "SAEDLLLJAD6YYISAM6RO3DMDLW3N22XPX4GSV3FEXTEAVXFJHNPA====",
+                    "k3s.io/node-env": "{}",
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "projectcalico.org/IPv4Address": "192.168.50.132/24",
+                    "projectcalico.org/IPv4VXLANTunnelAddr": "10.42.248.128",
+                    "projectcalico.org/Interfaces": "[{\"name\":\"enp1s0\"},{\"name\":\"enp2s0\",\"addresses\":[\"192.168.50.132\"]},{\"name\":\"wlp3s0\"}]",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "creationTimestamp": "2026-02-25T03:20:44Z",
+                "finalizers": [
+                    "wrangler.cattle.io/managed-etcd-controller",
+                    "wrangler.cattle.io/node"
+                ],
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/instance-type": "k3s",
+                    "beta.kubernetes.io/os": "linux",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "homelab-01",
+                    "kubernetes.io/os": "linux",
+                    "node-role.kubernetes.io/control-plane": "true",
+                    "node-role.kubernetes.io/master": "true",
+                    "node.kubernetes.io/instance-type": "k3s"
+                },
+                "name": "homelab-01",
+                "resourceVersion": "117239949",
+                "uid": "d475da32-8e39-429c-b4ec-521a1caa9a5b"
+            },
+            "spec": {
+                "podCIDR": "10.42.0.0/24",
+                "podCIDRs": [
+                    "10.42.0.0/24"
+                ],
+                "providerID": "k3s://homelab-01"
+            },
+            "status": {
+                "addresses": [
+                    {
+                        "address": "192.168.50.132",
+                        "type": "InternalIP"
+                    },
+                    {
+                        "address": "homelab-01",
+                        "type": "Hostname"
+                    }
+                ],
+                "allocatable": {
+                    "cpu": "16",
+                    "ephemeral-storage": "972870227615",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "32245544Ki",
+                    "pods": "110"
+                },
+                "capacity": {
+                    "cpu": "16",
+                    "ephemeral-storage": "976633Mi",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "32245544Ki",
+                    "pods": "110"
+                },
+                "conditions": [
+                    {
+                        "lastHeartbeatTime": "2026-02-25T04:35:34Z",
+                        "lastTransitionTime": "2026-02-25T04:35:34Z",
+                        "message": "Calico is running on this node",
+                        "reason": "CalicoIsUp",
+                        "status": "False",
+                        "type": "NetworkUnavailable"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-07-18T14:02:29Z",
+                        "lastTransitionTime": "2026-07-17T23:02:55Z",
+                        "message": "Node is a voting member of the etcd cluster",
+                        "reason": "MemberNotLearner",
+                        "status": "True",
+                        "type": "EtcdIsVoter"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:54:30Z",
+                        "lastTransitionTime": "2026-09-11T17:36:01Z",
+                        "message": "kubelet has sufficient memory available",
+                        "reason": "KubeletHasSufficientMemory",
+                        "status": "False",
+                        "type": "MemoryPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:54:30Z",
+                        "lastTransitionTime": "2026-09-11T17:36:01Z",
+                        "message": "kubelet has no disk pressure",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "status": "False",
+                        "type": "DiskPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:54:30Z",
+                        "lastTransitionTime": "2026-09-11T17:36:01Z",
+                        "message": "kubelet has sufficient PID available",
+                        "reason": "KubeletHasSufficientPID",
+                        "status": "False",
+                        "type": "PIDPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:54:30Z",
+                        "lastTransitionTime": "2026-09-11T17:36:01Z",
+                        "message": "kubelet is posting ready status",
+                        "reason": "KubeletReady",
+                        "status": "True",
+                        "type": "Ready"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "images": [
+                    {
+                        "names": [
+                            "ghcr.io/blakeblackshear/frigate@sha256:1724960349dad0bd2ae8ec884171a6fd5755a4dc242a0e66cadbda9c0e85c99b",
+                            "ghcr.io/blakeblackshear/frigate:stable"
+                        ],
+                        "sizeBytes": 1794248808
+                    },
+                    {
+                        "names": [
+                            "docker.io/infisical/infisical@sha256:2b5c481cf806b76a03228ab6d0dc3d0f65373dfd34a164cfa5229885dbfdd657",
+                            "docker.io/infisical/infisical:v0.155.1"
+                        ],
+                        "sizeBytes": 870510544
+                    },
+                    {
+                        "names": [
+                            "docker.io/homeassistant/home-assistant@sha256:59aa8824955c9db491b75d2eebe42bd68494f80c2ec69ec0d66d9dae37d37514",
+                            "docker.io/homeassistant/home-assistant:2026.6.1"
+                        ],
+                        "sizeBytes": 616619752
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/plastic-labs/honcho@sha256:32a831e303fa4053bf82af3b65cea019b80a7b491cfcdef3b5cb81c8cef635bf"
+                        ],
+                        "sizeBytes": 574928604
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/rust@sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+                            "docker.io/library/rust:1.96-bookworm"
+                        ],
+                        "sizeBytes": 563821022
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/gcc@sha256:b99b86a28812b1e6453a231a947dc43d76fe192788a12f344a9b568bf9f5d24c",
+                            "docker.io/library/gcc:14.2.0-bookworm"
+                        ],
+                        "sizeBytes": 508841261
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/node@sha256:2fa6c977460b56d4d8278947ab56faeb312bc4cc6c4cf78920c6de27812f51c5",
+                            "docker.io/library/node:22.17.0-bookworm"
+                        ],
+                        "sizeBytes": 406005843
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/python@sha256:9bed8554e926c07c6f908841d5ee88c33e8df9236b191526bbce81a9062ab43a",
+                            "docker.io/library/python:3.12-bookworm"
+                        ],
+                        "sizeBytes": 380458292
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/python@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12",
+                            "docker.io/library/python:3.12.11-bookworm"
+                        ],
+                        "sizeBytes": 380181343
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/python@sha256:5c34b355088846dddc8afb7442c20b9433dccdc8d66192dc52c616adeaa106a3"
+                        ],
+                        "sizeBytes": 378893348
+                    },
+                    {
+                        "names": [
+                            "docker.io/redis/redis-stack@sha256:96a8426b991a06c1e07198c5af5a62d0b24e87a7dfd6a1efaff19c2d80af836b",
+                            "docker.io/redis/redis-stack:7.2.0-v11"
+                        ],
+                        "sizeBytes": 357913192
+                    },
+                    {
+                        "names": [
+                            "docker.io/longhornio/longhorn-instance-manager@sha256:ade31319f5e03bb84398b9bda1f377b91ae98a2d9ebf0ceb4d8ce69f03e15737",
+                            "docker.io/longhornio/longhorn-instance-manager:v1.6.4"
+                        ],
+                        "sizeBytes": 342286955
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/colanode/server@sha256:7006cac874fd5a154425108b9c7e6d6d9d117933c3694820b1a4c28aeb10008c",
+                            "ghcr.io/colanode/server:0.4.7"
+                        ],
+                        "sizeBytes": 263244766
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/ayla-service@sha256:eacb459e00a8ea2d8e33404b27ba0d6c819b633d94b77ff899b2797fdda77b69",
+                            "ghcr.io/vicotrbb/ayla-service:029ff6e"
+                        ],
+                        "sizeBytes": 242365296
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/cloudnative-pg/postgresql@sha256:99be063781d171d3971089b49c992706bdab9ccbd2b57cdf126c7542773aedfe",
+                            "ghcr.io/cloudnative-pg/postgresql:16.4"
+                        ],
+                        "sizeBytes": 217672880
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/grafana@sha256:70d9599b186ce287be0d2c5ba9a78acb2e86c1a68c9c41449454d0fc3eeb84e8",
+                            "docker.io/grafana/grafana:12.3.0"
+                        ],
+                        "sizeBytes": 210145120
+                    },
+                    {
+                        "names": [
+                            "quay.io/argoproj/argocd@sha256:a7c20a17155aa16b0350f22ed01d12c7fd3dcea9f59d95b231c62a0df41c6d41",
+                            "quay.io/argoproj/argocd:v2.14.10"
+                        ],
+                        "sizeBytes": 186057558
+                    },
+                    {
+                        "names": [
+                            "docker.io/nidus-bench/java-spring:v1.0.12-campaign"
+                        ],
+                        "sizeBytes": 165890686
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 165890078
+                    },
+                    {
+                        "names": [
+                            "docker.io/longhornio/longhorn-engine@sha256:dd64fb7278fac78dd409671291f6ae7ca9d3594af12cc095a22d622a3f2532d5",
+                            "docker.io/longhornio/longhorn-engine:v1.6.4"
+                        ],
+                        "sizeBytes": 161341425
+                    },
+                    {
+                        "names": [
+                            "quay.io/calico/node@sha256:f2339c4ff3a57228cbc39a1f67ab81abded1997d843e0e0b1e86664c7c4eb6c0",
+                            "quay.io/calico/node:v3.31.3"
+                        ],
+                        "sizeBytes": 159483847
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/alloy@sha256:c311595156fca7b1131683d383dae1acfd29e8879d347161d2a6f714ebac0c0b",
+                            "docker.io/grafana/alloy:v1.12.1"
+                        ],
+                        "sizeBytes": 151265121
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus/prometheus@sha256:2b6f734e372c1b4717008f7d0a0152316aedd4d13ae17ef1e3268dbfaf68041b",
+                            "quay.io/prometheus/prometheus:v3.8.1"
+                        ],
+                        "sizeBytes": 136309267
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/devboxes-controller@sha256:905944905c50b5920c04fe3da097eb17924f561f31bb707df56fc6ee119a90ff",
+                            "ghcr.io/vicotrbb/devboxes-controller:0.3.0"
+                        ],
+                        "sizeBytes": 136183744
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/cloudnative-pg/pgbouncer@sha256:84d52334c3ea8fa3961c3f34ec50e5c6b12d46ad8aa77f0d1b67ee332768c2d6",
+                            "ghcr.io/cloudnative-pg/pgbouncer:1.23.0"
+                        ],
+                        "sizeBytes": 133658327
+                    },
+                    {
+                        "names": [
+                            "docker.io/longhornio/longhorn-manager@sha256:49843e94581e63319c259007b6485308c86fe133db4ea1e5a10867a99abf44b8",
+                            "docker.io/longhornio/longhorn-manager:v1.6.4"
+                        ],
+                        "sizeBytes": 124075362
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/colanode/postgresql@sha256:afd94e7eb82136e37420563eed09cf73ec80ce9a7ccdc44599dca29d8b76c4af",
+                            "ghcr.io/colanode/postgresql:17"
+                        ],
+                        "sizeBytes": 112516883
+                    },
+                    {
+                        "names": [
+                            "docker.io/pihole/pihole@sha256:8bc45afe1625487aef62859a5bf02f3d7b3429e480f4e29e4689635ab86ec312",
+                            "docker.io/pihole/pihole:2023.05.2"
+                        ],
+                        "sizeBytes": 112504836
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/postgres@sha256:ef257d85f76e48da1c64832459b59fcaba1a4dac97bf5d7450c77753542eee94",
+                            "docker.io/library/postgres:17.6-alpine"
+                        ],
+                        "sizeBytes": 110633742
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/postgres@sha256:20edbde7749f822887a1a022ad526fde0a47d6b2be9a8364433605cf65099416"
+                        ],
+                        "sizeBytes": 109997116
+                    },
+                    {
+                        "names": [
+                            "registry.k8s.io/ingress-nginx/controller@sha256:e24f39d3eed6bcc239a56f20098878845f62baa34b9f2be2fd2c38ce9fb0f29e"
+                        ],
+                        "sizeBytes": 103823244
+                    },
+                    {
+                        "names": [
+                            "docker.io/ducktors/turborepo-remote-cache@sha256:9040ea1ad67ff66ad1aada03891e67ccd6c195ee5b45ac0e2a7815fc2ab9db2d",
+                            "docker.io/ducktors/turborepo-remote-cache:2.11.1"
+                        ],
+                        "sizeBytes": 101202181
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnamilegacy/minio@sha256:8935e75fa5d11295c17171e4aa49efe390a1193cd7f12e4d21b92af9ffef09d7",
+                            "docker.io/bitnamilegacy/minio:2025.7.23-debian-12-r0"
+                        ],
+                        "sizeBytes": 99109636
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/e-navigator:homelab-source-telemetry"
+                        ],
+                        "sizeBytes": 98443697
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/headlamp-k8s/headlamp@sha256:c8c564ffbf088955efa4d08523df1b76e3bc4594efaf85efe9996ab99ebe48b2",
+                            "ghcr.io/headlamp-k8s/headlamp:v0.39.0"
+                        ],
+                        "sizeBytes": 98254074
+                    },
+                    {
+                        "names": [
+                            "docker.io/longhornio/longhorn-share-manager@sha256:07f9a619396604d86d41fe6303d1a7a8289f1ada8afb42bd8a0abd790fa5080c",
+                            "docker.io/longhornio/longhorn-share-manager:v1.6.4"
+                        ],
+                        "sizeBytes": 92324711
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:36779378300852dd1ad090e5a9c1cc432fbc21d48ab90d4c51a5f68fd4c45197"
+                        ],
+                        "sizeBytes": 92225718
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:60485d22cd83e834af94fb4d992bc208deb07ad146d9c60811fbcef4ba6ab7f0"
+                        ],
+                        "sizeBytes": 92225597
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:d97d6b26dba047a4bcf85ce6d3d6229a59dce880fd7718a70334304e28aa164f"
+                        ],
+                        "sizeBytes": 92225370
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:b30ca76dc26e4d0e1286682a7dc190b0ab0374f283b013b302481662c8b141d1"
+                        ],
+                        "sizeBytes": 92225060
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:202a00a142dab1aee038fc14712161107163d24bafd997214e6b68f2fe3a0821"
+                        ],
+                        "sizeBytes": 92224988
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:ab9963e334ea458f226606c257507a1b55926c21f9ce7bbc2c15f7f2ff8c7909"
+                        ],
+                        "sizeBytes": 92224048
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:a6857b035ff7dbff4b4bcaa22999f4c52ad78cd824263d4054486fd9156ae401",
+                            "ghcr.io/vicotrbb/scrollwise:3d184e732cd382efcfb85082dd5fed09b94b132b"
+                        ],
+                        "sizeBytes": 92223617
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/vicotrbb/scrollwise@sha256:f50e78658622e112b12c5ab2271931a691f77f8921442d443d8c352a9eff87e2"
+                        ],
+                        "sizeBytes": 92223609
+                    },
+                    {
+                        "names": [
+                            "docker.io/nidus-bench/node-express:v1.0.12-campaign"
+                        ],
+                        "sizeBytes": 81215154
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 81214981
+                    },
+                    {
+                        "names": [
+                            "docker.io/longhornio/longhorn-ui@sha256:70c0902102fa8192277aa72ff3d1d7de040ee012b8a7ec8267c2c70e3a5604e5",
+                            "docker.io/longhornio/longhorn-ui:v1.6.4"
+                        ],
+                        "sizeBytes": 80382426
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/node@sha256:7af03b14a13c8cdd38e45058fd957bf00a72bbe17feac43b1c15a689c029c732",
+                            "docker.io/library/node:22-bookworm-slim"
+                        ],
+                        "sizeBytes": 79891288
+                    },
+                    {
+                        "names": [
+                            "quay.io/frrouting/frr@sha256:086acb1278fe86118345f456a1fbfafb80c34d03f7bca9137da0729a1aee5e9c",
+                            "quay.io/frrouting/frr:9.0.2"
+                        ],
+                        "sizeBytes": 79403819
+                    },
+                    {
+                        "names": [
+                            "docker.io/rancher/k3s@sha256:983a88efba91ce49efa8af580feaf23cdcd8bf9f3f98ac6b4839162e2aeb1897",
+                            "docker.io/rancher/k3s:v1.30.4-k3s1"
+                        ],
+                        "sizeBytes": 71653284
+                    }
+                ],
+                "nodeInfo": {
+                    "architecture": "amd64",
+                    "bootID": "93cccf92-1185-4e23-804d-2814907fe7ff",
+                    "containerRuntimeVersion": "containerd://1.7.20-k3s1",
+                    "kernelVersion": "6.6.68",
+                    "kubeProxyVersion": "v1.30.4+k3s1",
+                    "kubeletVersion": "v1.30.4+k3s1",
+                    "machineID": "fd205e26405c40f9bc5888de3214eb6d",
+                    "operatingSystem": "linux",
+                    "osImage": "NixOS 24.05 (Uakari)",
+                    "systemUUID": "4eff2e80-45bc-11f0-b46a-80bdaf047c00"
+                },
+                "volumesAttached": [
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-f6ee28c4-0858-42c1-9161-bf23bc949919"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-306d4016-d383-4f9a-914e-0e5a9d1d6892"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-ca58355a-79dd-4aa1-b03e-7ce794ec886a"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-ed2bc8ba-33cd-47f1-9199-a8d47dc9282e"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-39343632-6654-4700-aa36-22a4ccf5ff12"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-77a3b347-2b67-4834-8693-15e2096ebb19"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-79fd0e7d-dc71-4acd-b0e3-4a1e00ad539c"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-188812d0-1f8f-4791-871b-15c314fd5cbf"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-9b18bc24-71d1-43ff-a908-92f82c13ed42"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-28b9f2d4-6aa5-4ad0-85bb-9544cef1e860"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-7c1b52a5-b149-4d73-8b6e-8a19656b9007"
+                    },
+                    {
+                        "devicePath": "",
+                        "name": "kubernetes.io/csi/driver.longhorn.io^pvc-3a21615b-6a38-44b5-afb4-3ca0e22e9e20"
+                    }
+                ],
+                "volumesInUse": [
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-188812d0-1f8f-4791-871b-15c314fd5cbf",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-28b9f2d4-6aa5-4ad0-85bb-9544cef1e860",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-306d4016-d383-4f9a-914e-0e5a9d1d6892",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-39343632-6654-4700-aa36-22a4ccf5ff12",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-3a21615b-6a38-44b5-afb4-3ca0e22e9e20",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-77a3b347-2b67-4834-8693-15e2096ebb19",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-79fd0e7d-dc71-4acd-b0e3-4a1e00ad539c",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-7c1b52a5-b149-4d73-8b6e-8a19656b9007",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-9b18bc24-71d1-43ff-a908-92f82c13ed42",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-ca58355a-79dd-4aa1-b03e-7ce794ec886a",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-ed2bc8ba-33cd-47f1-9199-a8d47dc9282e",
+                    "kubernetes.io/csi/driver.longhorn.io^pvc-f6ee28c4-0858-42c1-9161-bf23bc949919"
+                ]
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Node",
+            "metadata": {
+                "annotations": {
+                    "alpha.kubernetes.io/provided-node-ip": "192.168.50.133",
+                    "etcd.k3s.cattle.io/local-snapshots-timestamp": "2026-09-25T12:00:01-03:00",
+                    "etcd.k3s.cattle.io/node-address": "192.168.50.133",
+                    "etcd.k3s.cattle.io/node-name": "homelab-02-132fe2de",
+                    "k3s.io/hostname": "homelab-02",
+                    "k3s.io/internal-ip": "192.168.50.133",
+                    "k3s.io/node-args": "[\"server\",\"--cluster-init\",\"--token\",\"********\",\"--write-kubeconfig-mode\",\"0644\",\"--disable\",\"servicelb\",\"--disable\",\"traefik\",\"--disable\",\"local-storage\",\"--bind-address\",\"0.0.0.0\",\"--flannel-backend\",\"none\",\"--disable-network-policy\",\"--cluster-cidr\",\"10.42.0.0/16\",\"--tls-san\",\"192.168.50.132\",\"--tls-san\",\"192.168.50.133\",\"--cluster-init\",\"--node-taint\",\"node-role.kubernetes.io/control-plane=:NoSchedule\"]",
+                    "k3s.io/node-config-hash": "ZOHDDBAYJIVIVJ6YN7KDJLASHAXEDUDQFGHOHBEVUYYXA4N4PFWQ====",
+                    "k3s.io/node-env": "{}",
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "projectcalico.org/IPv4Address": "192.168.50.133/24",
+                    "projectcalico.org/IPv4VXLANTunnelAddr": "10.42.134.0",
+                    "projectcalico.org/Interfaces": "[{\"name\":\"enp2s0\",\"addresses\":[\"192.168.50.133\"]},{\"name\":\"wlp1s0\"}]",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "creationTimestamp": "2026-02-25T04:17:45Z",
+                "finalizers": [
+                    "wrangler.cattle.io/managed-etcd-controller",
+                    "wrangler.cattle.io/node"
+                ],
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/instance-type": "k3s",
+                    "beta.kubernetes.io/os": "linux",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "homelab-02",
+                    "kubernetes.io/os": "linux",
+                    "node-role.kubernetes.io/control-plane": "true",
+                    "node-role.kubernetes.io/etcd": "true",
+                    "node-role.kubernetes.io/master": "true",
+                    "node.kubernetes.io/instance-type": "k3s"
+                },
+                "name": "homelab-02",
+                "resourceVersion": "117240172",
+                "uid": "c5a4363d-5090-4439-ab3e-d30ab04caf5c"
+            },
+            "spec": {
+                "podCIDR": "10.42.1.0/24",
+                "podCIDRs": [
+                    "10.42.1.0/24"
+                ],
+                "providerID": "k3s://homelab-02",
+                "taints": [
+                    {
+                        "effect": "NoSchedule",
+                        "key": "node-role.kubernetes.io/control-plane"
+                    }
+                ]
+            },
+            "status": {
+                "addresses": [
+                    {
+                        "address": "192.168.50.133",
+                        "type": "InternalIP"
+                    },
+                    {
+                        "address": "homelab-02",
+                        "type": "Hostname"
+                    }
+                ],
+                "allocatable": {
+                    "cpu": "4",
+                    "ephemeral-storage": "486375843049",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16116304Ki",
+                    "pods": "110"
+                },
+                "capacity": {
+                    "cpu": "4",
+                    "ephemeral-storage": "488257Mi",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16116304Ki",
+                    "pods": "110"
+                },
+                "conditions": [
+                    {
+                        "lastHeartbeatTime": "2026-02-25T04:40:40Z",
+                        "lastTransitionTime": "2026-02-25T04:40:40Z",
+                        "message": "Calico is running on this node",
+                        "reason": "CalicoIsUp",
+                        "status": "False",
+                        "type": "NetworkUnavailable"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:55:05Z",
+                        "lastTransitionTime": "2026-09-11T17:34:51Z",
+                        "message": "Node is a voting member of the etcd cluster",
+                        "reason": "MemberNotLearner",
+                        "status": "True",
+                        "type": "EtcdIsVoter"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:52:47Z",
+                        "lastTransitionTime": "2026-02-25T04:17:45Z",
+                        "message": "kubelet has sufficient memory available",
+                        "reason": "KubeletHasSufficientMemory",
+                        "status": "False",
+                        "type": "MemoryPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:52:47Z",
+                        "lastTransitionTime": "2026-02-25T04:17:45Z",
+                        "message": "kubelet has no disk pressure",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "status": "False",
+                        "type": "DiskPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:52:47Z",
+                        "lastTransitionTime": "2026-02-25T04:17:45Z",
+                        "message": "kubelet has sufficient PID available",
+                        "reason": "KubeletHasSufficientPID",
+                        "status": "False",
+                        "type": "PIDPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2026-09-25T17:52:47Z",
+                        "lastTransitionTime": "2026-07-18T14:06:41Z",
+                        "message": "kubelet is posting ready status",
+                        "reason": "KubeletReady",
+                        "status": "True",
+                        "type": "Ready"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "images": [
+                    {
+                        "names": [
+                            "docker.io/library/rust@sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+                            "docker.io/library/rust:1.96-bookworm",
+                            "docker.io/library/rust:1.96.1-bookworm"
+                        ],
+                        "sizeBytes": 563821022
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/gcc@sha256:b99b86a28812b1e6453a231a947dc43d76fe192788a12f344a9b568bf9f5d24c",
+                            "docker.io/library/gcc:14.2.0-bookworm"
+                        ],
+                        "sizeBytes": 508841261
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/node@sha256:2fa6c977460b56d4d8278947ab56faeb312bc4cc6c4cf78920c6de27812f51c5",
+                            "docker.io/library/node:22.17.0-bookworm"
+                        ],
+                        "sizeBytes": 406005843
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/python@sha256:c36262cd12ed3eb4c32146f5268ea5037e04c688ccf32cdb04b6084671845541",
+                            "docker.io/library/python:3.12-bookworm"
+                        ],
+                        "sizeBytes": 380425443
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/python@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12",
+                            "docker.io/library/python:3.12.11-bookworm"
+                        ],
+                        "sizeBytes": 380181343
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/python@sha256:4d88a40c18f95eacef39350c1162fa0b7846a8dd1c55311e1e5a60825b7cd6e6",
+                            "docker.io/library/python:3.11.13-bookworm"
+                        ],
+                        "sizeBytes": 378828856
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 359284067
+                    },
+                    {
+                        "names": [
+                            "docker.io/nidus-bench/java-spring:local"
+                        ],
+                        "sizeBytes": 354268515
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/golang@sha256:ef8c5c733079ac219c77edab604c425d748c740d8699530ea6aced9de79aea40",
+                            "docker.io/library/golang:1.24.5-bookworm"
+                        ],
+                        "sizeBytes": 308272342
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/golang@sha256:10f549dc8489597aa7ed2b62008199bb96717f52a8e8434ea035d5b44368f8a6",
+                            "docker.io/library/golang:1.24.4-bookworm"
+                        ],
+                        "sizeBytes": 308266066
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/mongo@sha256:d5b3ca8c3f3cdce78d44870dc0871b76d5235e9b2ad4ea6bea5d1fbff8027703",
+                            "docker.io/library/mongo:7"
+                        ],
+                        "sizeBytes": 293565799
+                    },
+                    {
+                        "names": [
+                            "docker.io/nidus-bench/node-express:local"
+                        ],
+                        "sizeBytes": 244793994
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/eclipse-temurin@sha256:03a98128909d4216057841a9e779af84b3e395a62f412b3073b369a53c02465b",
+                            "docker.io/library/eclipse-temurin:21.0.7_6-jdk"
+                        ],
+                        "sizeBytes": 210345064
+                    },
+                    {
+                        "names": [
+                            "docker.io/apache/kafka@sha256:41c20d65b0a2180b9deca056d47540771752e69fe9225d5748dd65a25a9675d7",
+                            "docker.io/apache/kafka:3.7.0"
+                        ],
+                        "sizeBytes": 209668830
+                    },
+                    {
+                        "names": [
+                            "docker.io/nidus-bench/python-fastapi:local"
+                        ],
+                        "sizeBytes": 176356520
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/alloy@sha256:491b0578c04983fd54fe99b587b6fab4404dc46d0dc16677bd6b00cc1140b308"
+                        ],
+                        "sizeBytes": 164536799
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/postgres@sha256:fe03a7605299a34ddf5e4f285dff78c3d7190a576b3c6b46f2fcff69f4bffd54",
+                            "docker.io/library/postgres:16"
+                        ],
+                        "sizeBytes": 160197901
+                    },
+                    {
+                        "names": [
+                            "quay.io/calico/node@sha256:f2339c4ff3a57228cbc39a1f67ab81abded1997d843e0e0b1e86664c7c4eb6c0",
+                            "quay.io/calico/node:v3.31.3"
+                        ],
+                        "sizeBytes": 159483847
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/postgres@sha256:cc9f4143a8d2fa8cf3749d0cb4d26ecf2d53a77a2ac807e9ebd67ae22426221a"
+                        ],
+                        "sizeBytes": 157080334
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/alloy@sha256:c311595156fca7b1131683d383dae1acfd29e8879d347161d2a6f714ebac0c0b"
+                        ],
+                        "sizeBytes": 151265121
+                    },
+                    {
+                        "names": [
+                            "docker.io/nidus-bench/rust-nidus:local"
+                        ],
+                        "sizeBytes": 95751107
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 95739331
+                    },
+                    {
+                        "names": [
+                            "quay.io/frrouting/frr@sha256:086acb1278fe86118345f456a1fbfafb80c34d03f7bca9137da0729a1aee5e9c",
+                            "quay.io/frrouting/frr:9.0.2"
+                        ],
+                        "sizeBytes": 79403819
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/nginx@sha256:8adbdcb969e2676478ee2c7ad333956f0c8e0e4c5a7463f4611d7a2e7a7ff5dc",
+                            "docker.io/library/nginx:bookworm"
+                        ],
+                        "sizeBytes": 72319283
+                    },
+                    {
+                        "names": [
+                            "quay.io/calico/cni@sha256:a6ddb6d00a53f98c5392eb3b525cf00af10cace1f6ca9414230ff652e6700e78",
+                            "quay.io/calico/cni:v3.31.3"
+                        ],
+                        "sizeBytes": 72141081
+                    },
+                    {
+                        "names": [
+                            "docker.io/rancher/k3s@sha256:983a88efba91ce49efa8af580feaf23cdcd8bf9f3f98ac6b4839162e2aeb1897",
+                            "docker.io/rancher/k3s:v1.30.4-k3s1"
+                        ],
+                        "sizeBytes": 71653284
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 58925395
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/e-navigator-head-to-head:opt6-amd64"
+                        ],
+                        "sizeBytes": 58925282
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 58925236
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 58925008
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 58924467
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 58924306
+                    },
+                    {
+                        "names": [
+                            "quay.io/calico/goldmane@sha256:62316a0ff76734e2026ca79246b02a6578b62ac63f442cbb54ecb55a76f17164",
+                            "quay.io/calico/goldmane:v3.31.3"
+                        ],
+                        "sizeBytes": 55608418
+                    },
+                    {
+                        "names": null,
+                        "sizeBytes": 55587257
+                    },
+                    {
+                        "names": [
+                            "quay.io/calico/kube-controllers@sha256:3470040e0995deb6f6e23245a5149c9db1fc698a8a49da376cabe8dece62a0dd",
+                            "quay.io/calico/kube-controllers:v3.31.3"
+                        ],
+                        "sizeBytes": 53952979
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/redis@sha256:c22af04bb576503bf16b3e34a1fd2fd82de0f765afd866d2e380145e0af30d78",
+                            "docker.io/library/redis:bookworm"
+                        ],
+                        "sizeBytes": 53006336
+                    },
+                    {
+                        "names": [
+                            "quay.io/metallb/speaker@sha256:34e9cc2db6d83ca3ad4d92a6e2eadaf6b78be65621798e90827041749898acc0",
+                            "quay.io/metallb/speaker:v0.14.5"
+                        ],
+                        "sizeBytes": 52754428
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/beyla@sha256:133b8d66190f21e20365d9972e1621513ea5e44518fb71e1c3e0180c64815566"
+                        ],
+                        "sizeBytes": 51399142
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/traefik@sha256:74d72c7a1345984f186bddbabcc462b2128d0d8054177dc84afaeac4db1f0f56",
+                            "docker.io/library/traefik:v3.1"
+                        ],
+                        "sizeBytes": 50059639
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/guaracloud/e-navigator:sha-56c4b4e",
+                            "ghcr.io/guaracloud/e-navigator:sha-fafb91a-alloy-boundary"
+                        ],
+                        "sizeBytes": 49364721
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/beyla@sha256:026181d0524134b0596dfe847a7b4adb15bf2ddea9e469752bd087f663883f4a",
+                            "docker.io/grafana/beyla:3.1.2"
+                        ],
+                        "sizeBytes": 47828074
+                    },
+                    {
+                        "names": [
+                            "docker.io/falcosecurity/falco@sha256:88c01fa17bcc03c990a2691d08e7d43d746e32b07dbe9c6eb77bfdb3646cec41",
+                            "docker.io/falcosecurity/falco:0.43.0"
+                        ],
+                        "sizeBytes": 47700763
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/python@sha256:9d7f287598e1a5a978c015ee176d8216435aaf335ed69ac3c38dd1bbb10e8d64"
+                        ],
+                        "sizeBytes": 44341048
+                    },
+                    {
+                        "names": [
+                            "docker.io/natsio/nats-box@sha256:ffce8bd103383f179f8c7f11cf645726acf5d17280706c530c3b342dbe16334c",
+                            "docker.io/natsio/nats-box:latest"
+                        ],
+                        "sizeBytes": 43908101
+                    },
+                    {
+                        "names": [
+                            "quay.io/tigera/operator@sha256:3b1a6762e1f3fae8490773b8f06ddd1e6775850febbece4d6002416f39adc670",
+                            "quay.io/tigera/operator:v1.40.3"
+                        ],
+                        "sizeBytes": 40818714
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/guaracloud/e-navigator@sha256:62402d21b9cb02d59d63365c7e3716ffa0980bfea42d070b43fed618703a7df9"
+                        ],
+                        "sizeBytes": 38752567
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/e-navigator:standalone-go-f20e3b12-r69"
+                        ],
+                        "sizeBytes": 38720251
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/e-navigator:standalone-go-f20e3b12-r68"
+                        ],
+                        "sizeBytes": 38719970
+                    },
+                    {
+                        "names": [
+                            "ghcr.io/guaracloud/e-navigator@sha256:89bbc0b8e42fceda8205387896060c5dfa2c2fdf95d793f9f2a74fe7e3d7cc14"
+                        ],
+                        "sizeBytes": 38718709
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/e-navigator:standalone-go-f20e3b12-r70"
+                        ],
+                        "sizeBytes": 38718101
+                    }
+                ],
+                "nodeInfo": {
+                    "architecture": "amd64",
+                    "bootID": "a71a24d3-0c75-4700-ab76-59087366c4a5",
+                    "containerRuntimeVersion": "containerd://1.7.20-k3s1",
+                    "kernelVersion": "6.6.68",
+                    "kubeProxyVersion": "v1.30.4+k3s1",
+                    "kubeletVersion": "v1.30.4+k3s1",
+                    "machineID": "f79ebbfe86274d76bb39530186164726",
+                    "operatingSystem": "linux",
+                    "osImage": "NixOS 24.05 (Uakari)",
+                    "systemUUID": "53e9e500-1cd3-11f0-a5c1-ecb508c60800"
+                }
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

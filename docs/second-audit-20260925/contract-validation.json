@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "all measured extensions",
+  "frozen_files_unchanged": 10,
+  "source_side_copy_checksums": 1601,
+  "unique_diagnosis_traces": 24000,
+  "programmed_leaf_delays_reconciled": 72000,
+  "minimum_observed_minus_programmed_ms": 0.006858321341264073,
+  "protected_traces_by_phase": {
+    "reference": 27,
+    "incident": 41
+  },
+  "fixed_trial_comparison_grid_verified": true,
+  "pinned_binary_limits_and_full_load_configuration_verified": true,
+  "planned_ingress_and_schedule_receipts_verified": true
+}

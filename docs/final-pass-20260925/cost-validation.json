@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "cells": 96,
+  "measured_trace_occurrences": 288000,
+  "exported_spans_all": 1175200,
+  "backend_spans_all": 587600,
+  "unique_input_traces": 3500,
+  "clock_ticks": 100,
+  "throttled_periods": 0,
+  "max_snapshot_span_s": 0.0031567513942718506,
+  "max_schedule_lag_s": 0.0033360928297057058,
+  "fixed_content_and_input_order_verified": true,
+  "native_selection_recomputed": true,
+  "exact_cpu_endpoints_recomputed": true,
+  "backend_content_verified": true
+}

@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "missing_previous_files": [],
+  "changed_prior_files": [
+    {
+      "file": "CITATION.cff",
+      "prior_sha256": "2318819e9e32a06a688f0a63a963e27cf08992d7c781aa4f8a32d2179b187973",
+      "current_sha256": "60c529bf92335eeb6c8ca70c4648db23eba6f0870d6e33087698f70c1635bf10"
+    },
+    {
+      "file": "Makefile",
+      "prior_sha256": "fcb1ea585b42d59f670700cbd6c4e1058ebfc7475adf0b6dae46e60a3243b1c3",
+      "current_sha256": "f5fc3379ae2218a63be8fd54dc9a11d175bd7778295438b86cf44a81dd31efb7"
+    },
+    {
+      "file": "README.md",
+      "prior_sha256": "e516b78460448729a5758be498db1f003007672c60312c6e707456b79ca0385a",
+      "current_sha256": "aba51ea91b900ede861f24486eed6d267e3f68a514a298c0c9bdf720f0570999"
+    },
+    {
+      "file": "data/derived/delivery-receipt.json",
+      "prior_sha256": "a3c42e152deb53bbd6cee8dc105618cfca8f622d99f895520be7ff3182092880",
+      "current_sha256": "3f35b4c94fba343c6c000f79c424532cc296ea614ddff9677be4823aa1746520"
+    },
+    {
+      "file": "docs/claim-evidence-map.md",
+      "prior_sha256": "ab85500f64dcfae4d0fc7b622f7979e0126c0e295ad4cc888b67093cbb2e18fa",
+      "current_sha256": "1f787033585b57237616d2d5fe012b1d8cf721981d1aec5ef2d98168839e7c8f"
+    },
+    {
+      "file": "docs/publication-venues.md",
+      "prior_sha256": "d641c7a7c1909913d514bbb5c6aa2b21b80687e3a2a259c522a265d55aa842ca",
+      "current_sha256": "55fded9cf4466ca0c81917cc5d554e3df092ffe9e8a7e7d56edef4d1af21bf60"
+    },
+    {
+      "file": "docs/technical-supplement.md",
+      "prior_sha256": "f22c354f1b3f13c26debd59c2baa7e8b1f87d298c14a326a1efc587777d94112",
+      "current_sha256": "a90d1c8215efcdf70dd0fc4fe3c82113b801557f34a5a33ff59e7a8e8c9b7b76"
+    },
+    {
+      "file": "docs/third-audit-20260925/contract-validation.json",
+      "prior_sha256": "b97981f8dc3d7c220243349a6d1cc6d88b51b02bdb854fe151a7fef120d050ec",
+      "current_sha256": "01bc850ebfbc1e2b2258df7d26bc83c36146eca73159755efb65ed3a796944de"
+    },
+    {
+      "file": "docs/validation-report.md",
+      "prior_sha256": "d1c3a1b6b85c7f5d3e35d52c2222e172aca135fe640ab55b798928f8513d1fd6",
+      "current_sha256": "270bb8e734017d17db28ba909a38558cadcac500e5f735de2270ecfd97f9af1a"
+    },
+    {
+      "file": "output/pdf/how-much-can-we-sample.pdf",
+      "prior_sha256": "c4378423b3d1814ae84fb96137f893363559682d0cc32ada28ebb516445057da",
+      "current_sha256": "71e6fdfaea568e1153a7a6645f87559064a06d2a5a387f64b73af5d0eecf1ef2"
+    },
+    {
+      "file": "paper/abstract.tex",
+      "prior_sha256": "986fc5c1599dab07c188fb6d68d1a5026a37c86be4a34c4965b59d0502af2157",
+      "current_sha256": "82b5afaeece37c65670d8f2bea2f2cc0362bda8e65864a688668b7983fe3d082"
+    },
+    {
+      "file": "paper/appendix.tex",
+      "prior_sha256": "22366419bfff2680b82494e1c69b064a4594a10e8ca6b2903571fa79cf5311a1",
+      "current_sha256": "cb3057ca29c05fb25811567e4be7d507d5fa2e0b09ddd3f166f717b54698c851"
+    },
+    {
+      "file": "paper/conclusion.tex",
+      "prior_sha256": "3459251adc963a0618c5563d6ee9e526a75047e1988cd8f0bfb95d56fac21640",
+      "current_sha256": "c066ce1b845f3a7114c6e6e898ebac2b93a631daafa84fc37b9f3f0bf4cab898"
+    },
+    {
+      "file": "paper/cost-results.tex",
+      "prior_sha256": "7ae79d4ec8ad514b2af189f843df985f0d1bdc9864e5a4f6cb32937840f2c97d",
+      "current_sha256": "6aab6df065f244d2a137d39253fc05455c4826d625b6d9050086384244616c30"
+    },
+    {
+      "file": "paper/discussion.tex",
+      "prior_sha256": "1d83bb445ee77be35dac6a1e5cd622a9acb39e50582cdad651834194df7536c2",
+      "current_sha256": "96c148573a77b887ac3775962319cae4765a89c136ef6146e18be9955e679eb7"
+    },
+    {
+      "file": "paper/formal-appendix.tex",
+      "prior_sha256": "c34b014874b114bcee94f9e1f8c286e278b23274b8d2895c8906cbd60f664ae6",
+      "current_sha256": "ded96dde785ea58a956bc2e31a4c17591baa18a7b08950ce75eb8c29fa944db4"
+    },
+    {
+      "file": "paper/intro-related.tex",
+      "prior_sha256": "ec66b884907ecca5e6d7d9fbfb9044616248c9dc88e68865c540b218475d5b8c",
+      "current_sha256": "921a41d6a5a1be19352023b85b61cc31668ef6deff9eb0a6c6e52ba6f56703ad"
+    },
+    {
+      "file": "paper/load-results.tex",
+      "prior_sha256": "c5e57c8a3b94b4062de6acf023bfc46b0c429953e811626dddc47606878f9a8c",
+      "current_sha256": "43dfee153272c34a4549f611d2758de526e02f48c83347527e929e00fb0af127"
+    },
+    {
+      "file": "paper/main.pdf",
+      "prior_sha256": "c4378423b3d1814ae84fb96137f893363559682d0cc32ada28ebb516445057da",
+      "current_sha256": "71e6fdfaea568e1153a7a6645f87559064a06d2a5a387f64b73af5d0eecf1ef2"
+    },
+    {
+      "file": "paper/main.tex",
+      "prior_sha256": "9216cd102a896f29d3e6090c8582cc2c2db41d8d4ddc3923955d356031a81183",
+      "current_sha256": "f6f2a45906b26e2d357daabc94370c76b33aa20b8344171f4e76e21c409abd8b"
+    },
+    {
+      "file": "paper/methods.tex",
+      "prior_sha256": "ac585ab83f734b432b9178cb3deda66f0de1160e2f4b55842ef5f35b330b83eb",
+      "current_sha256": "fb1e2dd264c2b07b7b4d2256da95b50b47b3b17b232bfbd237f8588f4be0a872"
+    },
+    {
+      "file": "paper/references.bib",
+      "prior_sha256": "cc7704605d967f1c8d45b151ac2fa5dd83e83f9d7a14d4f6c8635f6e7b841c73",
+      "current_sha256": "2aebf0404755cabf763f2fa8ad87699e40166dd464d5a590bf6bc9992e897116"
+    },
+    {
+      "file": "paper/results.tex",
+      "prior_sha256": "9d52631adb855c19fb3744db8786cf79ae53b84d383ee3ee605583b491ff8cd4",
+      "current_sha256": "0ed1dca2164450d5b7be1a7753301dd662768ed0a00a3e4d2d131172480a2fb5"
+    },
+    {
+      "file": "paper/theory.tex",
+      "prior_sha256": "dae03805e475c97af2da9dc0a167e1a66cbc489889d1abc5e6d2aab19e3bf99c",
+      "current_sha256": "218c15e98b41cdac772e86777d345ec807a9242f5f155ebda9907edf68e788c9"
+    },
+    {
+      "file": "paper/window-results.tex",
+      "prior_sha256": "d49e232b8828773f2ed6c2cc16665fd6578827fe0c1162025d37d326dd3c04d5",
+      "current_sha256": "4e5f5ac1ade4f1110c9d71b014970875af8f0087c2c9e3b5dd2df0c3d90e0501"
+    },
+    {
+      "file": "scripts/check_acm_length.py",
+      "prior_sha256": "02810594b76115a045189a7f0344b976f33bc55ec9e3e50748e31e568f914010",
+      "current_sha256": "58d6cc71037eaa3a6272d6f90816ded574f6e1c9f0ea715a5486d2fe5e12886b"
+    }
+  ],
+  "note": "New files are listed in the final inventory; prior raw files and frozen sources are checked separately."
+}

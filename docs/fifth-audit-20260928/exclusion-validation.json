@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "failed_measured_attempt": {
+    "offered_spans_s": 20000,
+    "collector_accepted_and_exported_spans": 1400000,
+    "jaeger_successful_saves_at_endpoint": 1373900,
+    "jaeger_save_errors": 0,
+    "max_schedule_lag_s": 0.02773430258035603,
+    "complete_paired_blocks": 0
+  },
+  "excluded_long_pilot": {
+    "offered_spans_s": 10000,
+    "max_schedule_lag_s": 0.6971998840570421,
+    "maximum_allowed_lag_s": 0.5,
+    "backend_completion_passed": true
+  },
+  "next_selected_offered_spans_s": 5000,
+  "inference": "Neither interrupted attempt is a complete campaign or enters a paired estimate."
+}

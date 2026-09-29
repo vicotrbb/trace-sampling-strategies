@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-28T14:44:45.560297+00:00",
+  "stage": "before pilots",
+  "files": {
+    "experiments/fifth_audit/pod.yaml": "dda7e60659d8390f70a27b595c1bf30d186b8b1808cf6b755121fe3fda7a663c",
+    "experiments/fifth_audit/protocol.md": "ac5335ccb7be75887e45ed157748be4ffdf857a17a16583b0b26f2c90126c18e",
+    "experiments/fifth_audit/run_pilots.py": "b13f3cdbb0d9839a11b91a364e26e51cb76876b7c198db350cc45a564756c564",
+    "experiments/fifth_audit/runtime.py": "21c7c34a59d4e56cad9cf4009324d2b4cc7b939a6397012561acbbe80f8fd6bc",
+    "experiments/fifth_audit/study.py": "f8b2d778f0b5d2cb3a914d3fe5257ab52ef54447b8d4fc1c7497d909c62b54c4"
+  }
+}

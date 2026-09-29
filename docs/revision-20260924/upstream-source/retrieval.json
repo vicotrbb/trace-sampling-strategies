@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-24T21:58:10.252923+00:00",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/processor/tailsamplingprocessor/internal/sampling/probabilistic.go",
+      "sha256": "159a01aadf3d501ab0f54dcbe3a86fce3518c13a519f90e18a584cc97c803f6a",
+      "bytes": 2417,
+      "matches_original_archive": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector-contrib/v0.136.0/processor/tailsamplingprocessor/internal/sampling/latency.go",
+      "sha256": "53241eb257557a73daaae3a8574cab16587c508ce382fa7f60ac720264d421ca",
+      "bytes": 1944
+    }
+  ]
+}

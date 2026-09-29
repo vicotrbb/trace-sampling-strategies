@@ -1,0 +1,35 @@
+{
+  "utc": "2026-09-28T13:57:18.105870+00:00",
+  "sources": [
+    {
+      "file": "mint.html",
+      "url": "https://arxiv.org/html/2411.04605v1",
+      "status": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "unisage.html",
+      "url": "https://arxiv.org/html/2509.26336v2",
+      "status": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "gleaner.html",
+      "url": "https://arxiv.org/html/2604.16810v1",
+      "status": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "acm-authorship.html",
+      "url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+      "status": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "icpe-research.html",
+      "url": "https://icpe2027.spec.org/tracks-and-submissions/research-paper-track/",
+      "status": "unavailable",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ]
+}

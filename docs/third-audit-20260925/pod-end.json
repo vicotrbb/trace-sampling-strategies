@@ -1,0 +1,205 @@
+{
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+        "annotations": {
+            "cni.projectcalico.org/containerID": "73b8649ad7dbcfea65c2c9cae7e88bf882fa5f8c357cb62f822e6d9e0c12a151",
+            "cni.projectcalico.org/podIP": "10.42.248.174/32",
+            "cni.projectcalico.org/podIPs": "10.42.248.174/32",
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"name\":\"study-runner\",\"namespace\":\"trace-sampling-sensitivity-20260925\"},\"spec\":{\"containers\":[{\"command\":[\"python\",\"-c\",\"import time; time.sleep(43200)\"],\"env\":[{\"name\":\"STUDY_CONTEXT\",\"value\":\"homelab\"},{\"name\":\"PYTHONUNBUFFERED\",\"value\":\"1\"}],\"image\":\"python:3.12.10-slim@sha256:fd95fa221297a88e1cf49c55ec1828edd7c5a428187e67b5d1805692d11588db\",\"name\":\"runner\",\"resources\":{\"limits\":{\"cpu\":\"4\",\"memory\":\"6Gi\"},\"requests\":{\"cpu\":\"1\",\"memory\":\"1Gi\"}},\"volumeMounts\":[{\"mountPath\":\"/work\",\"name\":\"work\"}]}],\"nodeSelector\":{\"kubernetes.io/hostname\":\"homelab-01\"},\"restartPolicy\":\"Never\",\"terminationGracePeriodSeconds\":40,\"volumes\":[{\"emptyDir\":{\"sizeLimit\":\"24Gi\"},\"name\":\"work\"}]}}\n"
+        },
+        "creationTimestamp": "2026-09-25T17:07:14Z",
+        "name": "study-runner",
+        "namespace": "trace-sampling-sensitivity-20260925",
+        "resourceVersion": "117222032",
+        "uid": "ec033dda-4036-4cf2-98ea-1220e9caed87"
+    },
+    "spec": {
+        "containers": [
+            {
+                "command": [
+                    "python",
+                    "-c",
+                    "import time; time.sleep(43200)"
+                ],
+                "env": [
+                    {
+                        "name": "STUDY_CONTEXT",
+                        "value": "homelab"
+                    },
+                    {
+                        "name": "PYTHONUNBUFFERED",
+                        "value": "1"
+                    }
+                ],
+                "image": "python:3.12.10-slim@sha256:fd95fa221297a88e1cf49c55ec1828edd7c5a428187e67b5d1805692d11588db",
+                "imagePullPolicy": "IfNotPresent",
+                "name": "runner",
+                "resources": {
+                    "limits": {
+                        "cpu": "4",
+                        "memory": "6Gi"
+                    },
+                    "requests": {
+                        "cpu": "1",
+                        "memory": "1Gi"
+                    }
+                },
+                "terminationMessagePath": "/dev/termination-log",
+                "terminationMessagePolicy": "File",
+                "volumeMounts": [
+                    {
+                        "mountPath": "/work",
+                        "name": "work"
+                    },
+                    {
+                        "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "name": "kube-api-access-xffgp",
+                        "readOnly": true
+                    }
+                ]
+            }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "homelab-01",
+        "nodeSelector": {
+            "kubernetes.io/hostname": "homelab-01"
+        },
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 1000,
+        "priorityClassName": "homelab-low",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 40,
+        "tolerations": [
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/not-ready",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            },
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/unreachable",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            }
+        ],
+        "volumes": [
+            {
+                "emptyDir": {
+                    "sizeLimit": "24Gi"
+                },
+                "name": "work"
+            },
+            {
+                "name": "kube-api-access-xffgp",
+                "projected": {
+                    "defaultMode": 420,
+                    "sources": [
+                        {
+                            "serviceAccountToken": {
+                                "expirationSeconds": 3607,
+                                "path": "token"
+                            }
+                        },
+                        {
+                            "configMap": {
+                                "items": [
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "name": "kube-root-ca.crt"
+                            }
+                        },
+                        {
+                            "downwardAPI": {
+                                "items": [
+                                    {
+                                        "fieldRef": {
+                                            "apiVersion": "v1",
+                                            "fieldPath": "metadata.namespace"
+                                        },
+                                        "path": "namespace"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-09-25T17:07:15Z",
+                "status": "True",
+                "type": "PodReadyToStartContainers"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-09-25T17:07:14Z",
+                "status": "True",
+                "type": "Initialized"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-09-25T17:07:15Z",
+                "status": "True",
+                "type": "Ready"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-09-25T17:07:15Z",
+                "status": "True",
+                "type": "ContainersReady"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-09-25T17:07:14Z",
+                "status": "True",
+                "type": "PodScheduled"
+            }
+        ],
+        "containerStatuses": [
+            {
+                "containerID": "containerd://f4016db59dba3827786d6905ff98ec81f2e511e50cf4c5aa30c928d23c5a89fa",
+                "image": "docker.io/library/python:3.12.10-slim",
+                "imageID": "docker.io/library/python@sha256:fd95fa221297a88e1cf49c55ec1828edd7c5a428187e67b5d1805692d11588db",
+                "lastState": {},
+                "name": "runner",
+                "ready": true,
+                "restartCount": 0,
+                "started": true,
+                "state": {
+                    "running": {
+                        "startedAt": "2026-09-25T17:07:15Z"
+                    }
+                }
+            }
+        ],
+        "hostIP": "192.168.50.132",
+        "hostIPs": [
+            {
+                "ip": "192.168.50.132"
+            }
+        ],
+        "phase": "Running",
+        "podIP": "10.42.248.174",
+        "podIPs": [
+            {
+                "ip": "10.42.248.174"
+            }
+        ],
+        "qosClass": "Burstable",
+        "startTime": "2026-09-25T17:07:14Z"
+    }
+}
